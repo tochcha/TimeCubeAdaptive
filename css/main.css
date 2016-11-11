@@ -160,7 +160,7 @@ article:after,
       background: red; } }
 
 .wrapper {
-  width: 1121px;
+  max-width: 1121px;
   margin: 0 auto; }
 
 #header {
