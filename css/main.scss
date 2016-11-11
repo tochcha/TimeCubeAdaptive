@@ -34,6 +34,9 @@ $base-font:MyriadPro,
 Arial,
 Geneva,
 Helvetica;
+$minionIta: MinionProIt;
+$myriadSemi: MyriadProS;
+$myriadBold: MyriadProBold;
 $color:#494949;
 $link:#000;
 $link-hover:#c99726;
@@ -352,7 +355,7 @@ article:after,
 		float: left;
 		font-size: 20px;
 		line-height: 40px;
-		padding: 0 14px 5px 0;
+		padding: 1px 14px 2px 0;
 		a {
 			display: inline-block;
 			padding-right: 45px;
@@ -7187,7 +7190,48 @@ body {
 // black friday 2016 end
 
 
-
+.ht-right {
+	.favorite-compare {
+		padding-top: 12px;
+		display: none;
+		float: left;
+		a {
+			display: block;
+			height: 100%;
+		}
+	}
+	.qty {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font: 12px/13px Arial;
+		color: #000;
+		height: 13px;
+		padding: 0 3px;
+		background-color: #b7b7b7;
+	}
+	.active .qty {
+		background-color: #fff;
+	}
+	.favorite {
+		float: left;
+		height: 25px;
+		width: 29px;
+		background: url(../images/heart.png) no-repeat left 100%;
+		position: relative;
+		margin-right: 13px;
+	}
+	.compare {
+		width: 31px;
+		height: 25px;
+		background: url(../images/compare.png) no-repeat left bottom 1px;
+		float: left;
+		position: relative;
+	}
+	.mobile-right {
+		float: right;
+	}
+}
 //
 //
 //
