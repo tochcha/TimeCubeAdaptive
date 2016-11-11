@@ -1,0 +1,109 @@
+.scrollgeneric {
+	line-height: 1px;
+	font-size: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.vscrollerbase {
+	width: 31px;
+	background: url(../images/line.png);
+}
+
+.vscrollerbar {
+	width: 31px;
+	background: url(../images/begun.png);
+	cursor: grab;
+}
+
+.vscrollerbar:active {
+	cursor: grabbing;
+}
+
+.hscrollerbase {
+	height: 16px;
+	background: #D7EBDF;
+}
+
+.hscrollerbar {
+	height: 16px;
+	background-color: #7a7a7a;
+	cursor: pointer;
+}
+
+.vscrollerbarbeg {
+	width: 15px;
+	height: 15px !important;
+}
+
+.vscrollerbarend {
+	width: 15px;
+	height: 15px;
+}
+
+.hscrollerbarbeg {
+	height: 16px;
+	width: 17px !important;
+}
+
+.hscrollerbarend {
+/*	background: url(../images/scroll-right.png);*/
+	height: 16px;
+	width: 17px;
+	right:0;
+}
+
+.scrollerjogbox {
+	width: 15px;
+	height: 15px;
+	top: auto;
+	left: auto;
+	bottom: 0px;
+	right: 0px;
+	background: #4E727C;
+}
+
+.vscrollerbasebeg {
+	background: url(../images/button-up.gif);
+	width: 31px;
+	height: 31px !important;
+	z-index: 333;
+	cursor: pointer;
+}
+
+.vscrollerbaseend {
+	background: url(../images/button-down.gif);
+	width: 31px;
+	height: 31px;
+	z-index: 333;
+	cursor: pointer;
+}
+
+.hscrollerbase {
+	background-color: #d2d2d2;
+	margin-top: -16px;
+}
+
+.hscrollerbasebeg {
+	height: 16px;
+	width: 17px !important;
+	background: url(../images/scroll-left.png);
+	z-index: 9;
+	cursor: pointer;
+}
+
+.hscrollerbaseend {
+	height: 16px;
+	width: 17px;
+	background: url(../images/scroll-right.png);
+	z-index: 9;
+	cursor: pointer;
+}
+
+.scrollerjogbox:hover {
+	background: #5E828C;
+}
+
+
+/* Scroll Bar Master Styling Ends Here */
