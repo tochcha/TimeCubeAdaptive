@@ -1,7 +1,13 @@
 $(document).ready(function () {
 
+	// кнопка (sandwich) для выпадающего мобильного меню
+	$(".sandwich-mob").click(function () {
+		/*$("#sandwich").toggleClass("active");*/
+		$(".accordion").slideToggle(200);
+	});
+	
 	// подключение слайдера картинок
-	$('.zzzmain-slider').slick({
+	$('.main-slider').slick({
 		dots: true,
 		autoplay: true,
 		fade: true,
@@ -235,6 +241,22 @@ $(document).ready(function () {
 		dots: false
 	});
 
+	// карусель производителей
+	if( window.innerWidth < 768 ){
+		$('.manufacturers-carousel ul').slick({
+			infinite: true,
+			dots: false,
+			fade: false,
+			arrows: true,
+			pauseOnFocus: true,
+			speed: 500,
+			autoplaySpeed: 4000,
+			autoplay: true
+		});
+	}
+	$(function () {
+		$("#toTop2").scrollToTop();
+	});
 
 
 
