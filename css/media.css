@@ -137,9 +137,6 @@
     margin-top: -12px; }
   .before-footer .subscribe input[type="text"] {
     width: 216px; }
-  .before-footer .subscribe input[type="submit"] {
-    padding-left: 0;
-    background: #bcbcbc; }
   .footer-cols .column.col-1 {
     width: 50%;
     padding-right: 16%; }
@@ -156,7 +153,10 @@
       padding-bottom: 0;
       text-align: center; }
       #footer .cards li {
-        padding: 0 4px 14px; } }
+        padding: 0 4px 14px; }
+  .before-footer .subscribe input[type="submit"] {
+    padding-left: 0;
+    background: #bcbcbc; } }
 
 /* <=991 end */
 /* <=767 */
@@ -402,11 +402,28 @@
     display: none; }
   #footer .rem {
     display: none; }
-  .before-footer,
+  .footer-cols,
   .white-content.introtext {
     display: none; }
   .up-scroll-2,
   .site-menu {
+    display: block; }
+  .before-footer .subscribe {
+    padding-top: 0;
+    padding-bottom: 6px; }
+  .before-footer .subscribe label {
+    float: none;
+    width: 100%;
+    font: 16px/28px MyriadPro, Arial, Geneva, Helvetica; }
+  .btn-unsubscribe {
+    display: none; }
+  .before-footer .subscribe input[type="submit"] {
+    background: #bcbcbc url(../images/sbs.png) no-repeat 9px center;
+    padding-left: 20px; }
+  .before-footer .subscribe input[type="text"] {
+    width: 280px; }
+  .reviews-mobile,
+  .questions {
     display: block; } }
 
 /* <=767 end */
@@ -482,7 +499,14 @@
     margin-right: auto; }
   .content .wrapper aside .accordion li a {
     font-size: 15px;
-    padding-left: 16px; } }
+    padding-left: 16px; }
+  .before-footer .subscribe input[type="submit"] {
+    padding-left: 0;
+    width: 30px;
+    text-indent: 38px;
+    /*background-position: 32px center;*/ }
+  .before-footer .subscribe input[type="text"] {
+    width: 234px; } }
 
 /* <=479 end */
 

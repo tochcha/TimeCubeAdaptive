@@ -7456,7 +7456,51 @@ body {
 		}
 	}
 }
-
+.questions {
+	background-color: #fff;
+	padding: 12px 0;
+	display: none;
+	.title {
+		font:17px $base-font;
+		padding-bottom: 1px;
+	}
+	.tel {
+		font:30px/30px $base-font;
+		display: inline-block;
+		padding-right: 62px;
+		vertical-align: middle;
+	}
+	.around-clock {
+		font:17px/36px $base-font;
+		padding-left: 44px;
+		display: inline-block;
+		vertical-align: middle;
+		background: url(../images/schedule-2.png) no-repeat left;
+	}
+}
+.reviews-mobile {
+	text-align: center;
+	padding: 17px 0 26px;
+	display: none;
+	.title {
+		font:15px MyriadProBold;
+		padding-bottom: 16px;
+	}
+	p {
+		font:15px $base-font;
+		margin: 0 0 20px;
+	}
+	.reviewbox {
+		width: 282px;
+		border: 1px solid #8d8d8d;
+		margin: 0 auto;
+		padding: 20px 0 15px;
+		background-color: #fff;
+		img {
+			max-width:100%;
+		}
+	}
+}
 //
 //
 //

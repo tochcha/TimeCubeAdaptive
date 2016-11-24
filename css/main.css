@@ -5868,4 +5868,42 @@ body.black-friday {
       background-color: #f2f2f2;
       text-decoration: none; }
 
+.questions {
+  background-color: #fff;
+  padding: 12px 0;
+  display: none; }
+  .questions .title {
+    font: 17px MyriadPro, Arial, Geneva, Helvetica;
+    padding-bottom: 1px; }
+  .questions .tel {
+    font: 30px/30px MyriadPro, Arial, Geneva, Helvetica;
+    display: inline-block;
+    padding-right: 62px;
+    vertical-align: middle; }
+  .questions .around-clock {
+    font: 17px/36px MyriadPro, Arial, Geneva, Helvetica;
+    padding-left: 44px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/schedule-2.png) no-repeat left; }
+
+.reviews-mobile {
+  text-align: center;
+  padding: 17px 0 26px;
+  display: none; }
+  .reviews-mobile .title {
+    font: 15px MyriadProBold;
+    padding-bottom: 16px; }
+  .reviews-mobile p {
+    font: 15px MyriadPro, Arial, Geneva, Helvetica;
+    margin: 0 0 20px; }
+  .reviews-mobile .reviewbox {
+    width: 282px;
+    border: 1px solid #8d8d8d;
+    margin: 0 auto;
+    padding: 20px 0 15px;
+    background-color: #fff; }
+    .reviews-mobile .reviewbox img {
+      max-width: 100%; }
+
 /*# sourceMappingURL=main.css.map */
