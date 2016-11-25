@@ -424,24 +424,76 @@ article:after,
 		width: 339px;
 	}
 	.sandwich-mob {
-		width: 50px;
-		height: 50px;
+		height: 37px;
+		width: 37px;
 		position: absolute;
-		bottom: -9px;
-		right: 11px;
+		background-color: #727272;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 12px 10px;
+		bottom: 2px;
+		left: 22px;
 		cursor: pointer;
+		float: right;
 		display: none;
-		transition: .3s;
-		color: #adadad;
-		&:hover {
-			color: #646464;
+		div {
+			-webkit-transition: 0.3s ease;
+			transition: 0.3s ease;
 		}
-		&:after {
-			display: block;
-			position: absolute;
-			content: '\f039';
-			font: 30px FontAwesome;
-			margin: 9px 0 0 9px;
+		.sw-topper {
+			position: relative;
+			top: 0;
+			width: 16px;
+			height: 2px;
+			background: #fff;
+			-webkit-transform-origin: top;
+			transform-origin: top;
+		}
+		.sw-bottom {
+			position: relative;
+			width: 16px;
+			height: 2px;
+			top: 4px;
+			background: #fff;
+			-webkit-transform-origin: bottom;
+			transform-origin: bottom;
+		}
+		.sw-footer {
+			position: relative;
+			width: 16px;
+			height: 2px;
+			top: 8px;
+			background: #fff;
+			-webkit-transform-origin: top;
+			transform-origin: top;
+		}
+		&.active .sw-topper {
+			-moz-transform: rotate(45deg) translateX(5px) translateY(5px);
+			-webkit-transform: rotate(45deg) translateX(5px) translateY(5px);
+			-o-transform: rotate(45deg) translateX(5px) translateY(5px);
+			-ms-transform: rotate(45deg) translateX(5px) translateY(5px);
+			transform: rotate(45deg) translateX(5px) translateY(5px);
+			top: -1px;
+			width: 17px;
+		}
+		&.active .sw-bottom {
+			-moz-transform: rotate(-45deg) translateX(0px) translateY(1px);
+			-webkit-transform: rotate(-45deg) translateX(0px) translateY(1px);
+			-o-transform: rotate(-45deg) translateX(0px) translateY(1px);
+			-ms-transform: rotate(-45deg) translateX(0px) translateY(1px);
+			transform: rotate(-45deg) translateX(0px) translateY(1px);
+			top: 3px;
+			width: 17px;
+		}
+		&.active .sw-footer {
+			opacity: 0;
+			-moz-transform: translateY(-9px);
+			-webkit-transform: translateY(-9px);
+			-o-transform: translateY(-9px);
+			-ms-transform: translateY(-9px);
+			transform: translateY(-9px);
+			//transform: rotate(180deg);
 		}
 	}
 }
@@ -7456,38 +7508,40 @@ body {
 		}
 	}
 }
+
 .questions {
 	background-color: #fff;
 	padding: 12px 0;
 	display: none;
 	.title {
-		font:17px $base-font;
+		font: 17px $base-font;
 		padding-bottom: 1px;
 	}
 	.tel {
-		font:30px/30px $base-font;
+		font: 30px/30px $base-font;
 		display: inline-block;
 		padding-right: 62px;
 		vertical-align: middle;
 	}
 	.around-clock {
-		font:17px/36px $base-font;
+		font: 17px/36px $base-font;
 		padding-left: 44px;
 		display: inline-block;
 		vertical-align: middle;
 		background: url(../images/schedule-2.png) no-repeat left;
 	}
 }
+
 .reviews-mobile {
 	text-align: center;
 	padding: 17px 0 26px;
 	display: none;
 	.title {
-		font:15px MyriadProBold;
+		font: 15px MyriadProBold;
 		padding-bottom: 16px;
 	}
 	p {
-		font:15px $base-font;
+		font: 15px $base-font;
 		margin: 0 0 20px;
 	}
 	.reviewbox {
@@ -7497,10 +7551,11 @@ body {
 		padding: 20px 0 15px;
 		background-color: #fff;
 		img {
-			max-width:100%;
+			max-width: 100%;
 		}
 	}
 }
+
 //
 //
 //

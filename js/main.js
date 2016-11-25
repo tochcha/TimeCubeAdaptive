@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	// кнопка (sandwich) для выпадающего мобильного меню
 	$(".sandwich-mob").click(function () {
-		/*$("#sandwich").toggleClass("active");*/
+		$(".sandwich-mob").toggleClass("active");
 		$(".accordion").slideToggle(200);
 	});
 	
@@ -256,6 +256,7 @@ $(document).ready(function () {
 	}
 	$(function () {
 		$("#toTop2").scrollToTop();
+		$("#toTop3").scrollToTop();
 	});
 
 

@@ -253,23 +253,69 @@ article:after,
   width: 339px; }
 
 .header-content .sandwich-mob {
-  width: 50px;
-  height: 50px;
+  height: 37px;
+  width: 37px;
   position: absolute;
-  bottom: -9px;
-  right: 11px;
+  background-color: #727272;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  bottom: 2px;
+  left: 22px;
   cursor: pointer;
-  display: none;
-  transition: .3s;
-  color: #adadad; }
-  .header-content .sandwich-mob:hover {
-    color: #646464; }
-  .header-content .sandwich-mob:after {
-    display: block;
-    position: absolute;
-    content: '\f039';
-    font: 30px FontAwesome;
-    margin: 9px 0 0 9px; }
+  float: right;
+  display: none; }
+  .header-content .sandwich-mob div {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease; }
+  .header-content .sandwich-mob .sw-topper {
+    position: relative;
+    top: 0;
+    width: 16px;
+    height: 2px;
+    background: #fff;
+    -webkit-transform-origin: top;
+    transform-origin: top; }
+  .header-content .sandwich-mob .sw-bottom {
+    position: relative;
+    width: 16px;
+    height: 2px;
+    top: 4px;
+    background: #fff;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom; }
+  .header-content .sandwich-mob .sw-footer {
+    position: relative;
+    width: 16px;
+    height: 2px;
+    top: 8px;
+    background: #fff;
+    -webkit-transform-origin: top;
+    transform-origin: top; }
+  .header-content .sandwich-mob.active .sw-topper {
+    -moz-transform: rotate(45deg) translateX(5px) translateY(5px);
+    -webkit-transform: rotate(45deg) translateX(5px) translateY(5px);
+    -o-transform: rotate(45deg) translateX(5px) translateY(5px);
+    -ms-transform: rotate(45deg) translateX(5px) translateY(5px);
+    transform: rotate(45deg) translateX(5px) translateY(5px);
+    top: -1px;
+    width: 17px; }
+  .header-content .sandwich-mob.active .sw-bottom {
+    -moz-transform: rotate(-45deg) translateX(0px) translateY(1px);
+    -webkit-transform: rotate(-45deg) translateX(0px) translateY(1px);
+    -o-transform: rotate(-45deg) translateX(0px) translateY(1px);
+    -ms-transform: rotate(-45deg) translateX(0px) translateY(1px);
+    transform: rotate(-45deg) translateX(0px) translateY(1px);
+    top: 3px;
+    width: 17px; }
+  .header-content .sandwich-mob.active .sw-footer {
+    opacity: 0;
+    -moz-transform: translateY(-9px);
+    -webkit-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    transform: translateY(-9px); }
 
 .search-menu {
   float: left;
