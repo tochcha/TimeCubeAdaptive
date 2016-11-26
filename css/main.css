@@ -1076,7 +1076,7 @@ main {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-left: -425px;
+  margin-left: -436px;
   margin-top: -300px;
   width: 852px;
   height: 545px;
@@ -1533,16 +1533,16 @@ main {
       float: left;
       background-color: #fff;
       width: 421px;
-      height: 26px;
+      height: 16px;
       border: 1px solid #adadad;
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
       border-radius: 4px;
-      padding: 0 10px;
+      padding: 6px 10px 4px;
       margin: 0;
       color: #444;
-      font: 14px/36px MyriadPro, Arial, Geneva, Helvetica; }
+      font: 14px/16px MyriadPro, Arial, Geneva, Helvetica; }
     .before-footer .subscribe input[type=submit] {
       height: 26px;
       border: 1px solid #a0a0a0;

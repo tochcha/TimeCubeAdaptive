@@ -11,6 +11,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Каталог - TimeCube 2016</title>
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
@@ -34,6 +37,9 @@
 
 	<link rel="stylesheet" href="css/main.css" />
 	<!-- основной css -->
+
+	<link rel="stylesheet" href="css/media.css" />
+	<!-- адаптивный css -->
 </head>
 
 <body>
@@ -47,10 +53,20 @@
 					<div class="metro">Алексеевская</div>
 					<div class="tel"><a href="tel://7-800-775-2576" title="Позвонить">8 800 775-25-76</a></div>
 					<div class="contacts-link"><a href="#">Контакты</a></div>
-					<ul class="loginbox">
-						<li><a class="open-modal-4" href="#">Вход</a></li>
-						<li><a href="#">Регистрация</a></li>
-					</ul>
+					<div class="mobile-right">
+						<div class="favorite-compare">
+							<div class="favorite active">
+								<a href="#"><div class="qty">2</div></a>
+							</div>
+							<div class="compare">
+								<a href="#"><div class="qty">0</div></a>
+							</div>
+						</div>
+						<ul class="loginbox">
+							<li class="user"><a href="#">tochcha</a></li>
+							<li class="loginlink"><a href="#">Выход</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="header-content clearfix">
@@ -95,7 +111,7 @@
 										<div class="prod-info">
 											<div class="scu">FANCY BRICK Orange</div>
 											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="manufacturer"><b>Modalo</b> <img src="images/manufacturers/ger.png" alt=""> <span>Германия</span></div>
+											<div class="rem">С механическим управлением</div>
 										</div>
 										<div class="drop-qty">
 											<div class="num-input">
@@ -117,7 +133,7 @@
 										<div class="prod-info">
 											<div class="scu">FANCY BRICK Orange</div>
 											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="manufacturer"><b>Modalo</b> <img src="images/manufacturers/ger.png" alt=""> <span>Германия</span></div>
+											<div class="rem">С механическим управлением</div>
 										</div>
 										<div class="drop-qty">
 											<div class="num-input">
@@ -139,7 +155,7 @@
 										<div class="prod-info">
 											<div class="scu">FANCY BRICK Orange</div>
 											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом длинное название</a></div>
-											<div class="manufacturer"><b>Modalo</b> <img src="images/manufacturers/ger.png" alt=""> <span>Германия</span></div>
+											<div class="rem">С механическим управлением</div>
 										</div>
 										<div class="drop-qty">
 											<div class="num-input">
@@ -161,7 +177,7 @@
 										<div class="prod-info">
 											<div class="scu">FANCY BRICK Orange</div>
 											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="manufacturer"><b>Modalo</b> <img src="images/manufacturers/ger.png" alt=""> <span>Германия</span></div>
+											<div class="rem">С механическим управлением</div>
 										</div>
 										<div class="drop-qty">
 											<div class="num-input">
@@ -183,7 +199,7 @@
 										<div class="prod-info">
 											<div class="scu">FANCY BRICK Orange</div>
 											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="manufacturer"><b>Modalo</b> <img src="images/manufacturers/ger.png" alt=""> <span>Германия</span></div>
+											<div class="rem">С механическим управлением</div>
 										</div>
 										<div class="drop-qty">
 											<div class="num-input">
@@ -215,16 +231,17 @@
 					</div>
 					<div class="favorite-compare">
 						<div class="favorite active">
-							<a href="#">
-								<div class="qty">7</div>
-							</a>
+							<a href="#"><div class="qty">2</div></a>
 						</div>
-						<div class="compare active">
-							<a href="#">
-								<div class="qty">9</div>
-							</a>
+						<div class="compare">
+							<a href="#"><div class="qty">0</div></a>
 						</div>
 					</div>
+				</div>
+				<div class="sandwich-mob">
+					<div class="sw-topper"></div>
+					<div class="sw-bottom"></div>
+					<div class="sw-footer"></div>
 				</div>
 			</div>
 			<div class="down-scroll-fixed">
@@ -234,8 +251,212 @@
 			</div>
 		</div>
 	</header>
+	<div class="subheader">
+		<div class="wrapper">
+			<div class="form clearfix">
+				<form action="#">
+					<div>
+						<input type="text" placeholder="Поиск по сайту">
+						<input type="submit" value="&nbsp;">
+					</div>
+				</form>
+			</div>
+			<div class="sandwich-mob">
+				<div class="sw-topper"></div>
+				<div class="sw-bottom"></div>
+				<div class="sw-footer"></div>
+			</div>
+			<div class="cart">
+				<a href="#">
+					<div class="qty">0</div>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="content">
 		<div class="wrapper">
+			<aside>
+				<ul id="accordion" class="accordion">
+					<li><a href="#">Шкатулки для часов</a>
+						<ul>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Правила</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Шкатулки для часов с автоподзаводом</a>
+						<ul>
+							<li class="current"><a href="#">Все</a></li>
+							<li><a href="#">PREMIUM</a></li>
+							<li><a href="#">для 1-х часов</a></li>
+							<li><a href="#">для 2-х часов</a></li>
+							<li><a href="#">для 3-х часов</a></li>
+							<li><a href="#">для 4-5-ти часов</a></li>
+							<li><a href="#">для 6-7-ми часов</a></li>
+							<li><a href="#">для 8-ми и более часов</a></li>
+							<li><a href="#">Аксессуары</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Сейфы для часов</a>
+						<ul>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Шкатулки для украшений</a>
+						<ul>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Шкатулки для галстуков</a>
+						<ul>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Шкатулки для запонок</a>
+						<ul>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Ремешки для часов</a>
+						<ul>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+							<li><a href="">Item demo</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Дисконт</a>
+					</li>
+				</ul>
+				<div class="filters">
+					<h3>Фильтры:</h3>
+					<div class="filters-list">
+						<div class="item slide-block">
+							<div class="open-close">Цена:</div>
+							<div class="block">
+								<div class="inputs">
+									<input type="text" id="minCost" value="42200" />
+									<input type="text" id="maxCost" value="300000" />
+								</div>
+								<div class="d-nums clearfix">
+									<div>0</div>
+									<div>495 000</div>
+								</div>
+								<div id="slider"></div>
+							</div>
+						</div>
+						<div class="item slide-block">
+							<div class="open-close">Производитель:</div>
+							<div class="block">
+								<ul class="custom-form">
+									<li>
+										<input type='checkbox' id='Choice1' name='Choice'>
+										<label for='Choice1'><strong>MODALO</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice2' name='Choice'>
+										<label for='Choice2'><strong>Luxwinder</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice3' name='Choice'>
+										<label for='Choice3'><strong>BOXY</strong> (Тайвань)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice4' name='Choice'>
+										<label for='Choice4'><strong>BENSON</strong> (Голландия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice11' name='Choice'>
+										<label for='Choice11'><strong>Prestige</strong> (США)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice5' name='Choice'>
+										<label for='Choice5'><strong>MTE</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice6' name='Choice'>
+										<label for='Choice6'><strong>T.WING-PAK</strong> (Китай)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice7' name='Choice'>
+										<label for='Choice7'><strong>JEBELY</strong> (Швейцария)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice8' name='Choice'>
+										<label for='Choice8'><strong>ORIGINTIMES</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice9' name='Choice'>
+										<label for='Choice9'><strong>LUXOJOWANNY</strong> (Италия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice10' name='Choice'>
+										<label for='Choice10'><strong>LIDER</strong> (Китай)</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item slide-block">
+							<div class="open-close">Страна производитель:</div>
+							<div class="block">
+								<ul class="custom-form">
+									<li>
+										<input type='checkbox' id='country1' name='country'>
+										<label for='country1'><img src="images/manufacturers/ger.png" alt=""> Германия</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country2' name='country'>
+										<label for='country2'><img src="images/manufacturers/tai.png" alt=""> Тайвань</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country3' name='country'>
+										<label for='country3'><img src="images/manufacturers/hol.png" alt=""> Голландия</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country4' name='country'>
+										<label for='country4'><img src="images/manufacturers/usa.png" alt=""> США</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country7' name='country'>
+										<label for='country7'><img src="images/manufacturers/chn.png" alt=""> Китай</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country5' name='country'>
+										<label for='country5'><img src="images/manufacturers/swi.png" alt=""> Швейцария</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country6' name='country'>
+										<label for='country6'><img src="images/manufacturers/ita.png" alt=""> Италия</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="reviews">
+					<div class="title">Читайте отзывы о нас:</div>
+					<div class="reviewbox">
+						<a href="#"><img src="images/yandex.png" alt=""></a>
+					</div>
+				</div>
+			</aside>
 			<main>
 				<div class="main-slider-box">
 					<div class="main-slider inner">
@@ -960,186 +1181,6 @@
 					</article>
 				</div>
 			</main>
-			<aside>
-				<ul id="accordion" class="accordion">
-					<li><a href="#">Шкатулки для часов</a>
-						<ul>
-							<li><a href="#">История</a></li>
-							<li><a href="#">Правила</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Шкатулки для часов с автоподзаводом</a>
-						<ul>
-							<li class="current"><a href="#">Все</a></li>
-							<li><a href="#">PREMIUM</a></li>
-							<li><a href="#">для 1-х часов</a></li>
-							<li><a href="#">для 2-х часов</a></li>
-							<li><a href="#">для 3-х часов</a></li>
-							<li><a href="#">для 4-5-ти часов</a></li>
-							<li><a href="#">для 6-7-ми часов</a></li>
-							<li><a href="#">для 8-ми и более часов</a></li>
-							<li><a href="#">Аксессуары</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Сейфы для часов</a>
-						<ul>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Шкатулки для украшений</a>
-						<ul>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Шкатулки для галстуков</a>
-						<ul>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Шкатулки для запонок</a>
-						<ul>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Ремешки для часов</a>
-						<ul>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-							<li><a href="">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Дисконт</a>
-					</li>
-				</ul>
-				<div class="filters">
-					<h3>Фильтры:</h3>
-					<div class="item slide-block">
-						<div class="open-close">Цена:</div>
-						<div class="block">
-							<div class="inputs">
-								<input type="text" id="minCost" value="42200" />
-								<input type="text" id="maxCost" value="300000" />
-							</div>
-							<div class="d-nums clearfix">
-								<div>0</div>
-								<div>495 000</div>
-							</div>
-							<div id="slider"></div>
-						</div>
-					</div>
-					<div class="item slide-block">
-						<div class="open-close">Производитель:</div>
-						<div class="block">
-							<ul class="custom-form">
-								<li>
-									<input type='checkbox' id='Choice1' name='Choice'>
-									<label for='Choice1'><strong>MODALO</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice2' name='Choice'>
-									<label for='Choice2'><strong>Luxwinder</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice3' name='Choice'>
-									<label for='Choice3'><strong>BOXY</strong> (Тайвань)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice4' name='Choice'>
-									<label for='Choice4'><strong>BENSON</strong> (Голландия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice11' name='Choice'>
-									<label for='Choice11'><strong>Prestige</strong> (США)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice5' name='Choice'>
-									<label for='Choice5'><strong>MTE</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice6' name='Choice'>
-									<label for='Choice6'><strong>T.WING-PAK</strong> (Китай)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice7' name='Choice'>
-									<label for='Choice7'><strong>JEBELY</strong> (Швейцария)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice8' name='Choice'>
-									<label for='Choice8'><strong>ORIGINTIMES</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice9' name='Choice'>
-									<label for='Choice9'><strong>LUXOJOWANNY</strong> (Италия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice10' name='Choice'>
-									<label for='Choice10'><strong>LIDER</strong> (Китай)</label>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="item slide-block">
-						<div class="open-close">Страна производитель:</div>
-						<div class="block">
-							<ul class="custom-form">
-								<li>
-									<input type='checkbox' id='country1' name='country'>
-									<label for='country1'><img src="images/manufacturers/ger.png" alt=""> Германия</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country2' name='country'>
-									<label for='country2'><img src="images/manufacturers/tai.png" alt=""> Тайвань</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country3' name='country'>
-									<label for='country3'><img src="images/manufacturers/hol.png" alt=""> Голландия</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country4' name='country'>
-									<label for='country4'><img src="images/manufacturers/usa.png" alt=""> США</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country7' name='country'>
-									<label for='country7'><img src="images/manufacturers/chn.png" alt=""> Китай</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country5' name='country'>
-									<label for='country5'><img src="images/manufacturers/swi.png" alt=""> Швейцария</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country6' name='country'>
-									<label for='country6'><img src="images/manufacturers/ita.png" alt=""> Италия</label>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="reviews">
-					<div class="title">Читайте отзывы о нас:</div>
-					<div class="reviewbox">
-						<a href="#"><img src="images/yandex.png" alt=""></a>
-					</div>
-				</div>
-			</aside>
 		</div>
 	</div>
 	<div class="before-footer">
