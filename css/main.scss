@@ -378,7 +378,7 @@ article:after,
 	.loginbox {
 		float: left;
 		margin: 0;
-		padding: 0 0 0 6px;
+		padding: 0 0 0 9px;
 		height: 45px;
 		overflow: hidden;
 		background: url(../images/separ.png) no-repeat left center;
@@ -766,16 +766,16 @@ article:after,
 		}
 		.cart-drop {
 			position: absolute;
-			top: 32px;
-			right: -71px;
+			top: 38px;
+			right: -40px;
 			width: 648px;
-			z-index: 6;
+			z-index: 99;
 			cursor: default;
 			visibility: hidden;
 			opacity: 0;
 			transition: 0.3s;
 			.cart-drop-top {
-				background: url(../images/cart-drop-top.png);
+				background: url(../images/cart-drop-top-2.png);
 				height: 31px;
 			}
 			.cart-drop-middle {
@@ -1201,8 +1201,8 @@ main {
 			padding-bottom: 55px;
 			.balance {
 				float: right;
-				width: 96px;
-				padding-top: 3px;
+				/*width: 96px;*/
+				padding: 3px 6px 0 0;
 				img {
 					width: 28px;
 					height: 13px;
@@ -1274,6 +1274,9 @@ main {
 			text-align: center;
 			width: 146px;
 			height: 17px;
+			em {
+				display: none;
+			}
 		}
 		.quick-view {
 			text-align: center;
@@ -1370,10 +1373,10 @@ main {
 				border: none;
 				background-color: #007a01;
 				color: #fff;
-				font: 16px/20px $base-font;
+				font: 16px $base-font;
 				cursor: pointer;
 				margin: 0 20px 0 0;
-				padding: 0 0 2px;
+				padding: 0;
 				transition: 0.3s;
 				&:hover {
 					background-color: #2c982c;
@@ -1771,6 +1774,7 @@ main {
 
 /* модальн. ===================================== end */
 
+.you-view,
 .scroll-four-products,
 .scroll-six-products {
 	cursor: move;
@@ -2593,7 +2597,7 @@ main {
 			.oc-manufacturer {
 				font: 13px $base-font;
 				color: #797979;
-				padding-bottom: 8px;
+				padding-bottom: 6px;
 				span {
 					font-size: 11px;
 					color: #000;
@@ -2606,6 +2610,7 @@ main {
 			}
 		}
 		.labels {
+			max-width: 310px;
 			div {
 				float: left;
 				color: #fff;
@@ -2646,7 +2651,24 @@ main {
 					}
 				}
 			}
+			.label-3 {
+				position: static;
+				width: 168px;
+			}
 		}
+			.balance {
+				text-align: right;
+				margin-bottom: -14px;
+				img {
+					width: 28px;
+					height: 13px;
+					vertical-align: middle;
+				}
+				span {
+					font: 9px/13px Verdana, Arial;
+					padding-left: 6px;
+				}
+			}
 		.oc-price-buy {
 			float: left;
 			width: 142px;
@@ -2727,7 +2749,7 @@ main {
 .filters {
 	background-color: #fff;
 	color: #000;
-	padding: 15px 18px 32px;
+	padding: 15px 18px 22px;
 	margin-bottom: 22px;
 	h3 {
 		font: 24px/24px $base-font;
@@ -7011,14 +7033,16 @@ ul.perconal-info {
 		position: relative;
 		top: 0;
 		right: 0;
-		margin: -16px 0 -8px 76px;
+		margin: -16px 0 -8px 48px;
 	}
 }
 
 .one-column .item .labels div.label-2-one-column.top-pos {
-	position: absolute;
+	/*position: absolute;
 	top: 5px;
-	left: -22px;
+	left: -22px;*/
+	width: 57px;
+	text-align: center;
 }
 
 .modifications {
@@ -7297,7 +7321,7 @@ body {
 		width: 29px;
 		background: url(../images/heart.png) no-repeat left 100%;
 		position: relative;
-		margin-right: 13px;
+		margin-right: 16px;
 	}
 	.compare {
 		width: 31px;
@@ -7305,6 +7329,7 @@ body {
 		background: url(../images/compare.png) no-repeat left bottom 1px;
 		float: left;
 		position: relative;
+		margin-left: 3px;
 	}
 	.mobile-right {
 		float: right;
@@ -7555,6 +7580,97 @@ body {
 		}
 	}
 }
+
+.bx-filter-button-box input {
+	border: none;
+	background-color: #007a01;
+	color: #fff !important;
+	font: 16px/20px MyriadPro, Arial, Geneva, Helvetica;
+	cursor: pointer;
+	transition: 0.3s;
+	padding: 5px 15px;
+	margin: 20px 15px 0 15px;
+}
+
+.bx-filter-button-box input:hover {
+	background-color: #2c982c;
+}
+
+.bx-filter-button-box input.btn-link {
+	background-color: #898989;
+	float: right;
+}
+
+.bx-filter-button-box input.btn-link:hover {
+	background-color: #999;
+}
+
+.filter-switcher {
+	background-color: #727272;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	span {
+		display: inline-block;
+		padding-right: 22px;
+		position: relative;
+		color: #fff;
+		font: 17px/45px $base-font;
+		&:after {
+			position: absolute;
+			display: block;
+			width: 15px;
+			height: 8px;
+			background: url(../images/arrows-menu.png) no-repeat top;
+			top: 20px;
+			right: 0;
+			content: "";
+		}
+	}
+	&.active {
+		span {
+			&:after {
+				background-position: 0 -8px;
+			}
+		}
+	}
+}
+
+.you-view {
+	width: 738px;
+	.slick-arrow {
+		&.slick-prev {
+			/*left:-8px;*/
+		}
+		&.slick-next {
+			right: -37px;
+		}
+	}
+}
+
+.loader {
+	background: #fff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	.loader_inner {
+		background: url(../images/preloader.gif) no-repeat center;
+		background-size: cover;
+		height: 60px;
+		width: 60px;
+		margin-top: -30px;
+		margin-left: -30px;
+		left: 50%;
+		top: 50%;
+		position: absolute;
+	}
+}
+
 //
 //
 //

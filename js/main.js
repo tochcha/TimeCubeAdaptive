@@ -6,6 +6,12 @@ $(document).ready(function () {
 		$(".accordion").slideToggle(200);
 	});
 	
+	// кнопка для выпадающего мобильного фильтра
+	$(".filter-switcher").click(function () {
+		$(".filter-switcher").toggleClass("active");
+		$(".filters-list").slideToggle(300);
+	});
+	
 	// подключение слайдера картинок
 	$('.main-slider').slick({
 		dots: true,
@@ -18,12 +24,68 @@ $(document).ready(function () {
 
 	// подключение карусели 6-ти товаров-хитов
 	$('.scroll-six-products').slick({});
+	
+	// подключение карусели "вы смотрели"
+	$('.you-view').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+			{
+			  breakpoint: 1121,
+			  settings: {
+				slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 992,
+			  settings: {
+				slidesToShow: 3
+			  }
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1
+			  }
+			}
+		]
+	});
 
 	// подключение карусели по 4 товара
 	$('.scroll-four-products').slick({
 		infinite: true,
 		slidesToShow: 4,
-		slidesToScroll: 4
+		slidesToScroll: 4,
+		responsive: [
+			{
+			  breakpoint: 1121,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			  }
+			},
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		]
 	});
 	
 	// Другие модификации товара (карусель в карточке)
@@ -88,7 +150,7 @@ $(document).ready(function () {
 	});
 
 	// анимация "Вы добавили в корзину"
-	$(".open-modal-3").click(function () {
+	$(".item .buttons input, .oc-price-buy input, .open-modal-3").click(function () {
 		$(".overlay-3").addClass("overlay-on");
 		$(".cartpopup").toggleClass("active godown goup");
 	});
@@ -259,6 +321,15 @@ $(document).ready(function () {
 		$("#toTop3").scrollToTop();
 	});
 
-
-
 });
+	
+	// прелоадер
+	$(window).load(function() {
+
+		$(".loader_inner").fadeOut(900);
+		$(".loader").delay(900).fadeOut(900);
+
+		$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+		$(".top_text p").animated("fadeInUp", "fadeOutDown");
+
+	});
