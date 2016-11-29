@@ -44,7 +44,9 @@
   .static .tables {
     width: 100%; }
     .static .tables .address-table {
-      margin: 0 16px; } }
+      margin: 0 16px; }
+  .akcii li img {
+    width: 100%; } }
 
 /* <1121 finish*/
 /* <1121 and > 991 start */
