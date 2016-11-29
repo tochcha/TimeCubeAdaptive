@@ -47,9 +47,9 @@ else if (window.attachEvent){
 	$('ul.accordion li ul').css({
 		display: "none"
 	});
-	$('ul.accordion li').click(function () {
+	$('ul.accordion li a').click(function () {
 			//$('ul.accordion li.active ul').slideUp(300);
-		$(this).find("ul").slideUp(300);
+		$(this).parent().find("ul").slideUp(300);
 	});
 	$('ul.accordion li:has("ul")').click(function () {
 		if ($("ul", this).css("display") == "none") {

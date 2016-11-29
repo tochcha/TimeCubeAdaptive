@@ -6039,14 +6039,159 @@ body.black-friday {
   width: 100%;
   z-index: 9999; }
   .loader .loader_inner {
-    background: url(../images/preloader.gif) no-repeat center;
-    background-size: cover;
-    height: 60px;
-    width: 60px;
+    background: url(../images/logo.png) no-repeat center;
+    background-size: 100% 100%;
+    opacity: .8;
+    height: 51px;
+    width: 204px;
     margin-top: -30px;
-    margin-left: -30px;
+    margin-left: -111px;
     left: 50%;
     top: 50%;
     position: absolute; }
+
+.accordion2 {
+  display: none;
+  margin: 0;
+  padding: 0; }
+  .accordion2 li {
+    list-style: none; }
+  .accordion2 > li {
+    list-style: none;
+    margin-bottom: 2px;
+    position: relative; }
+    .accordion2 > li:after {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10%;
+      width: 15px;
+      height: 15px;
+      background-color: #5f5f5f;
+      transition: .3s;
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .accordion2 > li > a {
+      display: block;
+      padding: 10px 8%;
+      font: 15px/19px MyriadPro, Arial, Geneva, Helvetica;
+      color: #fff;
+      background-color: #797979;
+      transition: .3s; }
+      .accordion2 > li > a:hover {
+        background-color: #5f5f5f;
+        text-decoration: none; }
+    .accordion2 > li.active:after {
+      display: block;
+      top: 32px; }
+    .accordion2 > li.active > a {
+      background-color: #5f5f5f;
+      text-decoration: none; }
+    .accordion2 > li > ul {
+      padding: 24px 14px; }
+      .accordion2 > li > ul p {
+        margin-bottom: 14px; }
+
+.accordion2 .table {
+  width: 100%;
+  margin: 0 auto; }
+  .accordion2 .table .row {
+    width: 100%;
+    overflow: hidden;
+    font: 15px/26px MyriadPro, Arial, Geneva, Helvetica;
+    padding: 5px 0; }
+    .accordion2 .table .row:nth-child(odd) {
+      background-color: #ededed; }
+  .accordion2 .table .col-1 {
+    float: left;
+    padding-left: 24px; }
+  .accordion2 .table .col-2 {
+    float: right;
+    padding-right: 38px; }
+
+.accordion2 .delivary-payment {
+  margin-top: -27px;
+  position: relative; }
+  .accordion2 .delivary-payment .title {
+    text-align: center;
+    font: 15px MyriadProS;
+    padding: 24px 0 12px; }
+  .accordion2 .delivary-payment .subtitle {
+    background-color: #939393;
+    color: #fff;
+    font: italic 16px/29px Arial;
+    padding: 0 19px;
+    margin-bottom: 20px; }
+  .accordion2 .delivary-payment .row {
+    margin: 0 19px 12px;
+    position: relative; }
+    .accordion2 .delivary-payment .row label {
+      font: 12px MyriadPro, Arial, Geneva, Helvetica;
+      color: #7f7f7f;
+      text-transform: uppercase;
+      padding: 0 0 4px 2px;
+      display: block; }
+      .accordion2 .delivary-payment .row label span.red {
+        color: #c80101;
+        font-size: 17px; }
+    .accordion2 .delivary-payment .row .rem {
+      font: italic 11px Arial;
+      color: #7f7f7f;
+      padding: 6px 2px 0; }
+      .accordion2 .delivary-payment .row .rem a {
+        font-weight: bold; }
+        .accordion2 .delivary-payment .row .rem a:hover {
+          text-decoration: none; }
+  .accordion2 .delivary-payment .item {
+    padding-bottom: 22px; }
+    .accordion2 .delivary-payment .item ul.check-list {
+      margin: 0 auto;
+      padding: 0;
+      width: 409px; }
+      .accordion2 .delivary-payment .item ul.check-list li {
+        list-style: none;
+        font: 19px/25px MyriadProS;
+        padding-bottom: 5px; }
+        .accordion2 .delivary-payment .item ul.check-list li .gray-line {
+          background-color: #e6e6e6;
+          overflow: hidden;
+          width: 100%; }
+          .accordion2 .delivary-payment .item ul.check-list li .gray-line input {
+            display: none; }
+          .accordion2 .delivary-payment .item ul.check-list li .gray-line input:checked + label {
+            background: url(../images/check-on.png) no-repeat 0 center; }
+          .accordion2 .delivary-payment .item ul.check-list li .gray-line .left {
+            padding-left: 16px;
+            float: left; }
+            .accordion2 .delivary-payment .item ul.check-list li .gray-line .left label {
+              background: url(../images/check-off.png) no-repeat 0 center;
+              font: 16px/24px MyriadProS;
+              padding: 1px 0 0 26px;
+              text-transform: none;
+              color: #000;
+              cursor: pointer; }
+              .accordion2 .delivary-payment .item ul.check-list li .gray-line .left label:hover {
+                text-decoration: underline; }
+              .accordion2 .delivary-payment .item ul.check-list li .gray-line .left label span {
+                font-family: MyriadPro, Arial, Geneva, Helvetica;
+                text-decoration: underline; }
+          .accordion2 .delivary-payment .item ul.check-list li .gray-line .right {
+            padding-right: 12px;
+            float: right;
+            color: #007a00; }
+            .accordion2 .delivary-payment .item ul.check-list li .gray-line .right span {
+              font: 16px MyriadPro, Arial, Geneva, Helvetica; }
+        .accordion2 .delivary-payment .item ul.check-list li .white-line {
+          text-align: right;
+          padding-right: 12px;
+          color: #007a00; }
+          .accordion2 .delivary-payment .item ul.check-list li .white-line span {
+            font: 16px MyriadPro, Arial, Geneva, Helvetica; }
+    .accordion2 .delivary-payment .item .longrow {
+      margin: 0 9px 12px; }
 
 /*# sourceMappingURL=main.css.map */
