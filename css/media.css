@@ -40,7 +40,11 @@
     width: 180px;
     padding-right: 2px; }
   .tabs-right .tabs-wrapper .item ul.check-list {
-    width: auto; } }
+    width: auto; }
+  .static .tables {
+    width: 100%; }
+    .static .tables .address-table {
+      margin: 0 16px; } }
 
 /* <1121 finish*/
 /* <1121 and > 991 start */
@@ -130,7 +134,11 @@
   .tabs-right {
     width: 328px; }
     .tabs-right .tabset .tab img {
-      display: none; } }
+      display: none; }
+  .static .address-list .lists {
+    padding-left: 9px; }
+    .static .address-list .lists ul {
+      width: 184px; } }
 
 /* <1121 and > 991 finish */
 /* <=991 */
@@ -423,7 +431,9 @@
     border-top: 1px solid #c9c9c9; }
   .tabs-right .tabs-wrapper .item ul.check-list {
     margin-left: 22px;
-    margin-right: 22px; } }
+    margin-right: 22px; }
+  aside .simple-menu {
+    display: none; } }
 
 /* <=991 finish */
 /* <=991 and >=767 */
@@ -1007,7 +1017,17 @@
   .pf-tabs {
     display: none; }
   .accordion2 {
-    display: block; } }
+    display: block; }
+  .static .address-list .lists {
+    padding-left: 18px; }
+    .static .address-list .lists ul {
+      padding-bottom: 0;
+      width: 187px; }
+      .static .address-list .lists ul:last-child {
+        width: 100%; }
+        .static .address-list .lists ul:last-child li {
+          width: 50%;
+          float: left; } }
 
 /* <=767 finish */
 /* 480-767 start */
@@ -1221,7 +1241,21 @@
     width: auto; }
   .accordion2 .delivary-payment .row {
     margin-left: 9px;
-    margin-right: 9px; } }
+    margin-right: 9px; }
+  .static h2 {
+    padding: 10px 15px; }
+  .static .address-list {
+    padding: 0 15px; }
+    .static .address-list .lists ul:last-child,
+    .static .address-list .lists ul {
+      width: 100%; }
+      .static .address-list .lists ul:last-child li,
+      .static .address-list .lists ul li {
+        float: none; }
+  .static .tables .address-table {
+    margin: 0 4px; }
+    .static .tables .address-table table th, .static .tables .address-table table td {
+      padding: 2px; } }
 
 /* <=479 finish */
 /* height <768 start */

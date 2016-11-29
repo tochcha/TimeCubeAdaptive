@@ -73,6 +73,12 @@ $link-hover:#c99726;
 	.tabs-right .tabs-wrapper .item ul.check-list {
 		width: auto;
 	}
+	.static .tables {
+		width: 100%;
+		.address-table {
+			margin: 0 16px;
+		}
+	}
 }
 
 
@@ -214,6 +220,12 @@ $link-hover:#c99726;
 					display: none;
 				}
 			}
+		}
+	}
+	.static .address-list .lists {
+		padding-left: 9px;
+		ul {
+			width: 184px;
 		}
 	}
 }
@@ -622,6 +634,11 @@ $link-hover:#c99726;
 	.tabs-right .tabs-wrapper .item ul.check-list {
 		margin-left: 22px;
 		margin-right: 22px;
+	}
+	aside {
+		.simple-menu {
+			display: none;
+		}
 	}
 }
 
@@ -1398,8 +1415,8 @@ $link-hover:#c99726;
 		width: auto;
 		float: none;
 		.favorite-compare {
-			top:-42px;
-			right:0;
+			top: -42px;
+			right: 0;
 			.print {
 				display: none;
 			}
@@ -1416,6 +1433,20 @@ $link-hover:#c99726;
 	}
 	.accordion2 {
 		display: block;
+	}
+	.static .address-list .lists {
+		padding-left: 18px;
+		ul {
+			padding-bottom: 0;
+			width: 187px;
+			&:last-child {
+				width: 100%;
+				li {
+					width: 50%;
+					float: left;
+				}
+			}
+		}
 	}
 }
 
@@ -1739,7 +1770,7 @@ $link-hover:#c99726;
 				left: -18px;
 			}
 			&.slick-next {
-				right:-17px;
+				right: -17px;
 			}
 		}
 	}
@@ -1755,6 +1786,33 @@ $link-hover:#c99726;
 	.accordion2 .delivary-payment .row {
 		margin-left: 9px;
 		margin-right: 9px;
+	}
+	.static {
+		h2 {
+			padding: 10px 15px;
+		}
+		.address-list {
+			padding: 0 15px;
+			.lists {
+				ul:last-child,
+				ul {
+						width: 100%;
+					li {
+						float: none;
+					}
+				}
+			}
+		}
+		.tables {
+			.address-table {
+				margin: 0 4px;
+				table {
+					th, td {
+						padding: 2px;
+					}
+				}
+			}
+		}
 	}
 }
 
