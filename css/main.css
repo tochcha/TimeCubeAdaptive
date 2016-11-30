@@ -2373,7 +2373,9 @@ main {
   margin-bottom: 13px; }
   .big-slider img {
     width: 594px;
-    height: 495px; }
+    height: 495px;
+    cursor: all-scroll;
+    cursor: col-resize; }
   .big-slider .slick-arrow {
     position: absolute;
     width: 18px;

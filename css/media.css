@@ -46,7 +46,11 @@
     .static .tables .address-table {
       margin: 0 16px; }
   .akcii li img {
-    width: 100%; } }
+    width: 100%; }
+  .black-friday-banner .bf-middle .logo {
+    padding-left: 17px; }
+  .black-friday-banner .bfm-right {
+    padding-right: 12px; } }
 
 /* <1121 finish*/
 /* <1121 and > 991 start */
@@ -140,7 +144,9 @@
   .static .address-list .lists {
     padding-left: 9px; }
     .static .address-list .lists ul {
-      width: 184px; } }
+      width: 184px; }
+  .black-friday .buy-links .price-qty .price em {
+    width: 144px; } }
 
 /* <1121 and > 991 finish */
 /* <=991 */
@@ -435,7 +441,26 @@
     margin-left: 22px;
     margin-right: 22px; }
   aside .simple-menu {
-    display: none; } }
+    display: none; }
+  .black-friday-banner {
+    padding-bottom: 0; }
+  .black-friday-banner .bf-top div:nth-child(2) {
+    display: none; }
+  .black-friday-banner .bfm-right {
+    width: 540px; }
+  .black-friday-banner .bfm-right .title {
+    font-size: 32px;
+    padding: 6px 0 12px; }
+  .black-friday-banner .bfm-right .two-25 {
+    background-size: 100% 100%;
+    padding: 0 152px;
+    font-size: 22px; }
+  .label-25 {
+    left: -20px;
+    height: 132px;
+    overflow: hidden; }
+  .black-friday .buy-links .price-qty .price em {
+    width: 162px; } }
 
 /* <=991 finish */
 /* <=991 and >=767 */
@@ -1029,7 +1054,42 @@
         width: 100%; }
         .static .address-list .lists ul:last-child li {
           width: 50%;
-          float: left; } }
+          float: left; }
+  .black-friday-banner {
+    padding-top: 16px; }
+  .black-friday-banner .disc-1,
+  .black-friday-banner .disc-2,
+  .black-friday-banner .disc-3 {
+    display: none; }
+  .black-friday-banner .bf-top {
+    display: block;
+    text-align: center; }
+    .black-friday-banner .bf-top div:nth-child(3) {
+      display: none; }
+  .black-friday-banner .bf-middle {
+    padding-left: 12px; }
+  .black-friday-banner .bf-middle .logo {
+    display: none; }
+  .black-friday-banner .bfm-right {
+    width: auto;
+    float: none; }
+  .black-friday-banner .bfm-right .title {
+    font-size: 24px;
+    text-align: center; }
+  .black-friday-banner .bfm-right .two-25 {
+    background-size: auto;
+    background-position: right;
+    padding: 0 222px 0 0;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    text-transform: none; }
+    .black-friday-banner .bfm-right .two-25 .text {
+      top: 4px; }
+  .black-friday-banner .bf-bottom {
+    font-size: 18px; }
+  .black-friday .buy-links .price-qty .price em {
+    padding-left: 46px; } }
 
 /* <=767 finish */
 /* 480-767 start */
@@ -1256,8 +1316,27 @@
         float: none; }
   .static .tables .address-table {
     margin: 0 4px; }
-    .static .tables .address-table table th, .static .tables .address-table table td {
-      padding: 2px; } }
+    .static .tables .address-table table th,
+    .static .tables .address-table table td {
+      padding: 2px; }
+  .black-friday-banner .bf-top {
+    font-size: 21px; }
+  .black-friday-banner .bf-middle {
+    height: 116px; }
+  .black-friday-banner .bf-bottom {
+    padding: 0 25px; }
+  .black-friday-banner .bfm-right .title {
+    font-size: 16px; }
+  .black-friday-banner .bfm-right .two-25 .text {
+    display: none; }
+  .label-25 {
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    top: 107px;
+    left: -59px; } }
 
 /* <=479 finish */
 /* height <768 start */

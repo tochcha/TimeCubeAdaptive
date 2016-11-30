@@ -84,6 +84,12 @@ $link-hover:#c99726;
 			width: 100%;
 		}
 	}
+	.black-friday-banner .bf-middle .logo {
+		padding-left: 17px;
+	}
+	.black-friday-banner .bfm-right {
+		padding-right: 12px;
+	}
 }
 
 
@@ -232,6 +238,9 @@ $link-hover:#c99726;
 		ul {
 			width: 184px;
 		}
+	}
+	.black-friday .buy-links .price-qty .price em {
+		width: 144px;
 	}
 }
 
@@ -644,6 +653,34 @@ $link-hover:#c99726;
 		.simple-menu {
 			display: none;
 		}
+	}
+	.black-friday-banner {
+		padding-bottom: 0;
+	}
+	.black-friday-banner .bf-top {
+		div:nth-child(2) {
+			display: none;
+		}
+	}
+	.black-friday-banner .bfm-right {
+		width: 540px;
+	}
+	.black-friday-banner .bfm-right .title {
+		font-size: 32px;
+		padding: 6px 0 12px;
+	}
+	.black-friday-banner .bfm-right .two-25 {
+		background-size: 100% 100%;
+		padding: 0 152px;
+		font-size: 22px;
+	}
+	.label-25 {
+		left: -20px;
+		height: 132px;
+		overflow: hidden;
+	}
+	.black-friday .buy-links .price-qty .price em {
+		width: 162px;
 	}
 }
 
@@ -1453,6 +1490,53 @@ $link-hover:#c99726;
 			}
 		}
 	}
+	.black-friday-banner {
+		padding-top: 16px;
+	}
+	.black-friday-banner .disc-1,
+	.black-friday-banner .disc-2,
+	.black-friday-banner .disc-3 {
+		display: none;
+	}
+	.black-friday-banner .bf-top {
+		display: block;
+		text-align: center;
+		div:nth-child(3) {
+			display: none;
+		}
+	}
+	.black-friday-banner .bf-middle {
+		padding-left: 12px;
+	}
+	.black-friday-banner .bf-middle .logo {
+		display: none;
+	}
+	.black-friday-banner .bfm-right {
+		width: auto;
+		float: none;
+	}
+	.black-friday-banner .bfm-right .title {
+		font-size: 24px;
+		text-align: center;
+	}
+	.black-friday-banner .bfm-right .two-25 {
+		background-size: auto;
+		background-position: right;
+		padding: 0 222px 0 0;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: left;
+		text-transform: none;
+		.text {
+			top: 4px;
+		}
+	}
+	.black-friday-banner .bf-bottom {
+		font-size: 18px;
+	}
+	.black-friday .buy-links .price-qty .price em {
+		padding-left: 46px;
+	}
 }
 
 
@@ -1801,7 +1885,7 @@ $link-hover:#c99726;
 			.lists {
 				ul:last-child,
 				ul {
-						width: 100%;
+					width: 100%;
 					li {
 						float: none;
 					}
@@ -1812,12 +1896,39 @@ $link-hover:#c99726;
 			.address-table {
 				margin: 0 4px;
 				table {
-					th, td {
+					th,
+					td {
 						padding: 2px;
 					}
 				}
 			}
 		}
+	}
+	.black-friday-banner {
+		.bf-top {
+			font-size: 21px;
+		}
+		.bf-middle {
+			height: 116px;
+		}
+		.bf-bottom {
+			padding: 0 25px;
+		}
+		.bfm-right .title {
+			font-size: 16px;
+		}
+		.bfm-right .two-25 .text {
+			display: none;
+		}
+	}
+	.label-25 {
+		-moz-transform: scale(.5);
+		-webkit-transform: scale(.5);
+		-o-transform: scale(.5);
+		-ms-transform: scale(.5);
+		transform: scale(.5);
+		top:107px;
+		left:-59px;
 	}
 }
 
