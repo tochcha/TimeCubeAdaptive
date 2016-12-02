@@ -420,7 +420,7 @@ article:after,
 .header-content {
 	.logo {
 		float: left;
-		padding: 17px 0 17px 0;
+		padding: 17px 0 17px;
 		width: 339px;
 	}
 	.sandwich-mob {
@@ -4520,7 +4520,7 @@ main {
 	textarea {
 		border: 1px solid #a7a7a7;
 		width: 984px;
-		height: 58px;
+		height: 60px;
 		background-color: #fff;
 		overflow: auto;
 		font: 16px/24px $base-font;

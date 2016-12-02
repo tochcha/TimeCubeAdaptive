@@ -11,6 +11,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>ПВЗ оформление заказа - TimeCube 2016</title>
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
@@ -34,23 +37,39 @@
 
 	<link rel="stylesheet" href="css/main.css" />
 	<!-- основной css -->
+
+	<link rel="stylesheet" href="css/media.css" />
+	<!-- адаптивный css -->
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 	<header id="header">
 		<div class="wrapper">
 			<div class="header-top">
 				<div class="ht-left">
-					<div class="schedule">Будни: 9:00 – 20:00&nbsp;&nbsp;|&nbsp;&nbsp;Выходные: 11:00 –18:00</div>
+					<div class="schedule"><b>Магазин:</b> Будни: 9:00 – 20:00&nbsp;&nbsp;|&nbsp;&nbsp;Выходные: 11:00 –18:00</div>
 				</div>
 				<div class="ht-right">
 					<div class="metro">Алексеевская</div>
 					<div class="tel"><a href="tel://7-800-775-2576" title="Позвонить">8 800 775-25-76</a></div>
 					<div class="contacts-link"><a href="#">Контакты</a></div>
-					<ul class="loginbox">
-						<li><a class="open-modal-4" href="#">Вход</a></li>
-						<li><a href="#">Регистрация</a></li>
-					</ul>
+					<div class="mobile-right">
+						<div class="favorite-compare">
+							<div class="favorite">
+								<a href="#"><div class="qty">0</div></a>
+							</div>
+							<div class="compare active">
+								<a href="#"><div class="qty">5</div></a>
+							</div>
+						</div>
+						<ul class="loginbox">
+							<li class="loginlink"><a class="open-modal-4" href="#">Вход</a></li>
+							<li class="reglink"><a href="#">Регистрация</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="header-content clearfix">
@@ -78,153 +97,26 @@
 					</nav>
 				</div>
 				<div class="header-content-right">
-					<div class="cart not-empty">
-						<div class="qty">5</div>
+					<div class="cart">
+						<div class="qty">0</div>
 						<div class="cart-info">
 							<div>Корзина</div>
-							<div>278 500 <i class="fa fa-rub"></i></div>
-						</div>
-						<div class="cart-drop">
-							<div class="cart-drop-top"></div>
-							<div class="cart-drop-middle">
-								<ul>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-1.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-2.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-3.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом длинное название</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price"></div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-4.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-5.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-								</ul>
-								<div class="sub-drop-cart clearfix">
-									<div class="checkout"><a href="#">Оформить заказ</a></div>
-									<div class="sum-num">
-										<div class="sum">Итого:</div>
-										<div class="num">
-											<div class="old">137 900р.</div>
-											<div class="total">127 000 <span>р.</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cart-drop-bottom"></div>
+							<div>пуста</div>
 						</div>
 					</div>
 					<div class="favorite-compare">
-						<div class="favorite active">
-							<a href="#">
-								<div class="qty">7</div>
-							</a>
+						<div class="favorite">
+							<a href="#"><div class="qty">0</div></a>
 						</div>
 						<div class="compare active">
-							<a href="#">
-								<div class="qty">9</div>
-							</a>
+							<a href="#"><div class="qty">5</div></a>
 						</div>
 					</div>
+				</div>
+				<div class="sandwich-mob">
+					<div class="sw-topper"></div>
+					<div class="sw-bottom"></div>
+					<div class="sw-footer"></div>
 				</div>
 			</div>
 			<div class="down-scroll-fixed">
@@ -234,16 +126,30 @@
 			</div>
 		</div>
 	</header>
+	<div class="subheader">
+		<div class="wrapper">
+			<div class="form clearfix">
+				<form action="#">
+					<div>
+						<input type="text" placeholder="Поиск по сайту">
+						<input type="submit" value="&nbsp;">
+					</div>
+				</form>
+			</div>
+			<div class="sandwich-mob">
+				<div class="sw-topper"></div>
+				<div class="sw-bottom"></div>
+				<div class="sw-footer"></div>
+			</div>
+			<div class="cart">
+				<a href="#">
+					<div class="qty">0</div>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="content">
 		<div class="wrapper">
-			<div class="psevdomain">
-				<div class="white-content">
-					<ul class="breadcrumbs">
-						<li><a href="#">Главная страница</a></li>
-						<li><span>Корзина</span></li>
-					</ul>
-				</div>
-			</div>
 			<aside>
 				<div class="catalog-slide slide-block">
 					<div class="catalog-slide-link clearfix open-close">
@@ -325,6 +231,14 @@
 					</ul>
 				</div>
 			</aside>
+			<div class="psevdomain">
+				<div class="white-content">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная страница</a></li>
+						<li><span>Корзина</span></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="wrapper">
 			<div class="full">
@@ -815,6 +729,9 @@
 			<div class="rem">*Программа бесплатной доставки распространяется только на г. Москву и г. Санкт-Петербург в пределах кольцевых автодорог. Акция носит временный характер. Компания оставляет за собой право остановить её действие в любое время и без объяснения причин, выполнив свои обязательства перед клиентами, сделавшими свой заказ в момент ее действия.</div>
 			<div class="up-scroll">
 				<a href="#" id="toTop">Вверх</a>
+			</div>
+			<div class="up-scroll upscroll-mobile">
+				<a href="#" id="toTop3">Вверх</a>
 			</div>
 		</div>
 	</footer>

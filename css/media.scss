@@ -141,6 +141,57 @@ $link-hover:#c99726;
 			padding-right: 66px;
 		}
 	}
+	.checkout {
+		.tabset {
+			margin: 0 -16px 29px;
+		}
+	}
+	.checkout-box {
+		.row {
+			margin: 0 12px;
+			.text-input {
+				width: 281px;
+				textarea,
+				input {
+					width: 100%;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				&.longlong {
+					width: 100%;
+					input,
+					textarea {
+						width: 100%;
+					}
+				}
+			}
+			.checkbox {
+				label {
+					line-height: 19px;
+					padding-top: 3px;
+					padding-bottom: 3px;
+				}
+			}
+		}
+		ul.check-list {
+			width: auto;
+			margin: 0 12px;
+		}
+	}
+	.two-col .checkout-box {
+		width: 454px;
+	}
+	.big-textarea {
+		width: auto;
+		margin: 0 12px;
+		textarea {
+			width: 100%;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+	}
 }
 
 
@@ -808,6 +859,17 @@ $link-hover:#c99726;
 		.actions {
 			width: 73px;
 		}
+	}
+	.checkout-box {
+		.row {
+			.text-input {
+				width: 217px;
+			}
+		}
+	}
+	.two-col .checkout-box {
+		width: 100%;
+		float: none;
 	}
 }
 
@@ -1797,6 +1859,37 @@ $link-hover:#c99726;
 			}
 		}
 	}
+	.checkout {
+		.tabset {
+			text-align: center;
+			a {
+				padding: 0 12px;
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+	.checkout-box {
+		.row {
+			.text-input {
+				width: 100%;
+				margin-right: 0;
+				float: none;
+			}
+		}
+		ul.check-list {
+			li {
+				.addr-sv {
+					padding-left: 18px;
+					padding-right: 18px;
+				}
+			} 
+		}
+	}
+	.two-col .checkout-box {
+		width: 100%;
+		float: none;
+	}
 }
 
 
@@ -2246,6 +2339,64 @@ $link-hover:#c99726;
 					padding-bottom: 3px;
 				}
 			}
+		}
+	}
+	.checkout {
+		.tabset {
+			padding: 8px 14px 0;
+			a {
+				padding: 0 6px;
+				font-size: 14px;
+			}
+		}
+	}
+	.checkout-box {
+		.row {
+			.checkbox {
+				padding-right: 0;
+			}
+			.text-input {
+				&.longlong {
+					textarea {
+						height: 52px;
+					}
+				}
+			}
+		}
+		ul.check-list {
+			width: auto;
+			margin: 0;
+			li {
+				.gray-line {
+					.left {
+						float: none;
+						label {}
+					}
+					.right {
+						float: left;
+						padding-left: 16px;
+					}
+				}
+				.white-line {
+					margin-top: -25px;
+				}
+			}
+		}
+	}
+	.big-textarea {
+		textarea {
+			height: 84px;
+		}
+	}
+	.checkout footer .footer-content {
+		width: auto;
+		.ok {
+			label {
+				font-size: 14px;
+			}
+		}
+		input[type="submit"] {
+			width: 230px;
 		}
 	}
 }
