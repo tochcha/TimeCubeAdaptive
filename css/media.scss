@@ -9,7 +9,7 @@ $color:#494949;
 $link:#000;
 $link-hover:#c99726;
 
-/* <1121 */
+/* <=1119 */
 
 @media only screen and (max-width: 1120px) {
 	.wrapper {
@@ -192,10 +192,36 @@ $link-hover:#c99726;
 			box-sizing: border-box;
 		}
 	}
+	.compare-page {
+		.params {
+			width: 200px;
+			.title {
+				font-size: 17px;
+				padding-left: 0;
+				text-align: center;
+			}
+			.incomp-total {
+				padding-left: 0;
+				text-align: center;
+				font-size: 17px;
+			}
+		}
+		.items {
+			width: 700px;
+		}
+	}
+	.compare-list {
+		.zebra {
+			width: auto;
+			li {
+				padding: 0 6px;
+			}
+		}
+	}
 }
 
 
-/* <1121 finish*/
+/* <-1119 finish*/
 
 
 /* <1121 and > 991 start */
@@ -531,6 +557,7 @@ $link-hover:#c99726;
 		bottom: 0;
 		position: fixed;
 		opacity: .6;
+		z-index: 9;
 		-moz-transform: scale(.8);
 		-webkit-transform: scale(.8);
 		-o-transform: scale(.8);
@@ -870,6 +897,16 @@ $link-hover:#c99726;
 	.two-col .checkout-box {
 		width: 100%;
 		float: none;
+	}
+	.compare-page {
+		margin-left: 11px;
+		.params {
+			width: 202px;
+			padding-right: 10px;
+		}
+		.items {
+			width: 544px;
+		}
 	}
 }
 
@@ -1883,12 +1920,41 @@ $link-hover:#c99726;
 					padding-left: 18px;
 					padding-right: 18px;
 				}
-			} 
+			}
 		}
 	}
 	.two-col .checkout-box {
 		width: 100%;
 		float: none;
+	}
+	.compare-page {
+		h2 {
+			margin-right: 0;
+			margin-left: -11px;
+		}
+		.params {
+			width: 156px;
+			padding-right: 10px;
+			ul.checks {
+				padding-left: 4px;
+			}
+			.title {
+				height: 32px;
+				overflow: hidden;
+			}
+			.incomp-total {
+				padding-bottom: 6px;
+			}
+		}
+		.items {
+			width: 272px;
+		}
+	}
+	.compare-list .zebra li {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: 11px;
 	}
 }
 
@@ -2397,6 +2463,25 @@ $link-hover:#c99726;
 		}
 		input[type="submit"] {
 			width: 230px;
+		}
+	}
+	.min-480 .wrapper {
+		min-width: 480px !important;
+		padding-left: 0;
+		padding-right: 0;
+		.incomp-total {
+			padding-bottom: 34px;
+		}
+		.products {
+			width: 256px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.compare-page {
+		width: 470px;
+		.params {
+			width: 187px;
 		}
 	}
 }
