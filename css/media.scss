@@ -8,6 +8,22 @@ $myriadBold: MyriadProBold;
 $color:#494949;
 $link:#000;
 $link-hover:#c99726;
+// для ul
+@mixin i-b {
+	font-size: 0;
+	letter-spacing: -1px;
+	line-height: 0;
+}
+
+// для li
+@mixin i-b-dis {
+	font-size: 14px;
+	letter-spacing: 0;
+	line-height: 18px;
+	vertical-align: top;
+	display: inline-block;
+}
+
 
 /* <=1119 */
 
@@ -375,6 +391,33 @@ $link-hover:#c99726;
 	}
 	.black-friday .buy-links .price-qty .price em {
 		width: 144px;
+	}
+	.contact-table {
+		div {
+			font-size: 20px;
+		}
+		.col-1 {
+			width: 186px;
+			padding-left: 10px;
+		}
+		.col-2 {
+			width: 139px;
+			padding-left: 10px !important;
+		}
+		.col-3 {
+			padding-left: 10px !important;
+			width: 139px;
+		}
+		.col-4 {
+			width: 156px;
+			padding-left: 10px !important;
+		}
+		.contact-table-body {
+			div {
+				padding-left: 10px;
+				font-size: 13px;
+			}
+		}
 	}
 }
 
@@ -913,6 +956,9 @@ $link-hover:#c99726;
 		.items {
 			width: 544px;
 		}
+	}
+	.contact-table .col-1 {
+		width: 254px;
 	}
 }
 
@@ -1971,6 +2017,125 @@ $link-hover:#c99726;
 		-ms-transform: scale(0.7);
 		transform: scale(0.7);
 	}
+	.serv-in-main {
+		background-color: #fff;
+		padding-bottom: 14px;
+		margin-bottom: 21px;
+		display: block;
+		a {
+			&:hover {
+				color: $link;
+				text-decoration: none;
+				.img-box img {
+					opacity: .8;
+				}
+				h2 {
+					color: #000;
+				}
+				.more span {
+					color: #000;
+					background: url(../images/arrow-link.png) no-repeat right center;
+				}
+			}
+		}
+		.serv-head {
+			padding: 12px 0 12px 35px;
+			border-bottom: 1px solid #cdcdcd;
+			margin-bottom: 12px;
+		}
+		h3 {
+			margin: 0;
+			font: 16px $base-font;
+			span {
+				font-size: 24px;
+				display: block;
+			}
+		}
+		.img-box {
+			text-align: center;
+			img {
+				transition: 0.3s;
+				max-width: 100%;
+			}
+		}
+		h2 {
+			padding: 0 30px 11px 35px;
+			margin: 0;
+			font: 23px $base-font;
+			color: #494949;
+		}
+		.more {
+			text-align: right;
+			padding: 0 35px 14px;
+			span {
+				text-decoration: underline;
+				color: #757575;
+				font-size: 13px;
+				padding-right: 15px;
+				background: url(../images/arrow-link-off.png) no-repeat right center;
+			}
+		}
+	}
+	.contact-table {
+		display: none;
+	}
+	.contact-table-mobile {
+		margin-bottom: 32px;
+		display: block;
+		@include i-b;
+		.tabset {
+			@include i-b-dis;
+			width: 33%;
+			a {
+				display: block;
+				padding: 4px 12px 6px;
+				background-color: #727272;
+				transition: .3s;
+				border-bottom: 1px solid #fff;
+				color: #fff;
+				font-size: 16px;
+				line-height: 22px;
+				&:hover {
+					background-color: #606060;
+					text-decoration: none;
+				}
+				&.active {
+					color: $link-hover;
+					background-color: #ececec;
+				}
+				i {
+					font-size: 20px;
+					padding: 0 0 0 2px;
+					line-height: 26px;
+					display: inline-block;
+					position: relative;
+					top: 2px;
+				}
+			}
+		}
+		.tabs-wrapper {
+			width: 67%;
+			@include i-b-dis;
+			vertical-align: middle;
+			font-size: 15px;
+		}
+	}
+	.contact-content main {
+		padding-top: 18px;
+	}
+	.requisites {
+		.req-left {
+			float: none;
+			width: 90%;
+			padding: 0 5%;
+		}
+		.req-right {
+			float: none;
+			padding-top: 22px;
+			padding-right: 0;
+			margin: 0 auto;
+		}
+	}
 }
 
 
@@ -2540,6 +2705,42 @@ $link-hover:#c99726;
 		.params {
 			width: 161px;
 		}
+	}
+	.contact-table-mobile {
+		.tabset {
+			width: 41%;
+			a {
+				font-size: 14px;
+				padding-left: 5px;
+				padding-right: 5px;
+				i {
+					font-size: 18px;
+				}
+			}
+		}
+		.tabs-wrapper {
+			width: 59%;
+			.tab:first-child {
+				padding: 16px 12px;
+			}
+		}
+	}
+	.callcenter-phone {
+		padding-top: 9px;
+		padding-bottom: 22px;
+	}
+	.callcenter-phone,
+	.callcenter-phone a {
+		line-height: 23px;
+	}
+	.requisites {
+		h3 {
+			padding: 0 15px;
+		}
+	}
+	.way-list .title {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 

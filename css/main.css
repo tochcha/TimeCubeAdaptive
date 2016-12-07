@@ -728,6 +728,9 @@ main {
   width: 797px;
   padding-bottom: 22px; }
 
+.serv-in-main {
+  display: none; }
+
 .main-slider-box {
   margin-bottom: 20px; }
   .main-slider-box h3 {
@@ -4442,6 +4445,9 @@ main {
   font: 15px MyriadPro, Arial, Geneva, Helvetica;
   padding: 0 0 6px 36px; }
 
+.way-list .img-box img {
+  max-width: 100%; }
+
 .requisites {
   padding: 0 0 22px; }
   .requisites h3 {
@@ -6206,5 +6212,21 @@ body.black-friday {
             font: 16px MyriadPro, Arial, Geneva, Helvetica; }
     .accordion2 .delivary-payment .item .longrow {
       margin: 0 9px 12px; }
+
+.contact-table-mobile {
+  display: none; }
+  .contact-table-mobile .tabs-wrapper .tab {
+    transition: .3s;
+    vertical-align: middle;
+    display: none;
+    padding: 42px 27px 27px; }
+    .contact-table-mobile .tabs-wrapper .tab.vis {
+      display: inline-block; }
+    .contact-table-mobile .tabs-wrapper .tab:first-child {
+      padding-top: 29px; }
+    .contact-table-mobile .tabs-wrapper .tab:nth-child(3) {
+      padding-top: 64px; }
+    .contact-table-mobile .tabs-wrapper .tab:nth-child(4) {
+      padding-top: 54px; }
 
 /*# sourceMappingURL=main.css.map */

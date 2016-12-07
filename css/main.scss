@@ -1012,6 +1012,10 @@ main {
 	padding-bottom: 22px;
 }
 
+.serv-in-main {
+	display: none;
+}
+
 .main-slider-box {
 	margin-bottom: 20px;
 	h3 {
@@ -3743,7 +3747,7 @@ main {
 			text-align: center;
 		}
 		footer {
-			padding:36px 0 24px;
+			padding: 36px 0 24px;
 			position: relative;
 			z-index: 9;
 			background-color: #fff;
@@ -5583,7 +5587,9 @@ main {
 		padding: 0 0 6px 36px;
 	}
 	.img-box {
-		img {}
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -7869,6 +7875,30 @@ body {
 			}
 			.longrow {
 				margin: 0 9px 12px;
+			}
+		}
+	}
+}
+
+.contact-table-mobile {
+	display: none;
+	.tabs-wrapper {
+		.tab {
+			transition: .3s;
+			vertical-align: middle;
+			display: none;
+			padding: 42px 27px 27px;
+			&.vis {
+				display: inline-block;
+			}
+			&:first-child {
+				padding-top: 29px;
+			}
+			&:nth-child(3) {
+				padding-top: 64px;
+			}
+			&:nth-child(4) {
+				padding-top: 54px;
 			}
 		}
 	}

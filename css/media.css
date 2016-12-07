@@ -232,7 +232,24 @@
     .static .address-list .lists ul {
       width: 184px; }
   .black-friday .buy-links .price-qty .price em {
-    width: 144px; } }
+    width: 144px; }
+  .contact-table div {
+    font-size: 20px; }
+  .contact-table .col-1 {
+    width: 186px;
+    padding-left: 10px; }
+  .contact-table .col-2 {
+    width: 139px;
+    padding-left: 10px !important; }
+  .contact-table .col-3 {
+    padding-left: 10px !important;
+    width: 139px; }
+  .contact-table .col-4 {
+    width: 156px;
+    padding-left: 10px !important; }
+  .contact-table .contact-table-body div {
+    padding-left: 10px;
+    font-size: 13px; } }
 
 /* <1121 and > 991 finish */
 /* <=991 */
@@ -609,7 +626,9 @@
       width: 202px;
       padding-right: 10px; }
     .compare-page .items {
-      width: 544px; } }
+      width: 544px; }
+  .contact-table .col-1 {
+    width: 254px; } }
 
 /* <=991 finish */
 /* <=991 and >=767 */
@@ -1371,7 +1390,108 @@
     -webkit-transform: scale(0.7);
     -o-transform: scale(0.7);
     -ms-transform: scale(0.7);
-    transform: scale(0.7); } }
+    transform: scale(0.7); }
+  .serv-in-main {
+    background-color: #fff;
+    padding-bottom: 14px;
+    margin-bottom: 21px;
+    display: block; }
+    .serv-in-main a:hover {
+      color: #000;
+      text-decoration: none; }
+      .serv-in-main a:hover .img-box img {
+        opacity: .8; }
+      .serv-in-main a:hover h2 {
+        color: #000; }
+      .serv-in-main a:hover .more span {
+        color: #000;
+        background: url(../images/arrow-link.png) no-repeat right center; }
+    .serv-in-main .serv-head {
+      padding: 12px 0 12px 35px;
+      border-bottom: 1px solid #cdcdcd;
+      margin-bottom: 12px; }
+    .serv-in-main h3 {
+      margin: 0;
+      font: 16px MyriadPro, Arial, Geneva, Helvetica; }
+      .serv-in-main h3 span {
+        font-size: 24px;
+        display: block; }
+    .serv-in-main .img-box {
+      text-align: center; }
+      .serv-in-main .img-box img {
+        transition: 0.3s;
+        max-width: 100%; }
+    .serv-in-main h2 {
+      padding: 0 30px 11px 35px;
+      margin: 0;
+      font: 23px MyriadPro, Arial, Geneva, Helvetica;
+      color: #494949; }
+    .serv-in-main .more {
+      text-align: right;
+      padding: 0 35px 14px; }
+      .serv-in-main .more span {
+        text-decoration: underline;
+        color: #757575;
+        font-size: 13px;
+        padding-right: 15px;
+        background: url(../images/arrow-link-off.png) no-repeat right center; }
+  .contact-table {
+    display: none; }
+  .contact-table-mobile {
+    margin-bottom: 32px;
+    display: block;
+    font-size: 0;
+    letter-spacing: -1px;
+    line-height: 0; }
+    .contact-table-mobile .tabset {
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      vertical-align: top;
+      display: inline-block;
+      width: 33%; }
+      .contact-table-mobile .tabset a {
+        display: block;
+        padding: 4px 12px 6px;
+        background-color: #727272;
+        transition: .3s;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px; }
+        .contact-table-mobile .tabset a:hover {
+          background-color: #606060;
+          text-decoration: none; }
+        .contact-table-mobile .tabset a.active {
+          color: #c99726;
+          background-color: #ececec; }
+        .contact-table-mobile .tabset a i {
+          font-size: 20px;
+          padding: 0 0 0 2px;
+          line-height: 26px;
+          display: inline-block;
+          position: relative;
+          top: 2px; }
+    .contact-table-mobile .tabs-wrapper {
+      width: 67%;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      vertical-align: top;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 15px; }
+  .contact-content main {
+    padding-top: 18px; }
+  .requisites .req-left {
+    float: none;
+    width: 90%;
+    padding: 0 5%; }
+  .requisites .req-right {
+    float: none;
+    padding-top: 22px;
+    padding-right: 0;
+    margin: 0 auto; } }
 
 /* <=767 finish */
 /* 480-767 start */
@@ -1726,7 +1846,30 @@
   .compare-page {
     width: 460px; }
     .compare-page .params {
-      width: 161px; } }
+      width: 161px; }
+  .contact-table-mobile .tabset {
+    width: 41%; }
+    .contact-table-mobile .tabset a {
+      font-size: 14px;
+      padding-left: 5px;
+      padding-right: 5px; }
+      .contact-table-mobile .tabset a i {
+        font-size: 18px; }
+  .contact-table-mobile .tabs-wrapper {
+    width: 59%; }
+    .contact-table-mobile .tabs-wrapper .tab:first-child {
+      padding: 16px 12px; }
+  .callcenter-phone {
+    padding-top: 9px;
+    padding-bottom: 22px; }
+  .callcenter-phone,
+  .callcenter-phone a {
+    line-height: 23px; }
+  .requisites h3 {
+    padding: 0 15px; }
+  .way-list .title {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 /* <=479 finish */
 /* height <768 start */

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	
 	// кнопка (sandwich) для выпадающего мобильного меню
 	$(".sandwich-mob").click(function () {
 		$(".sandwich-mob").toggleClass("active");
@@ -336,17 +336,6 @@ $(document).ready(function () {
 		$("#toTop2").scrollToTop();
 		$("#toTop3").scrollToTop();
 	});
-	
-	
-	// липкий хедер для таблицы в корзине
-	 var HeaderTop = $('.full-content .cart-table header').offset().top;
-	 $(window).scroll(function(){
-	 if( $(window).scrollTop() > HeaderTop ) {
-	 $('.full-content .cart-table header').css({position: 'fixed', background: '#fff', top: '0px'});
-	 } else {
-	 $('.full-content .cart-table header').css({position: 'static'});
-	 }
-	 });
 
 });
 	
@@ -359,3 +348,13 @@ $(window).load(function() {
 	$(".top_text p").animated("fadeInUp", "fadeOutDown");*/
 
 });
+
+// липкий хедер для таблицы в корзине
+ var HeaderTop = $('.full-content .cart-table header').offset().top;
+ $(window).scroll(function(){
+ if( $(window).scrollTop() > HeaderTop ) {
+ $('.full-content .cart-table header').css({position: 'fixed', background: '#fff', top: '0px'});
+ } else {
+ $('.full-content .cart-table header').css({position: 'static'});
+ }
+ });
