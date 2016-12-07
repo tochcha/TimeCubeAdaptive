@@ -336,16 +336,26 @@ $(document).ready(function () {
 		$("#toTop2").scrollToTop();
 		$("#toTop3").scrollToTop();
 	});
+	
+	
+	// липкий хедер для таблицы в корзине
+	 var HeaderTop = $('.full-content .cart-table header').offset().top;
+	 $(window).scroll(function(){
+	 if( $(window).scrollTop() > HeaderTop ) {
+	 $('.full-content .cart-table header').css({position: 'fixed', background: '#fff', top: '0px'});
+	 } else {
+	 $('.full-content .cart-table header').css({position: 'static'});
+	 }
+	 });
 
 });
 	
-	// прелоадер
-	$(window).load(function() {
+// прелоадер
+$(window).load(function() {
 
-		$(".loader_inner").fadeOut(900);
-		$(".loader").delay(900).fadeOut(900);
+	$(".loader_inner").fadeOut(900);
+	$(".loader").delay(900).fadeOut(900);
+	/*$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+	$(".top_text p").animated("fadeInUp", "fadeOutDown");*/
 
-		$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-		$(".top_text p").animated("fadeInUp", "fadeOutDown");
-
-	});
+});

@@ -61,6 +61,8 @@
       width: 370px; }
     .full-content .cart-table header .price-title {
       width: 143px; }
+    .full-content .cart-table header .actions {
+      width: 96px; }
   .cart-table-content {
     width: 100%; }
     .cart-table-content .table {
@@ -74,8 +76,11 @@
         .cart-table-content .row .button a {
           width: 108px;
           line-height: 18px;
-          height: 56px;
-          margin-top: -3px; }
+          /*height: 56px;*/
+          height: auto;
+          margin-top: -3px;
+          padding-top: 2px;
+          padding-bottom: 2px; }
     .cart-table-content .prodnamebox {
       width: 281px; }
   .cart-table-content .row .gray-line-2 {
@@ -557,7 +562,7 @@
     width: 90px;
     padding-left: 9px; }
   .full-content .cart-table header .actions {
-    width: 60px; }
+    width: 61px; }
   .cart-table-content .img-box {
     display: none; }
   .cart-table-content .row .button span {
@@ -1234,31 +1239,30 @@
     font-size: 18px; }
   .black-friday .buy-links .price-qty .price em {
     padding-left: 46px; }
-  .full-content .cart-table header {
-    margin-bottom: 28px; }
-    .full-content .cart-table header div {
-      font-size: 13px; }
-    .full-content .cart-table header .name-title {
-      padding-left: 3px;
-      width: 200px; }
-    .full-content .cart-table header .price-title {
-      width: 60px; }
-    .full-content .cart-table header .qty {
-      padding-left: 0;
-      width: 76px;
-      display: none; }
-    .full-content .cart-table header .sum {
-      padding-left: 0;
-      width: 95px; }
-    .full-content .cart-table header .discount {
-      display: none; }
+  .full-content .cart-table header div {
+    font-size: 13px; }
+  .full-content .cart-table header .name-title {
+    padding-left: 3px;
+    width: 198px; }
+  .full-content .cart-table header .price-title {
+    width: 60px; }
+  .full-content .cart-table header .qty {
+    padding-left: 0;
+    width: 76px;
+    display: none; }
+  .full-content .cart-table header .sum {
+    padding-left: 0;
+    width: 95px; }
+  .full-content .cart-table header .discount {
+    display: none; }
   .cart-table-content .table {
     width: 417px; }
   .cart-table-content .gray-line {
     padding: 2px 0 2px 4px;
     height: auto; }
   .cart-table-content .prodnamebox {
-    width: 196px;
+    width: 100%;
+    float: none;
     /*line-height: 14px;*/ }
     .cart-table-content .prodnamebox .prodname a {
       font-weight: bold; }
@@ -1266,7 +1270,8 @@
       display: none; }
   .cart-table-content .price {
     width: 64px;
-    font-size: 14px; }
+    font-size: 14px;
+    padding-left: 196px; }
     .cart-table-content .price strong {
       font-size: 15px; }
     .cart-table-content .price s {
@@ -1286,7 +1291,8 @@
   .cart-table-content .row {
     margin-left: 0;
     height: 56px;
-    padding-top: 9px; }
+    padding-bottom: 22px;
+    padding-top: 18px; }
     .cart-table-content .row .img-pack {
       float: right;
       width: 50px;
@@ -1359,7 +1365,13 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-size: 11px; } }
+    font-size: 11px; }
+  .cart-table-content .row .gray-line-2 .pack-remove span {
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); } }
 
 /* <=767 finish */
 /* 480-767 start */
@@ -1608,26 +1620,60 @@
     top: 107px;
     left: -59px; }
   .full-content .cart-table header {
-    display: none; }
+    /*display: none;*/ }
+    .full-content .cart-table header .name-title {
+      width: 44px;
+      display: none;
+      text-indent: -9999px; }
+    .full-content .cart-table header .price-title {
+      width: 70px; }
+    .full-content .cart-table header .sum {
+      padding-right: 1px;
+      width: 130px; }
+    .full-content .cart-table header .actions {
+      width: 67px; }
   .cart-table-content .table {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 22px; }
+    .cart-table-content .table .remove {
+      width: 50px; }
+  .cart-table-content .gray-line {
+    margin-bottom: 14px; }
   .cart-table-content .prodnamebox {
     float: none;
-    width: 100%; }
+    width: 100%;
+    padding: 0 8px 6px;
+    line-height: 17px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .cart-table-content .prodnamebox .prodname a {
+      line-height: 17px;
+      white-space: normal; }
   .cart-table-content .price {
-    width: 84px; }
+    width: 84px;
+    padding-left: 0; }
   .cart-table-content .sum {
-    width: 104px; }
+    width: 104px;
+    padding-right: 18px; }
   .cart-table-content .row {
-    height: auto;
-    padding-bottom: 22px; }
+    height: auto; }
     .cart-table-content .row .gray-line-2 {
-      width: 185px; }
+      width: 100%; }
+      .cart-table-content .row .gray-line-2 .pack-sum {
+        width: auto; }
+        .cart-table-content .row .gray-line-2 .pack-sum em {
+          display: inline-block;
+          width: 54px;
+          font-style: normal;
+          font-size: 12px;
+          padding-right: 60px; }
       .cart-table-content .row .gray-line-2 .pack-price {
         text-indent: -9999px;
         width: 1px; }
       .cart-table-content .row .gray-line-2 .pack-remove {
-        position: static; }
+        position: static;
+        width: 64px; }
     .cart-table-content .row .img-pack {
       padding-right: 10px; }
     .cart-table-content .row .button {
@@ -1670,19 +1716,17 @@
     .checkout footer .footer-content input[type="submit"] {
       width: 230px; }
   .min-480 .wrapper {
-    min-width: 480px !important;
-    padding-left: 0;
-    padding-right: 0; }
-    .min-480 .wrapper .incomp-total {
-      padding-bottom: 34px; }
+    min-width: 470px !important;
+    padding-left: 5px;
+    padding-right: 5px; }
     .min-480 .wrapper .products {
       width: 256px;
       margin-left: auto;
       margin-right: auto; }
   .compare-page {
-    width: 470px; }
+    width: 460px; }
     .compare-page .params {
-      width: 187px; } }
+      width: 161px; } }
 
 /* <=479 finish */
 /* height <768 start */

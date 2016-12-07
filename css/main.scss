@@ -3714,6 +3714,8 @@ main {
 			border-bottom: 1px solid #000;
 			width: 1048px;
 			margin-bottom: 34px;
+			/*padding: 0 2px;*/
+			z-index: 8;
 			.name-title {
 				width: 484px;
 				text-align: left;
@@ -3741,7 +3743,10 @@ main {
 			text-align: center;
 		}
 		footer {
-			padding-bottom: 24px;
+			padding:36px 0 24px;
+			position: relative;
+			z-index: 9;
+			background-color: #fff;
 			.footer-left {
 				float: left;
 				width: 596px;
@@ -3861,6 +3866,9 @@ main {
 			border-bottom: 1px solid #000;
 			margin-bottom: 36px;
 			padding: 0 0 10px 22px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 	.img-box {
@@ -4116,6 +4124,9 @@ main {
 					bottom: -10px;
 					left: 0;
 					width: 116px;
+					a {
+						text-decoration: underline;
+					}
 				}
 			}
 			.pack-qty {
@@ -4194,6 +4205,9 @@ main {
 				text-align: right;
 				span {
 					font: 13px/29px Arial;
+				}
+				em {
+					display: none;
 				}
 			}
 			.pack-remove {
