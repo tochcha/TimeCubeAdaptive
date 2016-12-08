@@ -136,7 +136,23 @@
   .compare-list .zebra {
     width: auto; }
     .compare-list .zebra li {
-      padding: 0 6px; } }
+      padding: 0 6px; }
+  .faq-page .faq-form .row .text-input {
+    float: none; }
+    .faq-page .faq-form .row .text-input input {
+      width: 100%;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 24px; }
+    .faq-page .faq-form .row .text-input:first-child {
+      padding-bottom: 14px; }
+  .faq-page .faq-form .row textarea {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 68px; } }
 
 /* <-1119 finish*/
 /* <1121 and > 991 start */
@@ -1491,7 +1507,9 @@
     float: none;
     padding-top: 22px;
     padding-right: 0;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .faq-page .faq-list {
+    padding: 10px 0 24px; } }
 
 /* <=767 finish */
 /* 480-767 start */
@@ -1869,7 +1887,20 @@
     padding: 0 15px; }
   .way-list .title {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .faq-page {
+    padding: 0 15px; }
+    .faq-page .faq-form .subform {
+      width: 236px;
+      margin: 0 16px 22px; }
+      .faq-page .faq-form .subform .text-input input {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 24px; }
+      .faq-page .faq-form .subform input[type=submit] {
+        width: 100%; } }
 
 /* <=479 finish */
 /* height <768 start */

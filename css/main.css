@@ -2952,7 +2952,7 @@ main {
     letter-spacing: -1px;
     line-height: 0;
     border-bottom: 1px solid #000;
-    width: 1048px;
+    width: 1043px;
     margin-bottom: 34px;
     /*padding: 0 2px;*/
     z-index: 8; }
@@ -2968,7 +2968,7 @@ main {
     .full-content .cart-table header .sum {
       width: 109px; }
     .full-content .cart-table header .actions {
-      width: 91px;
+      width: 87px;
       text-align: right; }
   .full-content .cart-table header > div {
     font-size: 14px;

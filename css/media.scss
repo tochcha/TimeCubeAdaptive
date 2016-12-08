@@ -240,6 +240,32 @@ $link-hover:#c99726;
 			}
 		}
 	}
+	.faq-page {
+		.faq-form {
+			.row {
+				.text-input {
+					float: none;
+					input {
+						width: 100%;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						box-sizing: border-box;
+						height: 24px;
+					}
+					&:first-child {
+						padding-bottom: 14px;
+					}
+				}
+				textarea {
+					width: 100%;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+					height: 68px;
+				}
+			}
+		}
+	}
 }
 
 
@@ -2136,6 +2162,9 @@ $link-hover:#c99726;
 			margin: 0 auto;
 		}
 	}
+	.faq-page .faq-list {
+		padding: 10px 0 24px;
+	}
 }
 
 
@@ -2741,6 +2770,25 @@ $link-hover:#c99726;
 	.way-list .title {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.faq-page {
+		padding: 0 15px;
+		.faq-form .subform {
+			width: 236px;
+			margin: 0 16px 22px;
+			.text-input {
+				input {
+					width: 100%;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+					height: 24px;
+				}
+			}
+			input[type=submit] {
+				width: 100%;
+			}
+		}
 	}
 }
 
