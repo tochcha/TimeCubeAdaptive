@@ -10,7 +10,10 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Личный кабинет - Смена пароля - TimeCube 2016</title>
+	<title>Подарочная упаковка - TimeCube 2016</title>
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
@@ -34,23 +37,39 @@
 
 	<link rel="stylesheet" href="css/main.css" />
 	<!-- основной css -->
+
+	<link rel="stylesheet" href="css/media.css" />
+	<!-- адаптивный css -->
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 	<header id="header">
 		<div class="wrapper">
 			<div class="header-top">
 				<div class="ht-left">
-					<div class="schedule">Будни: 9:00 – 20:00&nbsp;&nbsp;|&nbsp;&nbsp;Выходные: 11:00 –18:00</div>
+					<div class="schedule"><b>Магазин:</b> Будни: 9:00 – 20:00&nbsp;&nbsp;|&nbsp;&nbsp;Выходные: 11:00 –18:00</div>
 				</div>
 				<div class="ht-right">
 					<div class="metro">Алексеевская</div>
 					<div class="tel"><a href="tel://7-800-775-2576" title="Позвонить">8 800 775-25-76</a></div>
 					<div class="contacts-link"><a href="#">Контакты</a></div>
-					<ul class="loginbox">
-						<li class="user"><a href="#">Vasiliy Gromov</a></li>
-						<li class="logout"><a title="Выйти" href="#">Выйти</a></li>
-					</ul>
+					<div class="mobile-right">
+						<div class="favorite-compare">
+							<div class="favorite">
+								<a href="#"><div class="qty">0</div></a>
+							</div>
+							<div class="compare active">
+								<a href="#"><div class="qty">5</div></a>
+							</div>
+						</div>
+						<ul class="loginbox">
+							<li class="loginlink"><a class="open-modal-4" href="#">Вход</a></li>
+							<li class="reglink"><a href="#">Регистрация</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="header-content clearfix">
@@ -78,153 +97,26 @@
 					</nav>
 				</div>
 				<div class="header-content-right">
-					<div class="cart not-empty">
-						<div class="qty">5</div>
+					<div class="cart">
+						<div class="qty">0</div>
 						<div class="cart-info">
 							<div>Корзина</div>
-							<div>278 500 <i class="fa fa-rub"></i></div>
-						</div>
-						<div class="cart-drop">
-							<div class="cart-drop-top"></div>
-							<div class="cart-drop-middle">
-								<ul>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-1.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-2.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-3.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом длинное название</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price"></div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-4.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-5.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-								</ul>
-								<div class="sub-drop-cart clearfix">
-									<div class="checkout"><a href="#">Оформить заказ</a></div>
-									<div class="sum-num">
-										<div class="sum">Итого:</div>
-										<div class="num">
-											<div class="old">137 900р.</div>
-											<div class="total">127 000 <span>р.</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cart-drop-bottom"></div>
+							<div>пуста</div>
 						</div>
 					</div>
 					<div class="favorite-compare">
-						<div class="favorite active">
-							<a href="#">
-								<div class="qty">7</div>
-							</a>
+						<div class="favorite">
+							<a href="#"><div class="qty">0</div></a>
 						</div>
 						<div class="compare active">
-							<a href="#">
-								<div class="qty">9</div>
-							</a>
+							<a href="#"><div class="qty">5</div></a>
 						</div>
 					</div>
+				</div>
+				<div class="sandwich-mob">
+					<div class="sw-topper"></div>
+					<div class="sw-bottom"></div>
+					<div class="sw-footer"></div>
 				</div>
 			</div>
 			<div class="down-scroll-fixed">
@@ -234,111 +126,125 @@
 			</div>
 		</div>
 	</header>
+	<div class="subheader">
+		<div class="wrapper">
+			<div class="form clearfix">
+				<form action="#">
+					<div>
+						<input type="text" placeholder="Поиск по сайту">
+						<input type="submit" value="&nbsp;">
+					</div>
+				</form>
+			</div>
+			<div class="sandwich-mob">
+				<div class="sw-topper"></div>
+				<div class="sw-bottom"></div>
+				<div class="sw-footer"></div>
+			</div>
+			<div class="cart">
+				<a href="#">
+					<div class="qty">0</div>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="content">
 		<div class="wrapper">
-			<main>
-				<div class="white-content">
-					<ul class="breadcrumbs">
-						<li><a href="#">Главная страница</a></li>
-						<li><span>Личный кабинет</span></li>
-					</ul>
-				</div>
-				<div class="static">
-					<h2 class="withico ico-3">Смена пароля</h2>
-					<div class="ld-form">
-						<p>Настоятельно рекомендуем использовать этот пароль только для интернет-магазина timecube.ru. <br>От сложности и сохранности пароля зависит неприкосновенность вашего личного кабинета</p>
-						<form action="#">
-							<div class="row">
-								<labeL>Текущий пароль<span class="span">*</span></labeL>
-								<input type="password" placeholder="текущий пароль">
-								<div class="view-check"><img src="images/quick-view-off.png" alt=""></div>
-							</div>
-							<div class="row">
-								<labeL>Логин<span class="span">*</span></labeL>
-								<input type="text" placeholder="grom-1976">
-								<div class="view-check"><img src="images/quick-view.png" alt=""></div>
-							</div>
-							<div class="button-area clearfix">
-								<input type="submit" value="Сохранить">
-								<div class="rem"><span>*</span>— обязательно для заполнения</div>
-							</div>
-						</form>
-						<div class="actions-footer clearfix">
-							<div class="return"><a href="#">Вернуться в личный кабинет</a></div>
+			<aside>
+				<div class="catalog-slide slide-block">
+					<div class="catalog-slide-link clearfix open-close">
+						<div class="csl-text">Каталог товаров</div>
+						<div id="sandwich">
+							<div class="sw-topper"></div>
+							<div class="sw-bottom"></div>
+							<div class="sw-footer"></div>
 						</div>
 					</div>
+					<ul id="accordion" class="accordion block">
+						<li><a href="#">Шкатулки для часов</a>
+							<ul>
+								<li><a href="#">История</a></li>
+								<li><a href="#">Правила</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Шкатулки для часов с автоподзаводом</a>
+							<ul>
+								<li class="current"><a href="#">Все</a></li>
+								<li><a href="#">PREMIUM</a></li>
+								<li><a href="#">для 1-х часов</a></li>
+								<li><a href="#">для 2-х часов</a></li>
+								<li><a href="#">для 3-х часов</a></li>
+								<li><a href="#">для 4-5-ти часов</a></li>
+								<li><a href="#">для 6-7-ми часов</a></li>
+								<li><a href="#">для 8-ми и более часов</a></li>
+								<li><a href="#">Аксессуары</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Сейфы для часов</a>
+							<ul>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Шкатулки для украшений</a>
+							<ul>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Шкатулки для галстуков</a>
+							<ul>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Шкатулки для запонок</a>
+							<ul>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Ремешки для часов</a>
+							<ul>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+								<li><a href="#">Item demo</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Дисконт</a>
+						</li>
+					</ul>
 				</div>
-			</main>
-			<aside>
-				<ul id="accordion" class="accordion">
-					<li><a href="#">Шкатулки для часов</a>
-						<ul>
-							<li><a href="#">История</a></li>
-							<li><a href="#">Правила</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Шкатулки для часов с автоподзаводом</a>
-						<ul>
-							<li class="current"><a href="#">Все</a></li>
-							<li><a href="#">PREMIUM</a></li>
-							<li><a href="#">для 1-х часов</a></li>
-							<li><a href="#">для 2-х часов</a></li>
-							<li><a href="#">для 3-х часов</a></li>
-							<li><a href="#">для 4-5-ти часов</a></li>
-							<li><a href="#">для 6-7-ми часов</a></li>
-							<li><a href="#">для 8-ми и более часов</a></li>
-							<li><a href="#">Аксессуары</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Сейфы для часов</a>
-						<ul>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Шкатулки для украшений</a>
-						<ul>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Шкатулки для галстуков</a>
-						<ul>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Шкатулки для запонок</a>
-						<ul>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Ремешки для часов</a>
-						<ul>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-							<li><a href="#">Item demo</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Дисконт</a>
-					</li>
-				</ul>
+				<div class="simple-menu">
+					<h3>Информация для покупателя</h3>
+					<ul>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Производители</a></li>
+						<li class="active"><a href="#">Подарочная упаковка</a></li>
+						<li><a href="#">Проверка товара и упаковка</a></li>
+						<li><a href="#">Доставка и гарантия</a></li>
+						<li><a href="#">Адреса ПВЗ</a></li>
+						<li><a href="#">Таблица подзавода</a></li>
+						<li><a href="#">Видео</a></li>
+						<li><a href="#">Опт</a></li>
+						<li><a href="#">FAQ Часто задаваемые вопросы</a></li>
+					</ul>
+				</div>
 				<div class="serv">
 					<a href="#">
 						<div class="serv-head">
@@ -356,6 +262,143 @@
 					</div>
 				</div>
 			</aside>
+			<main>
+				<div class="white-content">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная страница</a></li>
+						<li><span>Подарочная упаковка</span></li>
+					</ul>
+				</div>
+				<div class="static">
+					<h2>Подарочная упаковка</h2>
+					<div class="pack-bg"><img src="images/packs.jpg" alt=""></div>
+					<div class="pack-description">
+						<h3>Новая услуга — «Упакуй и подари».</h3>
+						<p>Интернет магазин «Timecube» предлагает покупателям преобразить покупку в интригующий сюрприз. Множество упаковочных материалов не оставят Вас равнодушными и придадут индивидуальность подарку.</p>
+					</div>
+					<div class="filter forpu">
+						<div class="row clearfix">
+							<div class="pages">
+								<label>Страницы:</label>
+								<ul>
+									<li><span>1</span></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">Все</a></li>
+								</ul>
+							</div>
+							<div class="pages show">
+								<label>Показать:</label>
+								<ul>
+									<li><span>9</span></li>
+									<li><a href="#">18</a></li>
+									<li><a href="#">36</a></li>
+									<li><a href="#">Все</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="products instatic">
+						<div class="view-next"><a href="#"><span>Как происходит проверка товара и его упаковка?</span></a></div>
+						<div class="product-list clearfix">
+							<div class="item">
+								<div class="img-box-pu">
+									<a href="#"><img src="images/pu-1.jpg" alt=""></a>
+								</div>
+								<a href="#" class="title">Розовый гламур</a>
+								<div class="price">
+									<span>11 400</span> руб.
+								</div>
+								<div class="button-trans clearfix">
+									<input type="submit" value="Выбрать" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-box-pu">
+									<a href="#"><img src="images/pu-2.jpg" alt=""></a>
+								</div>
+								<a href="#" class="title">Розовый гламур</a>
+								<div class="price">
+									<span>11 400</span> руб.
+								</div>
+								<div class="button-trans clearfix">
+									<input type="submit" value="Выбрать" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-box-pu">
+									<a href="#"><img src="images/pu-3.jpg" alt=""></a>
+								</div>
+								<a href="#" class="title">Розовый гламур</a>
+								<div class="price">
+									<span>11 400</span> руб.
+								</div>
+								<div class="button-trans clearfix">
+									<input type="submit" value="Выбрать" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-box-pu">
+									<a href="#"><img src="images/pu-4.jpg" alt=""></a>
+								</div>
+								<a href="#" class="title">Розовый гламур</a>
+								<div class="price">
+									<span>11 400</span> руб.
+								</div>
+								<div class="button-trans clearfix">
+									<input type="submit" value="Выбрать" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-box-pu">
+									<a href="#"><img src="images/pu-5.jpg" alt=""></a>
+								</div>
+								<a href="#" class="title">Розовый гламур</a>
+								<div class="price">
+									<span>11 400</span> руб.
+								</div>
+								<div class="button-trans clearfix">
+									<input type="submit" value="Выбрать" />
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-box-pu">
+									<a href="#"><img src="images/pu-6.jpg" alt=""></a>
+								</div>
+								<a href="#" class="title">Розовый гламур</a>
+								<div class="price">
+									<span>11 400</span> руб.
+								</div>
+								<div class="button-trans clearfix">
+									<input type="submit" value="Выбрать" />
+								</div>
+							</div>
+						</div>
+						<div class="view-next"><a href="#"><span>Показать ещё</span></a></div>
+						<div class="pagination">
+							<ul>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">&rarr;</a></li>
+							</ul>
+						</div>
+						<div class="view-next view-all"><a href="#"><span>Показать все</span></a></div>
+					</div>
+				</div>
+				<div class="white-content">
+					<h2>Подарочная упаковка</h2>
+					<article class="font-14">
+						<p>Новая услуга — «Упакуй и подари».<br />Красивая упаковка придает подарку красоту и загадочность. Чтобы сделать подарок оригинальным, люди, совершив покупку, начинают задумываться, как его упаковать. Ездят по торговым центрам, платят большие деньги за упаковку подарка — иными словами тратят много сил, денег, энергии и времени.</p>
+						<p>Интернет магазин “Timecube” предлагает покупателям избавиться от этого — просто выберите вариант подарочной упаковки, и опытный специалист в области дизайна и упаковки мастерски преобразит подарок в интригующий сюрприз. Множество упаковочных материалов не оставят Вас равнодушными и придадут уникальную индивидуальность покупке.</p>
+						<p>Обратите внимание на акции — некоторые шкатулки для часов и шкатулки для украшений упаковываются бесплатно.<br />Внимание — все товары перед продажей проходят тщательную проверку на предмет работоспособности и идеального внешнего вида.</p>
+						<p>Завершив упаковку шкатулки для часов или украшений, мы обязательно обертываем коробку в защитную пленку, чтобы бумага не поменялась, испачкалась или не порвалась. Перед вручением шкатулки, покупатель снимает пленку и подарок готов. Дарите удовольствие и получайте его сами!<br />Мы заботимся о клиентах и экономим Ваше время и деньги!</p>
+					</article>
+				</div>
+			</main>
 		</div>
 	</div>
 	<div class="before-footer">
@@ -479,6 +522,9 @@
 			<div class="rem">*Программа бесплатной доставки распространяется только на г. Москву и г. Санкт-Петербург в пределах кольцевых автодорог. Акция носит временный характер. Компания оставляет за собой право остановить её действие в любое время и без объяснения причин, выполнив свои обязательства перед клиентами, сделавшими свой заказ в момент ее действия.</div>
 			<div class="up-scroll">
 				<a href="#" id="toTop">Вверх</a>
+			</div>
+			<div class="up-scroll upscroll-mobile">
+				<a href="#" id="toTop3">Вверх</a>
 			</div>
 		</div>
 	</footer>
@@ -607,75 +653,8 @@
 	</div>
 	<!-- модальное окно "Вход в личный кабинет"  end -->
 
-	<!-- модальное окно "Быстрый просмотр" -->
-	<div class="modal goup quickviewpopup">
-		<div class="modal-content">
-			<div class="close"><span>&nbsp;</span></div>
-			<div class="qv-header">
-				<div class="sku-man-gar">
-					<div class="sku">Артикул: MR-411-BrL</div>
-					<div class="man">|&nbsp; Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""></div>
-					<div class="gar">Гарантия 12 мес.</div>
-				</div>
-				<h2>Шкатулка для 1-х часов с автоподзаводом</h2>
-				<div class="labels clearfix">
-					<div class="present">+Подарок</div>
-					<div class="shipping">+Доставка  по России</div>
-					<div class="shampagne">+Шампанское Moet &amp; Chandon</div>
-				</div>
-			</div>
-			<div class="qv-detail clearfix">
-				<div class="qv-images">
-					<div class="slider-for">
-						<div><img src="images/img-big-0.jpg" alt=""></div>
-						<div><img src="images/img-big-1.jpg" alt=""></div>
-						<div><img src="images/img-big-2.jpg" alt=""></div>
-						<div><img src="images/img-big-3.jpg" alt=""></div>
-						<div><img src="images/img-big-4.jpg" alt=""></div>
-					</div>
-					<div class="slider-nav">
-						<div><img src="images/thumb-0.jpg" alt=""></div>
-						<div><img src="images/thumb-1.jpg" alt=""></div>
-						<div><img src="images/thumb-2.jpg" alt=""></div>
-						<div><img src="images/thumb-3.jpg" alt=""></div>
-						<div><img src="images/thumb-4.jpg" alt=""></div>
-					</div>
-				</div>
-				<div class="qvd-info">
-					<div class="buy">
-						<div class="balance"><img src="images/balanse-1.png" alt=""><span>Товар последний на складе</span></div>
-						<div class="price-qty clearfix">
-							<div class="clearfix">
-								<div class="price">7 450 <span><i class="fa fa-rub"></i></span>
-									<div class="old">12 000 р.</div>
-								</div>
-							</div>
-							<div class="qty">
-								<div class="num-input">
-									<input type="text" value="1" />
-									<div class="plus"><i class="fa fa-angle-up"></i></div>
-									<div class="minus"><i class="fa fa-angle-down"></i></div>
-								</div>
-							</div>
-						</div>
-						<div class="addtocart"><a href="#">В корзину</a></div>
-					</div>
-					<div class="qv-text">
-						<p>Шкатулка выполнена из высококачественной эко-кожи коричневого цвета в форме цилиндра, установленного на платформу.</p>
-						<p>Металлическая крышка с иллюминатором диаметром 9 см из минерального стекла закручивается по резьбе.</p>
-					</div>
-				</div>
-			</div>
-			<div class="go-full"><a href="#">Перейти к полному описанию товара</a></div>
-		</div>
-	</div>
-	<!-- модальное окно "Быстрый просмотр"  end -->
-
 	<script type="text/javascript" src="js/tabs.js"></script>
 	<!-- табы -->
-
-	<script type="text/javascript" src="js/select.js"></script>
-	<!-- кастомный select -->
 
 	<script type="text/javascript" src="js/flexcroll.js"></script>
 	<!-- кастомный скроллбар для поиска -->
@@ -696,8 +675,12 @@
 	<script src="js/slick.js"></script>
 	<!-- слайдеры, карусели -->
 
+	<script src="js/drop-click-2.js"></script>
 	<script src="js/drop-click.js"></script>
 	<!-- аккордеон меню -->
+
+	<script type="text/javascript" src="js/select.js"></script>
+	<!-- кастомный select -->
 
 	<script src="js/main.js"></script>
 	<!-- небольшие скрипты -->

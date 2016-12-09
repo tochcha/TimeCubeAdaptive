@@ -10,7 +10,10 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Личный кабинет - Ваши покупки - TimeCube 2016</title>
+	<title>Личный кабинет - Избранное - TimeCube 2016</title>
+	<meta name="MobileOptimized" content="320" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
@@ -34,23 +37,39 @@
 
 	<link rel="stylesheet" href="css/main.css" />
 	<!-- основной css -->
+
+	<link rel="stylesheet" href="css/media.css" />
+	<!-- адаптивный css -->
 </head>
 
 <body>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
 	<header id="header">
 		<div class="wrapper">
 			<div class="header-top">
 				<div class="ht-left">
-					<div class="schedule">Будни: 9:00 – 20:00&nbsp;&nbsp;|&nbsp;&nbsp;Выходные: 11:00 –18:00</div>
+					<div class="schedule"><b>Магазин:</b> Будни: 9:00 – 20:00&nbsp;&nbsp;|&nbsp;&nbsp;Выходные: 11:00 –18:00</div>
 				</div>
 				<div class="ht-right">
 					<div class="metro">Алексеевская</div>
 					<div class="tel"><a href="tel://7-800-775-2576" title="Позвонить">8 800 775-25-76</a></div>
 					<div class="contacts-link"><a href="#">Контакты</a></div>
-					<ul class="loginbox">
-						<li class="user"><a href="#">Vasiliy Gromov</a></li>
-						<li class="logout"><a title="Выйти" href="#">Выйти</a></li>
-					</ul>
+					<div class="mobile-right">
+						<div class="favorite-compare">
+							<div class="favorite">
+								<a href="#"><div class="qty">0</div></a>
+							</div>
+							<div class="compare active">
+								<a href="#"><div class="qty">5</div></a>
+							</div>
+						</div>
+						<ul class="loginbox">
+							<li class="loginlink"><a class="open-modal-4" href="#">Вход</a></li>
+							<li class="reglink"><a href="#">Регистрация</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="header-content clearfix">
@@ -78,153 +97,26 @@
 					</nav>
 				</div>
 				<div class="header-content-right">
-					<div class="cart not-empty">
-						<div class="qty">5</div>
+					<div class="cart">
+						<div class="qty">0</div>
 						<div class="cart-info">
 							<div>Корзина</div>
-							<div>278 500 <i class="fa fa-rub"></i></div>
-						</div>
-						<div class="cart-drop">
-							<div class="cart-drop-top"></div>
-							<div class="cart-drop-middle">
-								<ul>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-1.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-2.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-3.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом длинное название</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price"></div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-4.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-									<li class="clearfix">
-										<div class="img-box">
-											<a href="#"><img src="images/cart-drop-5.jpg" title="Бокс для 2-х часов с автоподзаводом" alt=""></a>
-										</div>
-										<div class="prod-info">
-											<div class="scu">FANCY BRICK Orange</div>
-											<div class="name"><a href="#">Бокс для 2-х часов с автоподзаводом</a></div>
-											<div class="rem">С механическим управлением</div>
-										</div>
-										<div class="drop-qty">
-											<div class="num-input">
-												<div class="minus">-</div>
-												<input type="text" value="1" />
-												<div class="plus">+</div>
-											</div>
-										</div>
-										<div class="price">
-											<div class="old-price">12 300 р.</div>
-											<div class="actual-price">12 300 <span>р.</span></div>
-										</div>
-										<div class="remove"><img src="images/remove.png" alt=""></div>
-									</li>
-								</ul>
-								<div class="sub-drop-cart clearfix">
-									<div class="checkout"><a href="#">Оформить заказ</a></div>
-									<div class="sum-num">
-										<div class="sum">Итого:</div>
-										<div class="num">
-											<div class="old">137 900р.</div>
-											<div class="total">127 000 <span>р.</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cart-drop-bottom"></div>
+							<div>пуста</div>
 						</div>
 					</div>
 					<div class="favorite-compare">
-						<div class="favorite active">
-							<a href="#">
-								<div class="qty">7</div>
-							</a>
+						<div class="favorite">
+							<a href="#"><div class="qty">0</div></a>
 						</div>
 						<div class="compare active">
-							<a href="#">
-								<div class="qty">9</div>
-							</a>
+							<a href="#"><div class="qty">5</div></a>
 						</div>
 					</div>
+				</div>
+				<div class="sandwich-mob">
+					<div class="sw-topper"></div>
+					<div class="sw-bottom"></div>
+					<div class="sw-footer"></div>
 				</div>
 			</div>
 			<div class="down-scroll-fixed">
@@ -234,143 +126,30 @@
 			</div>
 		</div>
 	</header>
-	<div class="content">
+	<div class="subheader">
 		<div class="wrapper">
-			<main>
-				<div class="white-content">
-					<ul class="breadcrumbs">
-						<li><a href="#">Главная страница</a></li>
-						<li><a href="#">Личный кабинет</a></li>
-						<li><span>Заказы</span></li>
-					</ul>
-				</div>
-				<div class="static static-relative seen">
-					<h2 class="withico ico-6">Заказы</h2>
-					<ul class="orders-tabs">
-						<li><a href="#">Активные</a></li>
-						<li><a href="#">Выполненные</a></li>
-						<li><a class="active" href="#">Список моих покупок</a></li>
-					</ul>
-					<div class="date-title">07 май 2016&nbsp; | &nbsp;Заказ №850411</div>
-					<div class="products">
-						<div class="product-list one-column purchases clearfix">
-							<div class="item">
-								<div class="img-box">
-									<a href="#"><img src="images/products/2-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
-								</div>
-								<div class="one-col-text">
-									<div class="art">Артикул: JA-1301-G</div>
-									<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
-									<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
-								</div>
-								<div class="oc-price-buy">
-									<div class="price">
-										<div class="actual"><span>11 400</span> р.</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="img-box">
-									<a href="#"><img src="images/products/3-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
-								</div>
-								<div class="one-col-text">
-									<div class="art">Артикул: JA-1301-G</div>
-									<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
-									<div class="oc-manufacturer">Производитель: LEADER &amp; Co (Италия) <img src="images/manufacturers/ita.png" alt=""> <span>Гарантия 12 мес.</span></div>
-								</div>
-								<div class="oc-price-buy">
-									<div class="price">
-										<div class="actual"><span>11 400</span> р.</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="img-box">
-									<a href="#"><img src="images/products/4-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
-								</div>
-								<div class="one-col-text">
-									<div class="art">Артикул: JA-1301-G</div>
-									<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
-									<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
-								</div>
-								<div class="oc-price-buy">
-									<div class="price">
-										<div class="old"></div>
-										<div class="actual"><span>11 400</span> р.</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="itogo">Итого за заказ: <b>127 900</b> руб.</div>
+			<div class="form clearfix">
+				<form action="#">
+					<div>
+						<input type="text" placeholder="Поиск по сайту">
+						<input type="submit" value="&nbsp;">
 					</div>
-					<div class="date-title">07 май 2016&nbsp; | &nbsp;Заказ №850411</div>
-					<div class="products">
-						<div class="product-list one-column purchases clearfix">
-							<div class="item">
-								<div class="img-box">
-									<a href="#"><img src="images/products/2-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
-								</div>
-								<div class="one-col-text">
-									<div class="art">Артикул: JA-1301-G</div>
-									<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
-									<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
-								</div>
-								<div class="oc-price-buy">
-									<div class="price">
-										<div class="actual"><span>11 400</span> р.</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="img-box">
-									<a href="#"><img src="images/products/3-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
-								</div>
-								<div class="one-col-text">
-									<div class="art">Артикул: JA-1301-G</div>
-									<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
-									<div class="oc-manufacturer">Производитель: LEADER &amp; Co (Италия) <img src="images/manufacturers/ita.png" alt=""> <span>Гарантия 12 мес.</span></div>
-								</div>
-								<div class="oc-price-buy">
-									<div class="price">
-										<div class="actual"><span>11 400</span> р.</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="img-box">
-									<a href="#"><img src="images/products/4-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
-								</div>
-								<div class="one-col-text">
-									<div class="art">Артикул: JA-1301-G</div>
-									<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
-									<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
-								</div>
-								<div class="oc-price-buy">
-									<div class="price">
-										<div class="actual"><span>11 400</span> р.</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="itogo">Итого за заказ: <b>127 900</b> руб.</div>
-					</div>
-					<div class="hr"></div>
-					<div class="pages-control">
-						<div class="view-next"><a href="#"><span>Показать ещё</span></a></div>
-						<div class="pagination">
-							<ul>
-								<li><a href="#">&larr;</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li class="active"><a href="#">4</a></li>
-							</ul>
-						</div>
-						<div class="view-next view-all"><a href="#"><span>Показать все</span></a></div>
-					</div>
-					<div class="return forordertable"><a href="#">Вернуться в личный кабинет</a></div>
-				</div>
-			</main>
+				</form>
+			</div>
+			<div class="sandwich-mob">
+				<div class="sw-topper"></div>
+				<div class="sw-bottom"></div>
+				<div class="sw-footer"></div>
+			</div>
+			<div class="cart">
+				<a href="#">
+					<div class="qty">0</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="content personal-area">
+		<div class="wrapper">
 			<aside>
 				<ul id="accordion" class="accordion">
 					<li><a href="#">Шкатулки для часов</a>
@@ -458,6 +237,200 @@
 					</div>
 				</div>
 			</aside>
+			<main>
+				<div class="white-content">
+					<ul class="breadcrumbs">
+						<li><a href="#">Главная страница</a></li>
+						<li><a href="#">Личный кабинет</a></li>
+						<li><span>Избранное</span></li>
+					</ul>
+				</div>
+				<div class="static seen">
+					<h2 class="withico ico-8">Избранное</h2>
+					<div class="products">
+					<div class="product-list one-column clearfix">
+						<div class="item">
+							<div class="img-box">
+								<a href="#"><img src="images/products/2-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
+								<div class="red-label">-30</div>
+							</div>
+							<div class="one-col-text">
+								<div class="balance"><img src="images/balanse-2.png" alt=""> <span>В наличии</span></div>
+								<div class="art">Артикул: JA-1301-G</div>
+								<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
+								<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
+								<div class="labels clearfix">
+									<div class="label-2-one-column top-pos open-modal">+Подарок!</div>
+									<div class="label-3 open-modal-2">+Шампанское Moet &amp; Chandon</div>
+									<div class="oc-pack-tape"><a href="#" target="_blank">Упакуем бесплатно!</a></div>
+								</div>
+							</div>
+							<div class="oc-price-buy">
+								<div class="price">
+									<div class="old">12 000 р.</div>
+									<div class="actual"><span>11 400</span> р.</div>
+								</div>
+								<input type="submit" value="В корзину" />
+							</div>
+							<div class="favorite-compare">
+								<div class="favorite" title="В избранное">&nbsp;</div>
+								<div class="compare" title="К сравнению">&nbsp;</div>
+							</div>
+							<div class="quick-view"><span>Быстрый просмотр</span></div>
+						</div>
+						<div class="item">
+							<div class="img-box">
+								<a href="#"><img src="images/products/3-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
+								<div class="red-label">-5</div>
+							</div>
+							<div class="one-col-text">
+								<div class="balance"><img src="images/balanse-4.png" alt=""> <span>В наличии</span></div>
+								<div class="art">Артикул: JA-1301-G</div>
+								<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
+								<div class="oc-manufacturer">Производитель: LEADER &amp; Co (Италия) <img src="images/manufacturers/ita.png" alt=""> <span>Гарантия 12 мес.</span></div>
+								<div class="labels clearfix">
+									<div class="label-2-one-column top-pos open-modal">+Подарок!</div>
+									<div class="label-3 open-modal-2">+Шампанское Moet &amp; Chandon</div>
+									<div class="label-one-column">+Доставка по Москве и СПб!*</div>
+								</div>
+							</div>
+							<div class="oc-price-buy">
+								<div class="price">
+									<div class="old">223 000 р.</div>
+									<div class="actual"><span>283 400</span> р.</div>
+								</div>
+								<input type="submit" value="В корзину" />
+							</div>
+							<div class="favorite-compare">
+								<div class="favorite" title="В избранное">&nbsp;</div>
+								<div class="compare" title="К сравнению">&nbsp;</div>
+							</div>
+							<div class="quick-view"><span>Быстрый просмотр</span></div>
+						</div>
+						<div class="item">
+							<div class="img-box">
+								<a href="#"><img src="images/products/4-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
+								<div class="red-label">-25</div>
+							</div>
+							<div class="one-col-text">
+								<div class="balance"><img src="images/balanse-0.png" alt=""> <span>Нет в наличии</span></div>
+								<div class="art">Артикул: JA-1301-G</div>
+								<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
+								<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
+								<div class="labels clearfix">
+									<div class="label-3 open-modal-2">+Шампанское Moet &amp; Chandon</div>
+									<div class="label-one-column">+Доставка по Москве и СПб!*</div>
+									<div class="oc-pack-tape"><a href="#" target="_blank">Упакуем бесплатно!</a></div>
+								</div>
+							</div>
+							<div class="oc-price-buy">
+								<div class="price">
+									<div class="old"></div>
+									<div class="actual"><span>211 400</span> р.</div>
+								</div>
+								<input type="submit" value="В корзину" />
+							</div>
+							<div class="favorite-compare">
+								<div class="favorite" title="В избранное">&nbsp;</div>
+								<div class="compare" title="К сравнению">&nbsp;</div>
+							</div>
+							<div class="quick-view"><span>Быстрый просмотр</span></div>
+						</div>
+						<div class="item">
+							<div class="img-box">
+								<a href="#"><img src="images/products/1-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
+								<div class="red-label">-25</div>
+							</div>
+							<div class="one-col-text">
+								<div class="balance"><img src="images/balanse-1.png" alt=""> <span>Последний на складе</span></div>
+								<div class="art">Артикул: JA-1301-G</div>
+								<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
+								<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
+								<div class="labels clearfix">
+									<div class="label-2-one-column top-pos open-modal">+Подарок!</div>
+								</div>
+							</div>
+							<div class="oc-price-buy">
+								<div class="price">
+									<div class="old">12 000 р.</div>
+									<div class="actual"><span>11 400</span> р.</div>
+								</div>
+								<input type="submit" value="В корзину" />
+							</div>
+							<div class="favorite-compare">
+								<div class="favorite" title="В избранное">&nbsp;</div>
+								<div class="compare" title="К сравнению">&nbsp;</div>
+							</div>
+							<div class="quick-view"><span>Быстрый просмотр</span></div>
+						</div>
+						<div class="item">
+							<div class="img-box">
+								<a href="#"><img src="images/products/1-1.jpg" alt="Бокс для 1-х часов с автоподзаводом JA-1301-G" title="Бокс для 1-х часов с автоподзаводом JA-1301-G"></a>
+							</div>
+							<div class="one-col-text">
+								<div class="balance"><img src="images/balanse-3.png" alt=""> <span>В наличии</span></div>
+								<div class="art">Артикул: JA-1301-G</div>
+								<div class="oc-title"><a href="#">Бокс для 1-х часов с автоподзаводом JA-1301-G</a></div>
+								<div class="oc-manufacturer">Производитель: LEADER &amp; Co (КИТАЙ) <img src="images/manufacturers/chn.png" alt=""> <span>Гарантия 12 мес.</span></div>
+								<div class="labels clearfix">
+									<div class="label-2-one-column top-pos open-modal">+Подарок!</div>
+									<div class="label-3 open-modal-2">+Шампанское Moet &amp; Chandon</div>
+									<div class="label-one-column">+Доставка по Москве и СПб!*</div>
+									<div class="oc-pack-tape"><a href="#" target="_blank">Упакуем бесплатно!</a></div>
+								</div>
+							</div>
+							<div class="oc-price-buy">
+								<div class="price">
+									<div class="old">12 000 р.</div>
+									<div class="actual"><span>1 400</span> р.</div>
+								</div>
+								<input type="submit" value="В корзину" />
+							</div>
+							<div class="favorite-compare">
+								<div class="favorite" title="В избранное">&nbsp;</div>
+								<div class="compare" title="К сравнению">&nbsp;</div>
+							</div>
+							<div class="quick-view"><span>Быстрый просмотр</span></div>
+						</div>
+					</div>
+						<div class="view-next"><a href="#"><span>Показать ещё</span></a></div>
+						<div class="pagination">
+							<ul>
+								<li><a href="#">&larr;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li class="active"><a href="#">4</a></li>
+							</ul>
+						</div>
+						<div class="view-next view-all"><a href="#"><span>Показать все</span></a></div>
+					</div>
+					<div class="return forordertable"><a href="#">Вернуться в личный кабинет</a></div>
+				</div>
+				<div class="serv serv-in-main">
+					<a href="#">
+						<div class="serv-head">
+							<h3>Новая услуга: <span>Упакуй и подари!</span></h3>
+						</div>
+						<div class="img-box"><img src="images/serv.jpg" alt=""></div>
+						<h2>Праздничная упаковка на любой вкус!</h2>
+						<div class="more"><span>Подробнее</span></div>
+					</a>
+				</div>
+				<div class="site-menu">
+					<ul>
+						<li class="item-1"><a href="#">О компании</a></li>
+						<li class="item-2"><a href="#">Контакты</a></li>
+						<li class="item-3"><a href="#">Акции</a></li>
+						<li class="item-4"><a href="#">Доставка</a></li>
+						<li class="item-5"><a href="#">Гарантия</a></li>
+						<li class="item-6"><a href="#">Видео</a></li>
+						<li class="item-7"><a href="#">Опт</a></li>
+						<li class="item-8"><a href="#">Таблица подзавода часов</a></li>
+						<li class="item-9"><a href="#">Часто задаваемые вопросы</a></li>
+					</ul>
+				</div>
+			</main>
 		</div>
 	</div>
 	<div class="before-footer">
@@ -581,6 +554,9 @@
 			<div class="rem">*Программа бесплатной доставки распространяется только на г. Москву и г. Санкт-Петербург в пределах кольцевых автодорог. Акция носит временный характер. Компания оставляет за собой право остановить её действие в любое время и без объяснения причин, выполнив свои обязательства перед клиентами, сделавшими свой заказ в момент ее действия.</div>
 			<div class="up-scroll">
 				<a href="#" id="toTop">Вверх</a>
+			</div>
+			<div class="up-scroll upscroll-mobile">
+				<a href="#" id="toTop3">Вверх</a>
 			</div>
 		</div>
 	</footer>
@@ -776,9 +752,6 @@
 	<script type="text/javascript" src="js/tabs.js"></script>
 	<!-- табы -->
 
-	<script type="text/javascript" src="js/select.js"></script>
-	<!-- кастомный select -->
-
 	<script type="text/javascript" src="js/flexcroll.js"></script>
 	<!-- кастомный скроллбар для поиска -->
 
@@ -798,8 +771,12 @@
 	<script src="js/slick.js"></script>
 	<!-- слайдеры, карусели -->
 
+	<script src="js/drop-click-2.js"></script>
 	<script src="js/drop-click.js"></script>
 	<!-- аккордеон меню -->
+
+	<script type="text/javascript" src="js/select.js"></script>
+	<!-- кастомный select -->
 
 	<script src="js/main.js"></script>
 	<!-- небольшие скрипты -->

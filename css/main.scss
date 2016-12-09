@@ -5023,6 +5023,7 @@ main {
 			&.ico-6 {
 				background: url(../images/pl-6.png) no-repeat 26px center;
 				padding-left: 82px;
+				margin-bottom: 0;
 			}
 			&.ico-7 {
 				background: url(../images/pl-7.png) no-repeat 26px center;
@@ -5331,6 +5332,7 @@ main {
 		overflow: hidden;
 		padding: 18px 0 10px;
 		background: url(../images/separator-5.png) no-repeat bottom;
+		list-style: none;
 		&:last-child {
 			background: none;
 		}
@@ -5794,6 +5796,9 @@ main {
 
 .pack-bg {
 	margin: -19px 0 18px;
+	img {
+		max-width: 100%;
+	}
 }
 
 .pack-description {
@@ -6650,7 +6655,7 @@ ul.perconal-info {
 			cursor: pointer;
 		}
 		input[type=checkbox]:checked + label {
-			background-position: 0 -17px;
+			background-position: 6px -17px;
 		}
 		.notify-rem {
 			color: #f00;
@@ -6873,7 +6878,7 @@ ul.perconal-info {
 
 .order-table {
 	width: 724px;
-	margin: -18px auto 40px;
+	margin: 0 auto 40px;
 	.table {
 		display: table;
 		width: 100%;
@@ -7904,6 +7909,12 @@ body {
 	}
 }
 
+.winding-table {
+	td {
+		padding: 4px 5px 4px 0;
+		font-size: 14px;
+	}
+}
 //
 //
 //
