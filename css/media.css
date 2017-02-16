@@ -2407,7 +2407,7 @@
     .red-bow-big {
         width: 413px;
         padding-left: 0;
-        top:369px;
+        top:378px;
         background-size: 160% 100%;
         background-position: right;
     }
@@ -3044,7 +3044,9 @@
         padding-left: 84px;
     }
     .red-bow-big {
-        display: none;
+        width: 263px;
+        top:319px;
+        font-size:11px;
     }
 }
 /* <=479 finish */
