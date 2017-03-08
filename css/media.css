@@ -264,6 +264,9 @@
     .checkout footer {
         padding: 0 12px 32px;
     }
+    .red-bow-big.gold-bow-big {
+        width: 547px;
+    }
 }
 
 
@@ -1042,6 +1045,9 @@
     }
     .return.forordertable {
         margin: 0 22px;
+    }
+    .red-bow-big.gold-bow-big {
+        width: 595px;
     }
 }
 
@@ -2411,6 +2417,17 @@
         background-size: 160% 100%;
         background-position: right;
     }
+    .one-column .gold-bow {
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .one-column .gold-bow a {
+        padding-top: 6px;
+    }
+    .red-bow-big.gold-bow-big {
+        width: 413px;
+        padding-right: 0;
+    }
 }
 
 
@@ -2472,6 +2489,16 @@
     }
     .red-bow a {
         padding-left: 0;
+    }
+    .gold-bow {
+        height: 22px;
+        top:241px;
+    }
+    .gold-bow a {
+        padding: 0;
+        line-height: 22px;
+        background: url(../images/gold-bow-simple.png) no-repeat;
+        background-size: 100% 100%;
     }
 }
 
@@ -3047,6 +3074,15 @@
         width: 263px;
         top:319px;
         font-size:11px;
+    }
+    .gold-bow {
+        top:266px;
+    }
+    .one-column .gold-bow a {
+        padding-top: 9px;
+    }
+    .red-bow-big.gold-bow-big {
+        width: 263px;
     }
 }
 /* <=479 finish */
