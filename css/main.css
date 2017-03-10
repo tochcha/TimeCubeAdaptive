@@ -1361,6 +1361,17 @@ main {
     text-decoration: underline;
 }
 
+.product-list .item.with-gold-bow .quick-view {
+    left:5px;
+    top: 51px;
+    position: absolute;
+    z-index: 2;
+}
+
+.product-list .item.with-gold-bow .img-box {
+    padding-bottom: 46px;
+}
+
 .product-list .item .descr {
     height: 34px;
     margin: 0 auto 13px auto;
