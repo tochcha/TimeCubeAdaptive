@@ -1169,15 +1169,15 @@ main {
 
 .product-list .item {
     float: left;
-    width: 230px;
-    border: 1px solid #dadada;
+    width: 236px;
+    border: 1px solid #c9c9c9;
     position: relative;
-    margin: 0 0 20px 14px;
+    margin: 0 0 20px 13px;
 }
 
 .product-list .item:hover {
-    -webkit-box-shadow: 0 0 0 1px #dadada;
-    box-shadow: 0 0 0 1px #dadada;
+    -webkit-box-shadow: 0 0 0 1px #c9c9c9;
+    box-shadow: 0 0 0 1px #c9c9c9;
 }
 
 .product-list .item .img-box {
@@ -1251,8 +1251,7 @@ main {
 }
 
 .product-list .item .pl-head {
-    height: 15px;
-    padding-bottom: 55px;
+	padding-bottom: 4px;
 }
 
 .product-list .item .pl-head .balance {
@@ -1279,6 +1278,7 @@ main {
     margin: 7px 0 0 13px;
     position: relative;
     font-size: 13px;
+	font-family: Arial;
     line-height: 14px;
     float: left;
 }
@@ -1362,7 +1362,7 @@ main {
 }
 
 .product-list .item.with-gold-bow .quick-view {
-    left:5px;
+    left: 5px;
     top: 51px;
     position: absolute;
     z-index: 2;
@@ -1963,7 +1963,7 @@ main {
 .scroll-four-products .slick-arrow.slick-prev,
 .scroll-six-products .slick-arrow.slick-prev {
     background: url(../images/arrows-2.png) no-repeat 0 0;
-    left: -22px;
+    left: -14px;
 }
 
 .you-view .slick-arrow.slick-prev:hover,
@@ -1976,7 +1976,7 @@ main {
 .scroll-four-products .slick-arrow.slick-next,
 .scroll-six-products .slick-arrow.slick-next {
     background: url(../images/arrows-2.png) no-repeat -18px 0;
-    right: -36px;
+    right: -28px;
     margin-top: -53px;
 }
 
@@ -2660,7 +2660,7 @@ main {
 
 .filter {
     width: 757px;
-    margin: 0 0 35px -16px;
+    margin: 0 0 35px -8px;
     background-color: #e8e8e8;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -3460,7 +3460,6 @@ main {
 
 .visual-top a {
     color: #000;
-    text-decoration: underline;
 }
 
 .visual-top a:hover {
@@ -8762,7 +8761,7 @@ body.black-friday {
 }
 
 .you-view {
-    width: 738px;
+    width: 756px;
 }
 
 .you-view .slick-arrow.slick-prev {
@@ -8770,7 +8769,7 @@ body.black-friday {
 }
 
 .you-view .slick-arrow.slick-next {
-    right: -37px;
+    right: -27px;
 }
 
 .loader {
@@ -9109,8 +9108,8 @@ body.black-friday {
     position: absolute;
     left: 0;
     top: 454px;
-    color:#fff;
-    font:bold 14px Arial;
+    color: #fff;
+    font: bold 14px Arial;
     text-align: center;
     padding: 34px 0 0 96px;
 }
@@ -9118,29 +9117,33 @@ body.black-friday {
 .full .visual {
     position: relative;
 }
+
+
 /* красный бант end */
 
+
 /* золотой бант */
+
 .gold-bow {
     position: absolute;
     width: 100%;
     height: 60px;
-    left:0;
-    top:225px;
+    left: 0;
+    top: 225px;
     background-size: 100% 100%;
     text-align: center;
     color: #fff;
     font-size: 12px;
     z-index: 4;
-    font:bold 13px Arial;
+    font: bold 13px Arial;
 }
 
 .gold-bow a {
-    color:#fff;
+    color: #fff;
     display: block;
     height: 100%;
     color: #fff;
-    padding:13px 0 0 82px;
+    padding: 13px 0 0 82px;
     background: url(../images/gold-bow.png) no-repeat;
     background-size: 100% 100%;
     -moz-box-sizing: border-box;
@@ -9163,8 +9166,9 @@ body.black-friday {
 
 .one-column .gold-bow a {
     background: url(../images/gold-bow-2.png) no-repeat;
-    padding:10px 0 0 50px;
+    padding: 10px 0 0 50px;
 }
+
 .red-bow-big.gold-bow-big {
     background-image: url(../images/gold-bow-big.png);
     font-size: 18px;
@@ -9177,37 +9181,452 @@ body.black-friday {
     height: 114px;
     font-weight: normal;
 }
+
+
 /* золотой бант end */
 
+
 /* quick view для списка */
+
 .quick-view-simple {
     position: absolute;
-    top:-1px;
-    left:0;
+    top: -1px;
+    left: 0;
     border: 1px solid #c9c6c6;
     font: 12px/16px Arial;
-    color:#949494;
+    color: #949494;
     padding: 0 5px 0 30px;
     z-index: 2;
     background: url(../images/quick-view.png) no-repeat 6px center;
     cursor: pointer;
 }
+
+
 /* quick view для списка end */
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
+/* 04.04.2017 start */
+
+.product-listing {
+    border-top: 1px solid #c9c9c9;
+    width: 757px;
+    margin: 0 0 25px -16px;
+}
+
+.product-listing .item {
+    position: relative;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.product-listing .item:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.gold-pack-row {
+    padding: 3px 4px 0;
+    height: 42px;
+}
+
+.gold-pack-row a {
+    color: #fff;
+    display: block;
+    height: 100%;
+    color: #fff;
+    padding: 8px 0 0 62px;
+    background: url(../images/gold-bow-3.png) no-repeat;
+    background-size: 100% 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 193px;
+    height: 42px;
+    font: 12px/16px Arial;
+}
+
+.product-listing .img-box {
+    float: left;
+    width: 176px;
+    text-align: center;
+    padding: 0 38px 0 16px;
+    position: relative;
+}
+
+.product-listing .red-label {
+    width: 62px;
+    height: 32px;
+    font-size: 25px;
+    line-height: 28px;
+    padding: 0 10px 0 3px;
+    position: absolute;
+    top: -15px;
+    left: 134px;
+}
+
+.product-listing .img-box a {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.product-listing .img-box img {
+    width: 101px;
+}
+
+.product-listing .img-box div.quick-view-pack,
+.product-listing .quick-view {
+    text-align: center;
+    font: 12px/16px Arial, Verdana;
+    padding-bottom: 18px;
+    color: #949494;
+}
+
+.product-listing .img-box div.quick-view-pack span,
+.product-listing .quick-view span {
+    padding-left: 24px;
+    background: url(../images/quick-view.png) no-repeat left;
+    cursor: pointer;
+}
+
+.product-listing .quick-view span:hover {
+    text-decoration: underline;
+}
+
+.product-listing .one-col-text {
+    float: left;
+    width: 350px;
+    padding: 0 6px 0 0;
+    margin: -9px 0 12px;
+}
+
+.product-listing.pack-listing .one-col-text {
+    margin-top: 18px;
+}
+
+.product-listing .one-col-text .art {
+    font: 13px MyriadPro, Arial, Geneva, Helvetica;
+    color: #797979;
+}
+
+.product-listing .one-col-text .oc-title {
+    padding: 2px 0;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.product-listing .one-col-text .oc-title a {
+    font-size: 15px;
+    line-height: 15px;
+    color: #000;
+}
+
+.product-listing .one-col-text .oc-descr {
+    font: 13px MyriadPro, Arial, Geneva, Helvetica;
+    color: #797979;
+    padding: 0 0 6px;
+}
+
+.product-listing .one-col-text .oc-manufacturer {
+    font: 13px MyriadPro, Arial, Geneva, Helvetica;
+    color: #797979;
+    padding-bottom: 6px;
+}
+
+.product-listing .one-col-text .oc-manufacturer span {
+    font-size: 11px;
+    color: #000;
+    display: block;
+}
+
+.product-listing .one-col-text .oc-manufacturer img {
+    vertical-align: top;
+    display: inline;
+    padding: 0 2px;
+}
+
+.product-listing .labels > div {
+    float: left;
+    font: 11px/17px Arial;
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 1px 3px 0;
+    padding: 0 9px;
+    cursor: pointer;
+}
+
+.product-listing .labels .plus-present {
+    background-color: #c7af5c;
+}
+
+.product-listing .labels .label-shipping {
+    background-color: #b1b1b1;
+    cursor: default;
+}
+
+.product-listing .labels .label-champagne {
+    background-color: #548300;
+}
+
+.product-listing .oc-price-buy {
+    float: left;
+    width: 102px;
+    position: relative;
+    margin-top: -9px;
+    padding-bottom: 6px;
+}
+
+.product-listing.pack-listing .oc-price-buy {
+    margin-top: 12px;
+}
+
+.product-listing .oc-price-buy .price {
+    text-align: left;
+    padding: 0 0 6px;
+}
+
+.product-listing .oc-price-buy .price .old {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #f00;
+    position: static;
+    height: 14px;
+    font-family: Verdana;
+}
+
+.product-listing .oc-price-buy .price .actual {
+    font: bold 13px Verdana;
+    font-weight: normal;
+    color: #000;
+}
+
+.product-listing .oc-price-buy .price .actual span {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.product-listing .oc-price-buy input {
+    width: 100px;
+    height: 28px;
+    border: none;
+    background-color: #007a01;
+    color: #fff;
+    font: 16px/20px MyriadPro, Arial, Geneva, Helvetica;
+    cursor: pointer;
+    margin: 0 0 6px;
+    padding: 0 0 2px;
+    transition: 0.3s;
+}
+
+.product-listing .oc-price-buy input:hover {
+    background-color: #2c982c;
+}
+
+.product-listing .balance {
+    padding: 0 0 12px 3px;
+}
+
+.product-listing .balance img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+}
+
+.product-listing .balance span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    padding-left: 4px;
+    font: 9px/9px Verdana;
+    color: #000;
+}
+
+.product-listing .favorite-compare {
+    padding: 0 0 16px 17px;
+    float: left;
+    width: 26px;
+}
+
+.product-listing .favorite-compare .favorite {
+    width: 22px;
+    height: 19px;
+    background: url(../images/heart-2.png) no-repeat 0 0;
+    float: left;
+    margin: 5px 0 6px;
+    cursor: pointer;
+}
+
+.product-listing .favorite-compare .favorite.active {
+    background-position: 0 -19px;
+}
+
+.product-listing .favorite-compare .compare {
+    width: 26px;
+    height: 22px;
+    background: url(../images/compare-2.png) no-repeat 0 0;
+    float: left;
+    cursor: pointer;
+}
+
+.product-listing .favorite-compare .compare.active {
+    background-position: 0 -22px;
+}
+
+.brown-rem {
+    background-color: #bd9c61;
+    color: #fff;
+    font: 16px/20px MyriadPro;
+    padding: 14px 37px 16px;
+    margin-bottom: 25px;
+}
+
+.view-next a {
+    color: #007a00;
+}
+
+.product-list .item a.title {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.pack-list .item .price {
+    color: #b6b6b6;
+    text-align: center;
+    padding-left: 0;
+}
+
+.pack-list .item .price span {
+    color: #b6b6b6;
+}
+
+.quickviewpopup-pack .slider-nav {
+    display: block !important;
+}
+
+.quickviewpopup-pack .qv-detail .slider-nav .slick-current img {
+    border-color: #c9c9c9 !important;
+}
+
+
+/*.quickviewpopup-pack .qv-detail .slider-nav {
+	margin: 0;
+}*/
+
+.quickviewpopup-pack .qv-header .labels {
+    height: 17px;
+}
+
+.big-slider a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+
+.big-slider a span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background: url(../images/loop.png);
+    bottom: 9px;
+    right: 9px;
+}
+
+.red-bow-big.gold-bow-big,
+.big-slider img {
+    cursor: pointer;
+}
+
+
+/* 04.04.2017 end */
+
+
+.products {
+	padding: 10px 28px;
+}
+
+.tags-list {
+    position: relative;
+    margin:10px 0 26px;
+}
+
+.tags-list:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.tags-list .tag-item {
+    margin-right: 8px;
+}
+
+.tags-list .tag-item a {
+    display: inline-block;
+    font-size: 14px;
+	letter-spacing: 0;
+	font-family: Arial;
+    line-height: 26px;
+    padding: 0 9px 1px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #b8a870;
+    transition: .3s;
+    border-radius: 3px;
+    background-color: #f4edd6;
+}
+
+.tags-list .tag-item a:hover {
+    background-color: #d6e8f4;
+    border-color: #7394b5;
+}
+
+.tags-list .slick-arrow {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    text-indent: -9999px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    box-sizing: content-box;
+    padding: 0;
+    z-index: 2;
+    -webkit-box-shadow: 0 0 5px 5px #fff;
+    box-shadow: 0 0 5px 5px #fff;
+    display: block;
+}
+
+.tags-list .slick-arrow.slick-prev {
+    left: 0;
+    background: #fff url(../images/arrow-2-left.png) no-repeat center;
+}
+
+.tags-list .slick-arrow.slick-next {
+    right: 0;
+    background: #fff url(../images/arrow-2-right.png) no-repeat center;
+}
+
+.tags-list .slick-disabled {
+    display: none !important;
+}
+
+.gold-bow-4 {
+    width: 210px;
+    height: 41px;
+    margin: 0 auto;
+}
+
+.gold-bow-4 a {
+    display: block;
+    font: 12px/32px Arial;
+    color: #fff;
+    background: url(../images/gold-bow-4.png) no-repeat;
+    text-align: center;
+    padding:0 0 9px 52px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

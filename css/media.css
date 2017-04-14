@@ -267,6 +267,9 @@
     .red-bow-big.gold-bow-big {
         width: 547px;
     }
+	.big-slider a span {
+		display: none;
+	}
 }
 
 
@@ -534,6 +537,21 @@
         background-size: 100% 100%;
         padding-left: 140px;
     }
+	.product-listing {
+		width: auto;
+		margin-left: 0;
+	}
+	.product-listing .img-box {
+		padding-right: 12px;
+	}
+	.product-listing .one-col-text {
+		width: 344px;
+		padding-right: 0;
+		margin: -34px 0 20px;
+	}
+	.product-listing.pack-listing .one-col-text {
+		width: 230px;
+	}
 }
 /* <1121 and > 991 finish */
 
@@ -2428,6 +2446,34 @@
         width: 413px;
         padding-right: 0;
     }
+	.product-listing {
+		width: auto;
+		margin-left: 0;
+	}
+	.product-listing .img-box {
+		padding-right: 12px;
+	}
+	.product-listing .one-col-text {
+		width: 344px;
+		padding-right: 0;
+		margin: -34px 0 20px;
+	}
+	.product-listing .img-box div.quick-view-pack,
+	.product-listing .quick-view {
+		display: none;
+	}
+	.product-listing .oc-price-buy {
+		clear: both;
+		margin-left: 144px;
+	}
+	.quick-view-pack {
+		pointer-events: none;
+	}
+	.visual-top li {
+		padding-left: 0;
+		background: none;
+		display: block;
+	}
 }
 
 
@@ -2500,6 +2546,23 @@
         background: url(../images/gold-bow-simple.png) no-repeat;
         background-size: 100% 100%;
     }
+	.product-listing .img-box {
+		width: 132px;
+		padding-left: 0;
+	}
+	.product-listing .one-col-text {
+		width: 252px;
+		padding-right: 0;
+		margin: -9px 0 20px;
+	}
+	.product-listing .img-box div.quick-view-pack,
+	.product-listing .quick-view {
+		font-size: 11px;
+	}
+	.product-listing .red-label {
+		top:-40px;
+		left:200px;
+	}
 }
 
 
@@ -3084,6 +3147,33 @@
     .red-bow-big.gold-bow-big {
         width: 263px;
     }
+	.product-listing {
+		
+	}
+	.product-listing .img-box {
+		width: auto;
+		float: none;
+		padding: 0 0 4px;
+	}
+	.product-listing .img-box a {
+		margin-bottom: 2px;
+	}
+	.product-listing .img-box img {
+		width: auto;
+		max-width: 222px;
+	}
+	.product-listing .one-col-text {
+		width: auto;
+		float: none;
+		margin: 0 0 20px;
+	}
+	.product-listing .red-label {
+		top:-40px;
+		left:196px;
+	}
+	.product-listing .oc-price-buy {
+		margin-left: 0;
+	}
 }
 /* <=479 finish */
 
