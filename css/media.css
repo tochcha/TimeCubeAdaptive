@@ -267,9 +267,9 @@
     .red-bow-big.gold-bow-big {
         width: 547px;
     }
-	.big-slider a span {
-		display: none;
-	}
+    .big-slider a span {
+        display: none;
+    }
 }
 
 
@@ -286,7 +286,7 @@
         right: 111px;
     }
     .product-list .item {
-        width: 265px;
+        width: 274px;
     }
     .product-list .item .label-3 {
         width: 256px;
@@ -334,7 +334,7 @@
         width: 100%;
     }
     .you-view .slick-arrow.slick-next {
-        right: -36px;
+        right: -28px;
     }
     .product-list.one-column .item {
         width: auto;
@@ -537,22 +537,40 @@
         background-size: 100% 100%;
         padding-left: 140px;
     }
-	.product-listing {
-		width: auto;
-		margin-left: 0;
-	}
-	.product-listing .img-box {
-		padding-right: 12px;
-	}
-	.product-listing .one-col-text {
-		width: 344px;
-		padding-right: 0;
-		margin: -34px 0 20px;
-	}
-	.product-listing.pack-listing .one-col-text {
-		width: 230px;
-	}
+    .product-listing {
+        width: auto;
+        margin-left: 0;
+    }
+    .product-listing .img-box {
+        padding-right: 12px;
+    }
+    .product-listing .one-col-text {
+        width: 344px;
+        padding-right: 0;
+        margin: -34px 0 20px;
+    }
+    .watchbands-listing .one-col-text {
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+    .watchbands-listing .oc-price-buy {
+        margin-top: 0;
+    }
+    .watchbands-listing .favorite-compare {
+        margin-top: 12px;
+    }
+    .product-listing.pack-listing .one-col-text {
+        width: 230px;
+    }
+    .filter-column {
+        padding-left: 90px;
+    }
+    .fc-right {
+        padding-left: 68px;
+    }
 }
+
+
 /* <1121 and > 991 finish */
 
 
@@ -1067,6 +1085,15 @@
     .red-bow-big.gold-bow-big {
         width: 595px;
     }
+    .you-view {
+        width: auto;
+    }
+    .product-list .item {
+        width: 231px;
+    }
+    .filter {
+        width: 741px;
+    }
 }
 
 
@@ -1088,6 +1115,19 @@
     }
     .personal-area aside {
         margin-bottom: 18px;
+    }
+    .filter-column {
+        padding-right: 14px;
+        width: 290px;
+    }
+    .fc-right {
+        width: 380px;
+    }
+    .filter-column label {
+        width: 88px;
+    }
+    .fc-right label {
+        width: 122px;
     }
 }
 
@@ -2431,7 +2471,7 @@
     .red-bow-big {
         width: 413px;
         padding-left: 0;
-        top:378px;
+        top: 378px;
         background-size: 160% 100%;
         background-position: right;
     }
@@ -2446,34 +2486,59 @@
         width: 413px;
         padding-right: 0;
     }
-	.product-listing {
-		width: auto;
-		margin-left: 0;
-	}
-	.product-listing .img-box {
-		padding-right: 12px;
-	}
-	.product-listing .one-col-text {
-		width: 344px;
-		padding-right: 0;
-		margin: -34px 0 20px;
-	}
-	.product-listing .img-box div.quick-view-pack,
-	.product-listing .quick-view {
-		display: none;
-	}
-	.product-listing .oc-price-buy {
-		clear: both;
-		margin-left: 144px;
-	}
-	.quick-view-pack {
-		pointer-events: none;
-	}
-	.visual-top li {
-		padding-left: 0;
-		background: none;
-		display: block;
-	}
+    .product-listing {
+        width: auto;
+        margin-left: 0;
+    }
+    .product-listing .img-box {
+        padding-right: 12px;
+    }
+    .product-listing .one-col-text {
+        width: 344px;
+        padding-right: 0;
+        margin: -34px 0 20px;
+    }
+    .product-listing .img-box div.quick-view-pack,
+    .product-listing .quick-view {
+        display: none;
+    }
+    .product-listing .oc-price-buy {
+        clear: both;
+        margin-left: 144px;
+    }
+    .quick-view-pack {
+        pointer-events: none;
+    }
+    .visual-top li {
+        padding-left: 0;
+        background: none;
+        display: block;
+    }
+    .manufacturers-wrapper .manufacturers-carousel ul li .link {
+        width: auto;
+    }
+    .size-watchbands {
+        width: 460px;
+        margin-left: -240px;
+    }
+    .size-watchbands .modal-content h3 {
+        font-size: 18px;
+    }
+    .sw-base .swb-content p {
+        top: 11px;
+        left: 32%;
+    }
+    .size-watchbands p {
+        left: 32%;
+        top: 11px;
+    }
+    .size-watchbands .close-2 {
+        right: 32px;
+        bottom: 14px;
+    }
+    .filter-column .bx-filter-block {
+        width: auto;
+    }
 }
 
 
@@ -2531,38 +2596,84 @@
         width: 194px;
         background-position: right center;
         background-size: 160% 100%;
-        top:230px;
+        top: 230px;
     }
     .red-bow a {
         padding-left: 0;
     }
+    .gold-bow-4 {
+        height: 22px;
+        width: 194px;
+    }
     .gold-bow {
         height: 22px;
-        top:241px;
+        top: 241px;
     }
+    .gold-bow-4 a,
     .gold-bow a {
         padding: 0;
         line-height: 22px;
         background: url(../images/gold-bow-simple.png) no-repeat;
         background-size: 100% 100%;
     }
-	.product-listing .img-box {
-		width: 132px;
-		padding-left: 0;
-	}
-	.product-listing .one-col-text {
-		width: 252px;
-		padding-right: 0;
-		margin: -9px 0 20px;
-	}
-	.product-listing .img-box div.quick-view-pack,
-	.product-listing .quick-view {
-		font-size: 11px;
-	}
-	.product-listing .red-label {
-		top:-40px;
-		left:200px;
-	}
+    .product-listing .img-box {
+        width: 132px;
+        padding-left: 0;
+    }
+    .product-listing .one-col-text {
+        width: 252px;
+        padding-right: 0;
+        margin: -9px 0 20px;
+    }
+    .product-listing .img-box div.quick-view-pack,
+    .product-listing .quick-view {
+        font-size: 11px;
+    }
+    .product-listing .red-label {
+        top: -40px;
+        left: 200px;
+    }
+    .watchbands-listing .one-col-text {
+        margin-top: 23px;
+        margin-bottom: 12px;
+    }
+    .watchbands-listing .oc-price-buy {
+        margin-top: 0;
+    }
+    .watchbands-listing .favorite-compare {
+        margin-top: 12px;
+    }
+    .watchbands-listing .red-label {
+        top: 5px;
+        left: auto;
+        right: 10px;
+    }
+    .labellist {
+        width: 100%;
+        margin-top: -17px;
+        height: 74px;
+    }
+    .labellist.one {
+        height: 74px;
+        padding-top: 28px;
+    }
+    .labellist.two {
+        padding-top: 4px;
+        height: 74px;
+    }
+    .labellist div {
+        float: none !important;
+        margin: 0 auto 2px;
+    }
+    .price-rl .red-label {
+        margin-top: -54px;
+    }
+    .filter-column {
+        padding-left: 22px;
+    }
+    .fc-right {
+        padding-left: 0;
+    }
 }
 
 
@@ -2690,7 +2801,21 @@
     .bx-filter-block {
         width: 100%;
     }
+    .filter .filter-column label {
+        display: block;
+    }
     .filter label {
+        display: none;
+    }
+    .filter .filter-column label {
+        display: block;
+        font-size: 12px;
+        line-height: 13px;
+        text-align: left;
+        width: 100%;
+        padding-right: 0;
+    }
+    .filter .filter-column label br {
         display: none;
     }
     .filter .selectbox {
@@ -3128,18 +3253,18 @@
         width: 254px;
         background-position: center;
         background-size: 100% 100%;
-        top:265px;
+        top: 265px;
     }
     .red-bow a {
         padding-left: 84px;
     }
     .red-bow-big {
         width: 263px;
-        top:319px;
-        font-size:11px;
+        top: 319px;
+        font-size: 11px;
     }
     .gold-bow {
-        top:266px;
+        top: 266px;
     }
     .one-column .gold-bow a {
         padding-top: 9px;
@@ -3147,34 +3272,90 @@
     .red-bow-big.gold-bow-big {
         width: 263px;
     }
-	.product-listing {
-		
-	}
-	.product-listing .img-box {
-		width: auto;
-		float: none;
-		padding: 0 0 4px;
-	}
-	.product-listing .img-box a {
-		margin-bottom: 2px;
-	}
-	.product-listing .img-box img {
-		width: auto;
-		max-width: 222px;
-	}
-	.product-listing .one-col-text {
-		width: auto;
-		float: none;
-		margin: 0 0 20px;
-	}
-	.product-listing .red-label {
-		top:-40px;
-		left:196px;
-	}
-	.product-listing .oc-price-buy {
-		margin-left: 0;
-	}
+    .product-listing {}
+    .product-listing .img-box {
+        width: auto;
+        float: none;
+        padding: 0 0 4px;
+    }
+    .product-listing .img-box a {
+        margin-bottom: 2px;
+    }
+    .product-listing .img-box img {
+        width: auto;
+        max-width: 222px;
+    }
+    .product-listing .one-col-text {
+        width: auto;
+        float: none;
+        margin: 0 0 20px;
+    }
+    .watchbands-listing .one-col-text {
+        margin-bottom: 0;
+    }
+    .watchbands-listing .oc-price-buy {
+        margin-top: 12px;
+    }
+    .product-listing .red-label {
+        top: -40px;
+        left: 196px;
+    }
+    .watchbands-listing .red-label {
+        left: auto;
+        right: 10px;
+        top: 10px;
+    }
+    .product-listing .oc-price-buy {
+        margin-left: 0;
+    }
+    .filter-column {
+        width: 100%;
+        float: none;
+    }
+    .filter-column .bx-filter-block {
+        padding-left: 0;
+    }
+    .filter-column .bx-filter-button-box input {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .filter-column .selectbox {
+        width: 188px;
+    }
+    .size-watchbands {
+        width: 280px;
+        margin-left: -150px;
+        margin-top: -230px;
+    }
+    .size-watchbands .close-2,
+    .swc-content p,
+    .swb-content p,
+    .swfooter,
+    .size-watchbands .modal-content h3 {
+        display: none;
+    }
+    .sw-base .swb-content {
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+    .sw-clasps .swc-content {
+        height: 380px;
+        background-position: center;
+        background-size: cover;
+    }
+    .order-view .sortby {
+        float: none;
+        text-align: center;
+        padding-bottom: 14px;
+    }
+    .order-view .pages {
+        float: none;
+        text-align: center;
+    }
 }
+
+
 /* <=479 finish */
 
 
@@ -3207,10 +3388,13 @@
         width: 262px;
     }
 }
+
+
 /* height <768 finish */
 
 
 /* height <569 start */
+
 @media only screen and (max-height: 479px) {
     .modal.present-1, .overlay.overlay-on, .overlay-2.overlay-on, .modal.present-2 {
         display: none;

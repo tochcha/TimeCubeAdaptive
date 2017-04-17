@@ -204,8 +204,38 @@ $(document).ready(function() {
         $(".quickviewpopup").toggleClass("active godown goup");
     });
 
+    // анимация попап "Размер ремешка у основания часов"
+    $(".open-modal-5").click(function() {
+        $(".overlay").addClass("overlay-on");
+        $(".sw-base").toggleClass("active godown goup");
+    });
+    $(".overlay").click(function() {
+        $("overlay").toggleClass("overlay-on");
+        $(".sw-base").removeClass("active godown");
+        $(".sw-base").addClass("goup");
+    });
+    $(".sw-base .close, .sw-base .close-2").click(function() {
+        $(".overlay").toggleClass("overlay-on");
+        $(".sw-base").toggleClass("active godown goup");
+    });
+
+    // анимация попап "Размер ремешка у застёжки"
+    $(".open-modal-6").click(function() {
+        $(".overlay").addClass("overlay-on");
+        $(".sw-clasps").toggleClass("active godown goup");
+    });
+    $(".overlay").click(function() {
+        $("overlay").toggleClass("overlay-on");
+        $(".sw-clasps").removeClass("active godown");
+        $(".sw-clasps").addClass("goup");
+    });
+    $(".sw-clasps .close, .sw-clasps .close-2").click(function() {
+        $(".overlay").toggleClass("overlay-on");
+        $(".sw-clasps").toggleClass("active godown goup");
+    });
 
 
+	// переключение отображение списка товаров от плитки на список и обратно
     $(".plitka").click(function() {
         $(this).addClass("active");
         $(".listing").removeClass("active");
@@ -343,6 +373,24 @@ $(document).ready(function() {
         $("#toTop3").scrollToTop();
     });
 
+
+    window.addEventListener('load', function() {
+        var list = document.querySelectorAll('.labellist');
+        for (var i = 0; i < list.length; i++) {
+            switch (list[i].children.length) {
+                /*case 3:
+                    list[i].classList.add('three');
+                    break;
+                case 2:
+                    list[i].classList.add('two');
+                    break;*/
+                case 1:
+                    list[i].classList.add('one');
+                    break;
+            }
+        }
+    }, false);
+
 });
 
 // прелоадер
@@ -350,8 +398,6 @@ $(window).load(function() {
 
     $(".loader_inner").fadeOut(900);
     $(".loader").delay(900).fadeOut(900);
-    /*$(".top_text h1").animated("fadeInDown", "fadeOutUp");
-	$(".top_text p").animated("fadeInUp", "fadeOutDown");*/
 
 });
 
