@@ -9334,9 +9334,9 @@ body.black-friday {
 }
 
 .product-listing .one-col-text .oc-manufacturer img {
-    vertical-align: top;
+    vertical-align: middle;
     display: inline;
-    padding: 0 2px;
+    padding: 0 2px 3px;
 }
 
 .product-listing .labels > div {
@@ -9376,16 +9376,18 @@ body.black-friday {
 
 .product-listing .oc-price-buy .price {
     text-align: left;
-    padding: 0 0 6px;
+    padding: 16px 0 6px;
 }
 
 .product-listing .oc-price-buy .price .old {
     font-size: 12px;
     text-decoration: line-through;
     color: #f00;
-    position: static;
+    position: absolute;
     height: 14px;
     font-family: Verdana;
+	top:0;
+	left:0;
 }
 
 .product-listing .oc-price-buy .price .actual {
@@ -9683,9 +9685,14 @@ body.black-friday {
     padding-top: 12px;
 }
 
+.labellist.two div,
 .labellist.one div {
     margin: 0 auto;
     float: none !important;
+}
+
+.labellist.two div {
+	margin-bottom: 2px;
 }
 
 .labellist div {
@@ -9717,12 +9724,12 @@ body.black-friday {
 }
 
 .labellist .label-champagne {
-    background-color: #69a400;
+    background-color: #007a01;
     width: 100%;
 }
 
 .labellist .label-champagne:hover {
-    background-color: #548300;
+    background-color: #2c982c;
 }
 
 .price-rl .price {
