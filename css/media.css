@@ -1094,6 +1094,11 @@
     .filter {
         width: 741px;
     }
+	
+	.product-listing .red-label,
+	.price-rl .red-label {
+		padding-top: 3px;
+	}
 }
 
 
@@ -2665,8 +2670,13 @@
         float: none !important;
         margin: 0 auto 2px;
     }
+	.price-rl {
+		position: relative;
+	}
     .price-rl .red-label {
-        margin-top: -54px;
+        top: -11px;
+		position: absolute;
+		right:1px;
     }
     .filter-column {
         padding-left: 22px;

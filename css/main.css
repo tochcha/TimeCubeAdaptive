@@ -8111,6 +8111,36 @@ ul.perconal-info img {
     margin: -16px 0 -8px 48px;
 }
 
+.price-rl .red-label {
+    width: 65px;
+    height: 32px;
+    position: static;
+    float: right;
+	padding: 2px 22px 0 12px;
+    font-size: 24px;
+    line-height: 1;
+    margin: -8px 10px 0 0;
+	font-family: Tahoma;
+}
+
+.product-listing .red-label {
+    width: 62px;
+    height: 32px;
+    font-size: 24px;
+    line-height: 1;
+    padding: 2px 10px 0 3px;
+    position: absolute;
+    top: -15px;
+    left: 134px;
+	font-family: Tahoma;
+}
+
+.watchbands-listing .red-label {
+    left: auto;
+    right: 16px;
+    top: 30px;
+}
+
 .one-column .item .labels div.label-2-one-column.top-pos {
     /*position: absolute;
 	top: 5px;
@@ -9248,17 +9278,6 @@ body.black-friday {
     position: relative;
 }
 
-.product-listing .red-label {
-    width: 62px;
-    height: 32px;
-    font-size: 25px;
-    line-height: 28px;
-    padding: 0 10px 0 3px;
-    position: absolute;
-    top: -15px;
-    left: 134px;
-}
-
 .product-listing .img-box a {
     display: block;
     margin-bottom: 18px;
@@ -9736,16 +9755,6 @@ body.black-friday {
     float: left;
 }
 
-.price-rl .red-label {
-    width: 65px;
-    height: 32px;
-    position: static;
-    float: right;
-    line-height: 27px;
-    font-size: 24px;
-    margin: -8px 10px 0 0;
-}
-
 .submit-balance {
     float: left;
 }
@@ -10053,12 +10062,6 @@ body.black-friday {
 
 .watchbands-listing .img-box a {
     margin-bottom: 0;
-}
-
-.watchbands-listing .red-label {
-    left: auto;
-    right: 16px;
-    top: 30px;
 }
 
 

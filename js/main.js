@@ -396,8 +396,8 @@ $(document).ready(function() {
 // прелоадер
 $(window).load(function() {
 
-    $(".loader_inner").fadeOut(900);
-    $(".loader").delay(900).fadeOut(900);
+    $(".loader_inner").fadeOut(500);
+    $(".loader").delay(500).fadeOut(500);
 
 });
 
