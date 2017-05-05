@@ -3355,11 +3355,16 @@ main {
     margin-bottom: 13px;
 }
 
+.big-slider div.slick-slide {
+    position: relative;
+}
+
 .big-slider img {
     width: 594px;
     height: 495px;
-    cursor: all-scroll;
-    cursor: col-resize;
+    /*cursor: all-scroll;
+    cursor: col-resize;*/
+	cursor: default;
 }
 
 .big-slider .slick-arrow {
@@ -8116,11 +8121,11 @@ ul.perconal-info img {
     height: 32px;
     position: static;
     float: right;
-	padding: 2px 22px 0 12px;
+    padding: 2px 22px 0 12px;
     font-size: 24px;
     line-height: 1;
     margin: -8px 10px 0 0;
-	font-family: Tahoma;
+    font-family: Tahoma;
 }
 
 .product-listing .red-label {
@@ -8132,7 +8137,7 @@ ul.perconal-info img {
     position: absolute;
     top: -15px;
     left: 134px;
-	font-family: Tahoma;
+    font-family: Tahoma;
 }
 
 .watchbands-listing .red-label {
@@ -9198,12 +9203,21 @@ body.black-friday {
     font-size: 18px;
     line-height: 18px;
     padding-right: 40px;
-    padding-top: 32px;
+    padding-top: 33px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 114px;
     font-weight: normal;
+    top: 382px;
+}
+
+.red-bow-big.gold-bow-big a {
+    color: #fff;
+}
+
+.red-bow-big.gold-bow-big a:hover {
+    text-decoration: underline;
 }
 
 
@@ -9405,8 +9419,8 @@ body.black-friday {
     position: absolute;
     height: 14px;
     font-family: Verdana;
-	top:0;
-	left:0;
+    top: 0;
+    left: 0;
 }
 
 .product-listing .oc-price-buy .price .actual {
@@ -9542,6 +9556,10 @@ body.black-friday {
     text-decoration: none;
 }
 
+.big-slider a.big-link {
+	overflow: hidden;
+}
+
 .big-slider a span {
     display: block;
     width: 32px;
@@ -9550,11 +9568,8 @@ body.black-friday {
     background: url(../images/loop.png);
     bottom: 9px;
     right: 9px;
-}
-
-.red-bow-big.gold-bow-big,
-.big-slider img {
-    cursor: pointer;
+    z-index: 2;
+    cursor: zoom-in;
 }
 
 
@@ -9711,7 +9726,7 @@ body.black-friday {
 }
 
 .labellist.two div {
-	margin-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 .labellist div {
@@ -10063,23 +10078,3 @@ body.black-friday {
 .watchbands-listing .img-box a {
     margin-bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
