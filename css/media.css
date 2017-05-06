@@ -1094,11 +1094,17 @@
     .filter {
         width: 741px;
     }
-	
-	.product-listing .red-label,
-	.price-rl .red-label {
-		padding-top: 3px;
-	}
+    .product-listing .red-label,
+    .price-rl .red-label {
+        padding-top: 3px;
+    }
+    #nopack.modal {
+        width: 700px;
+        margin-left: -360px;
+    }
+    #nopack.modal .modal-content {
+        width: auto;
+    }
 }
 
 
@@ -2544,6 +2550,14 @@
     .filter-column .bx-filter-block {
         width: auto;
     }
+    #nopack.modal {
+        width: 440px;
+        margin-left: -230px;
+        margin-top: -150px;
+    }
+    #nopack.modal h4 br {
+        display: none;
+    }
 }
 
 
@@ -2670,13 +2684,13 @@
         float: none !important;
         margin: 0 auto 2px;
     }
-	.price-rl {
-		position: relative;
-	}
+    .price-rl {
+        position: relative;
+    }
     .price-rl .red-label {
         top: -11px;
-		position: absolute;
-		right:1px;
+        position: absolute;
+        right: 1px;
     }
     .filter-column {
         padding-left: 22px;
@@ -3362,6 +3376,11 @@
     .order-view .pages {
         float: none;
         text-align: center;
+    }
+    #nopack.modal {
+        width: 280px;
+        margin-left: -150px;
+        margin-top: -180px;
     }
 }
 

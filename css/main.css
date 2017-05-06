@@ -3364,7 +3364,7 @@ main {
     height: 495px;
     /*cursor: all-scroll;
     cursor: col-resize;*/
-	cursor: default;
+    cursor: default;
 }
 
 .big-slider .slick-arrow {
@@ -9557,7 +9557,7 @@ body.black-friday {
 }
 
 .big-slider a.big-link {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .big-slider a span {
@@ -10077,4 +10077,19 @@ body.black-friday {
 
 .watchbands-listing .img-box a {
     margin-bottom: 0;
+}
+
+#nopack.modal {
+    height: auto;
+    margin-top: -118px;
+}
+
+#nopack.modal .modal-content {
+    height: auto;
+    padding-bottom: 80px;
+}
+
+#nopack h2,
+#nopack h4 {
+    text-align: center;
 }

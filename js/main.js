@@ -234,6 +234,21 @@ $(document).ready(function() {
         $(".sw-clasps").toggleClass("active godown goup");
     });
 
+    // анимация попап сообщения "У Вас ещё нет товаров, которые можно упаковать..."
+    $(".nopack").click(function() {
+        $(".overlay").addClass("overlay-on");
+        $("#nopack").toggleClass("active godown goup");
+    });
+    $(".overlay").click(function() {
+        $("overlay").toggleClass("overlay-on");
+        $("#nopack").removeClass("active godown");
+        $("#nopack").addClass("goup");
+    });
+    $("#nopack .close").click(function() {
+        $(".overlay").toggleClass("overlay-on");
+        $("#nopack").toggleClass("active godown goup");
+    });
+
 
 	// переключение отображение списка товаров от плитки на список и обратно
     $(".plitka").click(function() {
