@@ -2518,7 +2518,7 @@
         margin-left: 144px;
     }
     .quick-view-pack {
-        pointer-events: none;
+        /*pointer-events: none;*/
     }
     .visual-top li {
         padding-left: 0;
@@ -2558,6 +2558,35 @@
     #nopack.modal h4 br {
         display: none;
     }
+	.modal.quickviewpopup.quickviewpopup-pack {
+		width: 94%;
+		margin-left: -10px;
+		top:22px;
+		left:3%;
+		position: absolute;
+		margin-top: 0;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
+		float: none;
+		padding-right: 0;
+		margin: 0 auto;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .modal-content .qvd-info {
+		float: none;
+		width: 452px;
+		margin: 22px auto;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qvd-info .buy {
+		width: 49%;
+		float: left;
+		border-bottom: none;
+		padding-left: 0;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-text {
+		float: right;
+		width: 49%;
+		padding: 22px 0;
+	}
 }
 
 
@@ -2733,6 +2762,19 @@
     .ht-right .loginbox li.user {
         margin-top: -2px;
     }
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
+		float: none;
+		padding-right: 0;
+		margin: 0 auto;
+		width: 400px;
+	}
+	.qv-detail .slider-for div img {
+		max-width: 100%;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .modal-content .qvd-info {
+		float: none;
+		width: 100%;
+	}
 }
 
 
@@ -3382,6 +3424,19 @@
         margin-left: -150px;
         margin-top: -180px;
     }
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
+		display: none;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qvd-info .buy {
+		width: 100%;
+		float: none;
+		border-bottom: 1px solid #dadada;
+	}
+	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-text {
+		float: none;
+		width: 100%;
+		padding: 2px 0 22px;
+	}
 }
 
 
