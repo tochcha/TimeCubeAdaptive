@@ -448,104 +448,213 @@
 				</ul>
 				<div class="filters">
 					<h3>Фильтры:</h3>
-					<div class="item slide-block">
-						<div class="open-close">Цена:</div>
-						<div class="block">
-							<div class="inputs">
-								<input type="text" id="minCost" value="42200" />
-								<input type="text" id="maxCost" value="300000" />
+					<div class="filter-switcher"><span>Фильтры</span></div>
+					<div class="filters-list">
+						<div class="item slide-block">
+							<div class="open-close">Цена:</div>
+							<div class="block">
+								<div class="inputs">
+									<input type="text" id="minCost" value="42200" />
+									<input type="text" id="maxCost" value="300000" />
+								</div>
+								<div class="d-nums clearfix">
+									<div>0</div>
+									<div>495 000</div>
+								</div>
+								<div id="slider"></div>
 							</div>
-							<div class="d-nums clearfix">
-								<div>0</div>
-								<div>495 000</div>
+						</div>
+						<div class="item slide-block">
+							<div class="open-close">Цвет (наружный):</div>
+							<div class="block">
+								<ul class="custom-form">
+									<li>
+										<input type='checkbox' id='colorcheck1' name='colorcheck'>
+										<label for='colorcheck1'>Бежевый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck2' name='colorcheck'>
+										<label for='colorcheck2'>Белый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck3' name='colorcheck'>
+										<label for='colorcheck3'>Бордовый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck4' name='colorcheck'>
+										<label for='colorcheck4'>Голубой</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck5' name='colorcheck'>
+										<label for='colorcheck5'>Желтый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck6' name='colorcheck'>
+										<label for='colorcheck6'>Зеленый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck7' name='colorcheck'>
+										<label for='colorcheck7'>Золотой</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck8' name='colorcheck'>
+										<label for='colorcheck8'>Коричневый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck9' name='colorcheck'>
+										<label for='colorcheck9'>Красный</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck10' name='colorcheck'>
+										<label for='colorcheck10'>Оранжевый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck11' name='colorcheck'>
+										<label for='colorcheck11'>Розовый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck12' name='colorcheck'>
+										<label for='colorcheck12'>Светло-коричневый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck13' name='colorcheck'>
+										<label for='colorcheck13'>Серебряный</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck14' name='colorcheck'>
+										<label for='colorcheck14'>Серый</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck15' name='colorcheck'>
+										<label for='colorcheck15'>Синий</label>
+									</li>
+									<li>
+										<input type='checkbox' id='colorcheck16' name='colorcheck'>
+										<label for='colorcheck16'>Темно-синий</label>
+									</li>
+								</ul>
 							</div>
-							<div id="slider"></div>
 						</div>
-					</div>
-					<div class="item slide-block">
-						<div class="open-close">Производитель:</div>
-						<div class="block">
-							<ul class="custom-form">
-								<li>
-									<input type='checkbox' id='Choice1' name='Choice'>
-									<label for='Choice1'><strong>MODALO</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice2' name='Choice'>
-									<label for='Choice2'><strong>Luxwinder</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice3' name='Choice'>
-									<label for='Choice3'><strong>BOXY</strong> (Тайвань)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice4' name='Choice'>
-									<label for='Choice4'><strong>BENSON</strong> (Голландия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice11' name='Choice'>
-									<label for='Choice11'><strong>Prestige</strong> (США)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice5' name='Choice'>
-									<label for='Choice5'><strong>MTE</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice6' name='Choice'>
-									<label for='Choice6'><strong>T.WING-PAK</strong> (Китай)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice7' name='Choice'>
-									<label for='Choice7'><strong>JEBELY</strong> (Швейцария)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice8' name='Choice'>
-									<label for='Choice8'><strong>ORIGINTIMES</strong> (Германия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice9' name='Choice'>
-									<label for='Choice9'><strong>LUXOJOWANNY</strong> (Италия)</label>
-								</li>
-								<li>
-									<input type='checkbox' id='Choice10' name='Choice'>
-									<label for='Choice10'><strong>LIDER</strong> (Китай)</label>
-								</li>
-							</ul>
+						<div class="item slide-block">
+							<div class="open-close">Внешняя отделка:</div>
+							<div class="block">
+								<ul class="custom-form">
+									<li>
+										<input type='checkbox' id='vocheck1' name='vocheck'>
+										<label for='vocheck1'>Дерево</label>
+									</li>
+									<li>
+										<input type='checkbox' id='vocheck2' name='vocheck'>
+										<label for='vocheck2'>Пластик</label>
+									</li>
+									<li>
+										<input type='checkbox' id='vocheck3' name='vocheck'>
+										<label for='vocheck3'>Кожа</label>
+									</li>
+									<li>
+										<input type='checkbox' id='vocheck4' name='vocheck'>
+										<label for='vocheck4'>Металл</label>
+									</li>
+									<li>
+										<input type='checkbox' id='vocheck5' name='vocheck'>
+										<label for='vocheck5'>Стекло</label>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="item slide-block">
-						<div class="open-close">Страна производитель:</div>
-						<div class="block">
-							<ul class="custom-form">
-								<li>
-									<input type='checkbox' id='country1' name='country'>
-									<label for='country1'><img src="images/manufacturers/ger.png" alt=""> Германия</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country2' name='country'>
-									<label for='country2'><img src="images/manufacturers/tai.png" alt=""> Тайвань</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country3' name='country'>
-									<label for='country3'><img src="images/manufacturers/hol.png" alt=""> Голландия</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country4' name='country'>
-									<label for='country4'><img src="images/manufacturers/usa.png" alt=""> США</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country7' name='country'>
-									<label for='country7'><img src="images/manufacturers/chn.png" alt=""> Китай</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country5' name='country'>
-									<label for='country5'><img src="images/manufacturers/swi.png" alt=""> Швейцария</label>
-								</li>
-								<li>
-									<input type='checkbox' id='country6' name='country'>
-									<label for='country6'><img src="images/manufacturers/ita.png" alt=""> Италия</label>
-								</li>
-							</ul>
+						<div class="item slide-block">
+							<div class="open-close">Производитель:</div>
+							<div class="block">
+								<ul class="custom-form">
+									<li>
+										<input type='checkbox' id='Choice1' name='Choice'>
+										<label for='Choice1'><strong>MODALO</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice2' name='Choice'>
+										<label for='Choice2'><strong>Luxwinder</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice3' name='Choice'>
+										<label for='Choice3'><strong>BOXY</strong> (Тайвань)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice4' name='Choice'>
+										<label for='Choice4'><strong>BENSON</strong> (Голландия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice11' name='Choice'>
+										<label for='Choice11'><strong>Prestige</strong> (США)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice5' name='Choice'>
+										<label for='Choice5'><strong>MTE</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice6' name='Choice'>
+										<label for='Choice6'><strong>T.WING-PAK</strong> (Китай)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice7' name='Choice'>
+										<label for='Choice7'><strong>JEBELY</strong> (Швейцария)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice8' name='Choice'>
+										<label for='Choice8'><strong>ORIGINTIMES</strong> (Германия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice9' name='Choice'>
+										<label for='Choice9'><strong>LUXOJOWANNY</strong> (Италия)</label>
+									</li>
+									<li>
+										<input type='checkbox' id='Choice10' name='Choice'>
+										<label for='Choice10'><strong>LIDER</strong> (Китай)</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="item slide-block">
+							<div class="open-close">Страна производитель:</div>
+							<div class="block">
+								<ul class="custom-form">
+									<li>
+										<input type='checkbox' id='country1' name='country'>
+										<label for='country1'><img src="images/manufacturers/ger.png" alt=""> Германия</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country2' name='country'>
+										<label for='country2'><img src="images/manufacturers/tai.png" alt=""> Тайвань</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country3' name='country'>
+										<label for='country3'><img src="images/manufacturers/hol.png" alt=""> Голландия</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country4' name='country'>
+										<label for='country4'><img src="images/manufacturers/usa.png" alt=""> США</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country7' name='country'>
+										<label for='country7'><img src="images/manufacturers/chn.png" alt=""> Китай</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country5' name='country'>
+										<label for='country5'><img src="images/manufacturers/swi.png" alt=""> Швейцария</label>
+									</li>
+									<li>
+										<input type='checkbox' id='country6' name='country'>
+										<label for='country6'><img src="images/manufacturers/ita.png" alt=""> Италия</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 bx-filter-button-box">
+							<div class="bx-filter-block">
+								<div class="bx-filter-parameters-box-container">
+									<input class="btn btn-themes" type="submit" id="set_filter" name="set_filter" value="Показать">
+									<input class="btn btn-link" type="submit" id="del_filter" name="del_filter" value="Сбросить">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
