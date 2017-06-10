@@ -107,10 +107,10 @@ $(document).ready(function() {
     // подключение слайдера картинок
     $('.thumbsbox').slick({
         vertical: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         asNavFor: '.big-slider',
         slidesToScroll: 1,
-        centerMode: true,
+        //centerMode: true,
         focusOnSelect: true
     });
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
     });
 
 
-	// переключение отображение списка товаров от плитки на список и обратно
+    // переключение отображение списка товаров от плитки на список и обратно
     $(".plitka").click(function() {
         $(this).addClass("active");
         $(".listing").removeClass("active");
@@ -358,8 +358,8 @@ $(document).ready(function() {
         dots: false
     });
 
-    // карусель производителей
-    if (window.innerWidth < 768) {
+    // карусель производителей на экраны меньше 768
+    /*if (window.innerWidth < 768) {
         $('.manufacturers-carousel ul').slick({
             infinite: true,
             dots: false,
@@ -370,7 +370,28 @@ $(document).ready(function() {
             autoplaySpeed: 4000,
             autoplay: true
         });
-    }
+    }*/
+
+    // карусель производителей на все экраны
+    $('.manufacturers-carousel ul').slick({
+        infinite: true,
+        dots: false,
+        fade: false,
+        arrows: true,
+        pauseOnFocus: true,
+        speed: 500,
+        autoplaySpeed: 444000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
 
     // карусель тегов
     $('.tags-list').slick({
@@ -405,6 +426,11 @@ $(document).ready(function() {
             }
         }
     }, false);
+
+
+	// автоподстройка высоты textarea
+    $('.normalheightresize').autosize();
+    $('.animatedheightresize').autosize();
 
 });
 

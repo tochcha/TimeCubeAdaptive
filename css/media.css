@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1199px) {
+    .blue-informer {
+        right: 235px;
+    }
+}
+
+
 /* <=1119 */
 
 @media only screen and (max-width: 1120px) {
@@ -16,7 +23,6 @@
     }
     .search-menu {
         width: 470px;
-        padding-top: 20px;
     }
     .search-menu .form input[type=search],
     .search-menu .form input[type=text] {
@@ -269,6 +275,12 @@
     }
     .big-slider a span {
         display: none;
+    }
+    .pf-tabs .tabset .tab {
+        padding: 0 7px;
+    }
+    .terms {
+        padding: 6px 22px 44px;
     }
 }
 
@@ -567,6 +579,9 @@
     }
     .fc-right {
         padding-left: 68px;
+    }
+    .blue-informer {
+        right: 249px;
     }
 }
 
@@ -926,7 +941,7 @@
     }
     .flags .favorite-compare {
         position: absolute;
-        top: -120px;
+        top: -90px;
         right: 21px;
         padding-left: 0;
     }
@@ -948,10 +963,6 @@
     .tabs-left .video {
         margin: 0 auto 35px;
         width: 600px;
-    }
-    .pf-tabs .tabs-wrapper #tab3,
-    .pf-tabs .tabs-wrapper #tab4 {
-        padding-right: 55px;
     }
     .tabs-right {
         float: none;
@@ -1105,6 +1116,28 @@
     #nopack.modal .modal-content {
         width: auto;
     }
+    .pf-tabs .tabset .tab img {
+        display: none;
+    }
+    .pf-tabs .tabs-wrapper .tab .table {
+        margin: 22px auto 0;
+    }
+    .pf-tabs .delivary-payment {
+        max-width: 100%;
+    }
+    .blue-informer {
+        right: 172px;
+    }
+    .new-review-page .row {
+        width: 670px;
+    }
+    .new-review-page .row input,
+    .new-review-page .row textarea {
+        width: 534px;
+    }
+    .nrp-footer {
+        width: 670px;
+    }
 }
 
 
@@ -1139,6 +1172,10 @@
     }
     .fc-right label {
         width: 122px;
+    }
+    .detail-ratingbox {
+        float: left;
+        padding-top: 2px;
     }
 }
 
@@ -1190,6 +1227,7 @@
     }
     .header-content .logo {
         margin: 0 auto;
+        padding-top: 30px;
     }
     .header-content .sandwich-mob {
         display: none;
@@ -1423,6 +1461,7 @@
     }
     .manufacturers-wrapper {
         background-color: #646464;
+        padding-bottom: 20px;
     }
     .manufacturers-wrapper .manufacturers-carousel {
         width: 325px;
@@ -1471,7 +1510,7 @@
         margin: 0;
         padding: 0 0 0 62px;
     }
-    .manufacturers-wrapper .slick-arrow {
+    .manufacturers-carousel .slick-arrow {
         width: 23px;
         height: 19px;
         border: none;
@@ -1482,13 +1521,16 @@
         cursor: pointer;
         z-index: 3;
     }
-    .manufacturers-wrapper .slick-arrow.slick-prev {
-        background: url(../images/arrows-manufacturer.png) no-repeat 0 0;
+    .manufacturers-carousel .slick-arrow.slick-prev {
+        background: url(../images/arrows-manufacturer.png) no-repeat 0 0 !important;
         right: 40px;
+        margin-top: 0;
+        left: auto;
     }
-    .manufacturers-wrapper .slick-arrow.slick-next {
-        background: url(../images/arrows-manufacturer.png) no-repeat 0 -19px;
+    .manufacturers-carousel .slick-arrow.slick-next {
+        background: url(../images/arrows-manufacturer.png) no-repeat 0 -19px !important;
         right: 0;
+        margin-top: 0;
     }
     .white-content article {
         padding: 0 16px;
@@ -1861,7 +1903,8 @@
     }
     .flags .favorite-compare {
         top: -42px;
-        right: 0;
+        left: 0;
+        right: auto;
     }
     .flags .favorite-compare .print {
         display: none;
@@ -2525,9 +2568,9 @@
         background: none;
         display: block;
     }
-    .manufacturers-wrapper .manufacturers-carousel ul li .link {
+    /*.manufacturers-wrapper .manufacturers-carousel ul li .link {
         width: auto;
-    }
+    }*/
     .size-watchbands {
         width: 460px;
         margin-left: -240px;
@@ -2558,35 +2601,83 @@
     #nopack.modal h4 br {
         display: none;
     }
-	.modal.quickviewpopup.quickviewpopup-pack {
-		width: 94%;
-		margin-left: -10px;
-		top:22px;
-		left:3%;
-		position: absolute;
-		margin-top: 0;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
-		float: none;
-		padding-right: 0;
-		margin: 0 auto;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .modal-content .qvd-info {
-		float: none;
-		width: 452px;
-		margin: 22px auto;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qvd-info .buy {
-		width: 49%;
-		float: left;
-		border-bottom: none;
-		padding-left: 0;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-text {
-		float: right;
-		width: 49%;
-		padding: 22px 0;
-	}
+    .modal.quickviewpopup.quickviewpopup-pack {
+        width: 94%;
+        margin-left: -10px;
+        top: 22px;
+        left: 3%;
+        position: absolute;
+        margin-top: 0;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
+        float: none;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .modal-content .qvd-info {
+        float: none;
+        width: 452px;
+        margin: 22px auto;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qvd-info .buy {
+        width: 49%;
+        float: left;
+        border-bottom: none;
+        padding-left: 0;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-text {
+        float: right;
+        width: 49%;
+        padding: 22px 0;
+    }
+    .blue-informer {
+        right: 21px;
+    }
+    .detail-ratingbox {
+        padding-right: 0;
+    }
+    .rl-item .name {
+        margin-left: -14px;
+        padding: 5px 14px;
+    }
+    .reply-form-footer .check-box label {
+        line-height: 16px;
+        margin-bottom: 12px;
+    }
+    .new-review-page {
+        padding-right: 0;
+    }
+    .new-review-page .row {
+        width: 100%;
+    }
+    .new-review-page .row label {
+        float: none;
+        display: block;
+    }
+    .new-review-page .row input,
+    .new-review-page .row textarea {
+        width: 100%;
+        float: none;
+    }
+    .nrp-footer {
+        width: 100%;
+        padding-left: 0;
+    }
+    .nrp-footer input[type=submit] {
+        margin-top: 22px;
+    }
+    .new-review-page h3 {
+        padding: 0 0 18px;
+    }
+    .terms p {
+        text-indent: 16px;
+    }
+    .title-write-review {
+        padding-bottom: 20px;
+    }
+    .product-listing .ratingbox {
+        margin: 0 0 10px -2px;
+    }
 }
 
 
@@ -2762,19 +2853,22 @@
     .ht-right .loginbox li.user {
         margin-top: -2px;
     }
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
-		float: none;
-		padding-right: 0;
-		margin: 0 auto;
-		width: 400px;
-	}
-	.qv-detail .slider-for div img {
-		max-width: 100%;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .modal-content .qvd-info {
-		float: none;
-		width: 100%;
-	}
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
+        float: none;
+        padding-right: 0;
+        margin: 0 auto;
+        width: 400px;
+    }
+    .qv-detail .slider-for div img {
+        max-width: 100%;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .modal-content .qvd-info {
+        float: none;
+        width: 100%;
+    }
+    .blue-informer {
+        top: 39px;
+    }
 }
 
 
@@ -2832,7 +2926,7 @@
         width: 300px;
     }
     .manufacturers-wrapper h2 {
-        padding-left: 10px;
+        padding-left: 14px;
     }
     .manufacturers-wrapper .manufacturers-carousel {
         width: 270px;
@@ -3424,19 +3518,43 @@
         margin-left: -150px;
         margin-top: -180px;
     }
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
-		display: none;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qvd-info .buy {
-		width: 100%;
-		float: none;
-		border-bottom: 1px solid #dadada;
-	}
-	.modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-text {
-		float: none;
-		width: 100%;
-		padding: 2px 0 22px;
-	}
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-images {
+        display: none;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qvd-info .buy {
+        width: 100%;
+        float: none;
+        border-bottom: 1px solid #dadada;
+    }
+    .modal.quickviewpopup.quickviewpopup-pack .qv-detail .qv-text {
+        float: none;
+        width: 100%;
+        padding: 2px 0 22px;
+    }
+    .flags .favorite-compare {
+        left: 15px;
+    }
+    .rl-item .reply .reply-form {
+        padding: 20px 15px 10px;
+    }
+    .rl-item .answer {
+        margin-left: 12px;
+        padding-left: 0;
+        background: none;
+    }
+    .nrp-footer,
+    .new-review-page .row {
+        margin-bottom: 12px;
+    }
+    .terms {
+        padding: 6px 0 32px;
+    }
+    .terms p {
+        text-indent: 0;
+    }
+    .product-listing .ratingbox {
+        padding-top: 0;
+    }
 }
 
 
