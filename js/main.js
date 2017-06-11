@@ -16,6 +16,7 @@ $(document).ready(function() {
     $('.main-slider').slick({
         dots: true,
         autoplay: true,
+		autoplaySpeed: 6000,
         fade: true,
     });
 
@@ -437,8 +438,8 @@ $(document).ready(function() {
 // прелоадер
 $(window).load(function() {
 
-    $(".loader_inner").fadeOut(500);
-    $(".loader").delay(500).fadeOut(500);
+    $(".loader_inner").fadeOut(300);
+    $(".loader").delay(300).fadeOut(300);
 
 });
 
