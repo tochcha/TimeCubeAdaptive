@@ -250,6 +250,21 @@ $(document).ready(function() {
         $("#nopack").toggleClass("active godown goup");
     });
 
+    // анимация заказа полировочных работ"
+    $(".order-polish").click(function() {
+        $(".overlay").addClass("overlay-on");
+        $("#order-polish").toggleClass("active godown goup");
+    });
+    $(".overlay").click(function() {
+        $("overlay").toggleClass("overlay-on");
+        $("#order-polish").removeClass("active godown");
+        $("#order-polish").addClass("goup");
+    });
+    $("#order-polish .close, .close-btn").click(function() {
+        $(".overlay").toggleClass("overlay-on");
+        $("#order-polish").toggleClass("active godown goup");
+    });
+
 
     // переключение отображение списка товаров от плитки на список и обратно
     $(".plitka").click(function() {

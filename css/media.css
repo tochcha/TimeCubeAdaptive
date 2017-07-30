@@ -1185,6 +1185,10 @@
 	.serviceman {
 		padding-left: 37px;
 	}
+	#order-polish {
+		width: 700px;
+		margin-left: -360px;
+	}
 }
 
 
@@ -2789,6 +2793,16 @@
 		float: none;
 		width: auto;
 	}
+	#order-polish {
+		width: 420px;
+		margin-left: -220px;
+	}
+	#order-polish p {
+		padding: 0 32px;
+	}
+	.op-content .btn-back {
+		padding-top: 12px;
+	}
 }
 
 
@@ -3682,6 +3696,21 @@
 	}
 	.our-servs-img {
 		padding: 0 0 12px;
+	}
+	#order-polish {
+		width: 240px;
+		margin-left: -130px;
+	}
+	#order-polish p {
+		padding: 0 12px;
+		font-size: 18px;
+		margin-bottom: 22px;
+	}
+	.op-content .btn-back .close-btn {
+		padding: 0 14px;
+	}
+	#order-polish h2 {
+		line-height: 22px;
 	}
 }
 
