@@ -10717,6 +10717,7 @@ body.black-friday {
     box-sizing: border-box;
 }
 
+.serv-list .button-box input[type=submit],
 .nrp-footer input[type=submit] {
     float: left;
     text-align: center;
@@ -10732,6 +10733,7 @@ body.black-friday {
     cursor: pointer;
 }
 
+.serv-list .button-box input[type=submit]:hover,
 .nrp-footer input[type=submit]:hover {
     background-color: #2c982c;
 }
@@ -10767,3 +10769,369 @@ body.black-friday {
 .terms p.align-right {
     text-align: right;
 }
+
+.white-content article.service-item {
+    padding: 16px 37px 0;
+}
+
+.service-item h1 {
+    font: 26px/30px MyriadPro;
+    margin: 0 -14px 13px;
+    border-bottom: 6px solid #f0f0f0;
+    padding: 0 14px 12px;
+}
+
+.service-item-content {
+    padding-bottom: 1px;
+}
+
+.service-item-content .sic-text {
+    float: left;
+    width: 356px;
+    padding: 12px 0 0;
+}
+
+.service-item-content .sic-text a {
+    color: #256b9f;
+    text-decoration: underline;
+}
+
+.service-item-content .sic-text a:hover {
+    text-decoration: none;
+}
+
+.white-content .service-item-content p {
+    font: 15px/20px Arial;
+    text-align: left;
+    margin: 0 0 16px;
+}
+
+.service-item-content span {
+    color: #ff0303;
+}
+
+.service-item-content b {
+    white-space: nowrap;
+}
+
+.service-item-content .sic-img-box {
+    float: right;
+}
+
+.service-item-content img {
+    max-width: 100%;
+}
+
+.serv-list-grig h2 {
+    border: none;
+    margin-bottom: 0;
+    padding: 14px 37px;
+}
+
+.serv-list {
+    margin: 0;
+    padding: 0 20px 12px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.serv-list li {
+    list-style: none;
+    border: 1px solid #c9c9c9;
+    width: 370px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 26px 28px;
+    margin-bottom: 19px;
+}
+
+.serv-list .button-box {
+    padding-bottom: 12px;
+    text-align: right;
+}
+
+.serv-list h3 {
+    margin: 0 0 2px;
+    font: 21px/24px Arial;
+}
+
+.serv-list .color-1 h3 {
+    color: #256b9f;
+}
+
+.serv-list .color-2 h3 {
+    color: #309f25;
+}
+
+.serv-list .color-3 h3 {
+    color: #e0ad41;
+}
+
+.serv-list .color-4 h3 {
+    color: #be3636;
+}
+
+.serv-list .size {
+    font: 15px Arial;
+}
+
+.serv-list .img-box {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 304px;
+}
+
+.serv-list .img-box img {
+    max-width: 100%;
+}
+
+.serv-list .price {
+    text-align: right;
+    padding: 0 4px 8px;
+    color: #007e27;
+    font: 26px MyriadPro;
+}
+
+.serv-list .price span {
+    font-size: 34px;
+}
+
+.serv-list .button-box input[type=submit] {
+    float: none;
+    padding: 0 10px 2px;
+}
+
+.oa-title {
+    font: 19px/23px Arial;
+    padding: 5px 0 27px;
+}
+
+.original-accessories ul {
+    padding: 0;
+    margin: 0 16px 32px;
+    border-top: 2px solid #dbdbdb;
+}
+
+.original-accessories li {
+    list-style: none;
+    padding: 26px 0 30px;
+    border-bottom: 2px solid #dbdbdb;
+    text-align: center;
+}
+
+.white-content .original-accessories h3 {
+    font: 21px/21px Arial;
+    margin: 0 0 21px;
+}
+
+.original-accessories h3 a {
+    color: #256b9f;
+    transition: .3s;
+}
+
+.original-accessories h3 a:hover {
+    text-decoration: none;
+    color: #eb0f19;
+}
+
+.original-accessories h3 a:hover span {
+    color: #eb0f19;
+}
+
+.original-accessories h3 strong {
+    font-weight: normal;
+}
+
+.original-accessories h3 span {
+    font-size: 14px;
+    color: #939393;
+}
+
+.original-accessories .img-box img {
+    max-width: 100%;
+}
+
+.service-intro {
+    margin: 0 -14px 26px;
+    border-bottom: 6px solid #f0f0f0;
+    padding: 6px 14px 12px;
+}
+
+.white-content .service-intro p {
+    text-align: left;
+    font: 15px/20px Arial;
+    margin: 0 0 10px;
+}
+
+.our-servs {
+    margin: 0 -14px 54px;
+    border-bottom: 6px solid #f0f0f0;
+    padding: 0 14px;
+}
+
+.our-servs li {
+    list-style: none;
+    background-color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.our-servs li:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.our-servs-text {
+    float: left;
+    padding: 18px 0 8px 22px;
+    width: 350px;
+}
+
+.our-servs-text .title {
+    font: 22px/24px Arial;
+    padding: 0 0 10px 7px;
+    margin-bottom: 10px;
+    background: url(../images/ray.png) no-repeat left bottom;
+}
+
+.white-content .our-servs-text p {
+    font: 15px Arial;
+    margin: 0 0 18px;
+    text-align: left;
+    padding-left: 7px;
+}
+
+.our-servs .link-button {
+    padding: 0 0 2px 17px;
+}
+
+.our-servs .link-button a {
+    display: inline-block;
+    font: 15px/38px Arial;
+    transition: .3s;
+    background-color: #b2b2b2;
+    color: #fff;
+    padding: 0 36px;
+}
+
+.our-servs .link-button a:hover {
+    background-color: #397bac;
+    text-decoration: none;
+}
+
+.our-servs-img {
+    float: right;
+}
+
+.our-servs-img img {
+    display: block;
+	max-width: 100%;
+}
+
+.serviceman {
+    padding: 0 0 42px 70px;
+}
+
+.serviceman:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.serviceman .img-box {
+	float: left;
+}
+
+.serviceman img {
+	display: block;
+	padding: 5px;
+	border: 2px solid #c5c5c5;
+}
+
+.serviceman .serviceman-text {
+	width: 400px;
+	float: right;
+	padding-top: 22px;
+}
+
+.serviceman .title {
+	font: italic 14px Arial;
+	padding-bottom: 18px;
+}
+
+.serviceman .title span {
+	text-decoration: underline;
+}
+
+.serviceman .serviceman-text p {
+	font: 15px MyriadPro;
+	margin: 0 0 19px;
+}
+
+.serviceman a {
+	color: #007a00;
+	text-decoration: underline;
+}
+
+.serviceman a:hover {
+	text-decoration: none;
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/

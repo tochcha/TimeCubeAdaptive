@@ -583,6 +583,37 @@
     .blue-informer {
         right: 249px;
     }
+	.service-item-content .sic-text {
+		float: none;
+		padding: 12px 0;
+		width: 100%;
+	}
+	.service-item-content .sic-text br {
+		display: none;
+	}
+	.service-item-content .sic-text strong {
+		display: block;
+	}
+	.service-item-content .sic-img-box {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 12px;
+	}
+	.serv-list li {
+		width: 280px;
+		padding: 18px;
+	}
+	.our-servs-img {
+		margin-top: -48px;
+	}
+	.serviceman {
+		padding-left: 0;
+	}
+	.serviceman .serviceman-text {
+		width: 312px;
+		padding-top: 12px;
+	}
 }
 
 
@@ -1138,6 +1169,22 @@
     .nrp-footer {
         width: 670px;
     }
+	.service-item-content .sic-text {
+		padding-top: 0;
+	}
+	.service-item-content .sic-img-box {
+		width: 318px;
+	}
+	.serv-list li {
+		width: 354px;
+		padding: 20px;
+	}
+	.our-servs-img {
+		width: 318px;
+	}
+	.serviceman {
+		padding-left: 37px;
+	}
 }
 
 
@@ -2678,6 +2725,70 @@
     .product-listing .ratingbox {
         margin: 0 0 10px -2px;
     }
+	.service-item-content .sic-text {
+		float: none;
+		padding: 12px 0;
+		width: 100%;
+	}
+	.service-item-content .sic-text br {
+		display: none;
+	}
+	.service-item-content .sic-text strong {
+		display: block;
+	}
+	.service-item-content .sic-img-box {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-bottom: 12px;
+	}
+	.serv-list-grig h2,
+	.white-content article.service-item {
+		padding-left: 27px;
+		padding-right: 27px;
+	}
+	.serv-list-grig h2 {
+		line-height: 22px;
+		font-size: 25px;
+	}
+	.serv-list {
+		padding-left: 27px;
+		padding-right: 27px;
+	}
+	.serv-list li {
+		width: 100%;
+		padding: 27px 32px;
+	}
+	.our-servs-text {
+		float: none;
+		padding: 18px 22px;
+		width: auto;
+	}
+	.our-servs-img {
+		width: auto;
+		text-align: center;
+		padding-bottom: 22px;
+		float: none;
+	}
+	.our-servs-img img {
+		display: inline;
+	}
+	.serviceman {
+		padding-left: 0;
+		padding-bottom: 12px;
+	}
+	.serviceman .img-box {
+		float: none;
+		text-align: center;
+		padding-bottom: 12px;
+	}
+	.serviceman .img-box img {
+		display: inline-block;
+	}
+	.serviceman .serviceman-text {
+		float: none;
+		width: auto;
+	}
 }
 
 
@@ -3555,6 +3666,23 @@
     .product-listing .ratingbox {
         padding-top: 0;
     }
+	.serv-list {
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.serv-list li {
+		padding: 12px;
+	}
+	.original-accessories ul {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.our-servs-text {
+		padding: 18px 12px;
+	}
+	.our-servs-img {
+		padding: 0 0 12px;
+	}
 }
 
 

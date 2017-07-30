@@ -428,7 +428,6 @@ $(document).ready(function() {
         }
     }, false);
 
-
 	// автоподстройка высоты textarea
     $('.normalheightresize').autosize();
     $('.animatedheightresize').autosize();
