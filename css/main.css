@@ -8220,6 +8220,7 @@ ul.perconal-info img {
     margin: -16px 0 -8px 48px;
 }
 
+.price-dscnt .red-label,
 .price-rl .red-label {
     width: 65px;
     height: 32px;
@@ -8230,6 +8231,10 @@ ul.perconal-info img {
     line-height: 1;
     margin: -8px 10px 0 0;
     font-family: Tahoma;
+}
+
+.price-dscnt .red-label {
+	margin-top: 0;
 }
 
 .product-listing .red-label {
@@ -11175,6 +11180,21 @@ body.black-friday {
 
 .op-content .btn-back .close-btn:hover {
 	background-color: #f5f5f5;
+}
+
+.price-dscnt .price {
+	float: left;
+	position: relative;
+	padding-top: 10px;
+}
+
+.price-dscnt .price .old {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font: 12px Verdana;
+	color: #f00;
+	text-decoration: line-through;
 }
 /**/
 
