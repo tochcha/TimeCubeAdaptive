@@ -265,6 +265,21 @@ $(document).ready(function() {
         $("#order-polish").toggleClass("active godown goup");
     });
 
+    // анимация попап "Обратная связь"
+    $(".open-modal-7").click(function() {
+        $(".overlay").addClass("overlay-on");
+        $(".feedbackpopup").toggleClass("active godown goup");
+    });
+    $(".overlay").click(function() {
+        $("overlay").toggleClass("overlay-on");
+        $(".feedbackpopup").removeClass("active godown");
+        $(".feedbackpopup").addClass("goup");
+    });
+    $(".feedbackpopup .close, .feedbackpopup .close-2").click(function() {
+        $(".overlay").toggleClass("overlay-on");
+        $(".feedbackpopup").toggleClass("active godown goup");
+    });
+
 
     // переключение отображение списка товаров от плитки на список и обратно
     $(".plitka").click(function() {

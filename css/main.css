@@ -474,7 +474,7 @@ article:after,
 .search-menu nav ul li {
     list-style: none;
     float: left;
-    padding-right: 16px;
+    padding-right: 21.5px;
 }
 
 .search-menu nav ul a {
@@ -1573,7 +1573,7 @@ main {
 }
 
 .modal .close:hover {
-    background-position: right -50px;
+    background-position: right -49px;
     color: #000;
 }
 
@@ -5833,6 +5833,7 @@ main {
     background-color: #ececec;
     margin-bottom: 0;
     border: none;
+    font-size: 23px;
 }
 
 .static h2.withico {
@@ -6434,7 +6435,7 @@ main {
 
 .callcenter-phone {
     padding: 0 0 10px 37px;
-    font: 17px/38px MyriadPro, Arial, Geneva, Helvetica;
+    font: 20px/38px MyriadPro, Arial, Geneva, Helvetica;
 }
 
 .callcenter-phone a {
@@ -6515,7 +6516,6 @@ main {
 .contact-map .map-box {
     border-top: 1px solid #c9c9c9;
     border-bottom: 1px solid #c9c9c9;
-    height: 511px;
 }
 
 .way-list h3 {
@@ -6617,6 +6617,8 @@ main {
     margin: 0 auto;
 }
 
+.feedbackpopup input[type=text],
+.feedbackpopup input[type=email],
 .loginbody input[type=text],
 .loginbody input[type=password] {
     width: 300px;
@@ -6629,6 +6631,25 @@ main {
     margin: 0 0 15px;
 }
 
+.feedbackpopup input[type=text],
+.feedbackpopup input[type=email] {
+    width: 100%;
+    height: 36px;
+}
+
+.feedbackpopup textarea {
+    width: 100%;
+    height: 115px;
+    padding: 8px 11px;
+    background-color: #f2f2f2;
+    border: 1px solid #c9c9c9;
+    padding: 8px 11px;
+    font: 15px/20px MyriadPro, Arial, Geneva, Helvetica;
+    color: #000;
+    margin: 0 0 15px;
+}
+
+.feedbackpopup input[type=submit],
 .loginbody input[type=submit] {
     width: 324px;
     height: 38px;
@@ -6640,8 +6661,10 @@ main {
     cursor: pointer;
     background-color: #007a00;
     border: none;
+    transition: .3s;
 }
 
+.feedbackpopup input[type=submit]:hover,
 .loginbody input[type=submit]:hover {
     background-color: #009a00;
 }
@@ -6660,6 +6683,7 @@ main {
     float: left;
 }
 
+.feedbackpopup label,
 .lb-left label {
     font: 15px/21px MyriadPro, Arial, Geneva, Helvetica;
     padding-bottom: 5px;
@@ -6669,6 +6693,11 @@ main {
 .lb-left label span {
     font-size: 16px;
     color: #c80101;
+}
+
+.feedbackpopup label span {
+    font-size: 16px;
+    color: #007a00;
 }
 
 .lb-left .remember {
@@ -8234,7 +8263,7 @@ ul.perconal-info img {
 }
 
 .price-dscnt .red-label {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .product-listing .red-label {
@@ -10940,7 +10969,7 @@ body.black-friday {
 .serv-list .button-box input[type=submit] {
     float: none;
     padding: 0 0 2px;
-	display: inline-block;
+    display: inline-block;
 }
 
 .oa-title {
@@ -11068,7 +11097,7 @@ body.black-friday {
 
 .our-servs-img img {
     display: block;
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .serviceman {
@@ -11083,118 +11112,309 @@ body.black-friday {
 }
 
 .serviceman .img-box {
-	float: left;
+    float: left;
 }
 
 .serviceman img {
-	display: block;
-	padding: 5px;
-	border: 2px solid #c5c5c5;
+    display: block;
+    padding: 5px;
+    border: 2px solid #c5c5c5;
 }
 
 .serviceman .serviceman-text {
-	width: 400px;
-	float: right;
-	padding-top: 22px;
+    width: 400px;
+    float: right;
+    padding-top: 22px;
 }
 
 .serviceman .title {
-	font: italic 14px Arial;
-	padding-bottom: 18px;
+    font: italic 14px Arial;
+    padding-bottom: 18px;
 }
 
 .serviceman .title span {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .serviceman .serviceman-text p {
-	font: 15px MyriadPro;
-	margin: 0 0 19px;
+    font: 15px MyriadPro;
+    margin: 0 0 19px;
 }
 
 .serviceman a {
-	color: #007a00;
-	text-decoration: underline;
+    color: #007a00;
+    text-decoration: underline;
 }
 
 .serviceman a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #order-polish {
-	width: 758px;
-	height: 414px;
-	margin-left: -389px;
-	margin-top: -232px;
+    width: 758px;
+    height: 414px;
+    margin-left: -389px;
+    margin-top: -232px;
 }
 
 .order-polish-content {
-	position: relative;
-	height: 100%;
-	background-color: #fff;
+    position: relative;
+    height: 100%;
+    background-color: #fff;
 }
 
 #order-polish h2 {
-	margin: 0 0 50px;
-	font:22px/34px Verdana;
-	padding: 10px 30px;
-	background-color: #e4e4e4;
+    margin: 0 0 50px;
+    font: 22px/34px Verdana;
+    padding: 10px 30px;
+    background-color: #e4e4e4;
 }
 
 #order-polish p {
-	position: static;
-	text-align: center;
-	font: 25px MyriadPro;
-	margin: 0 0 32px;
+    position: static;
+    text-align: center;
+    font: 25px MyriadPro;
+    margin: 0 0 32px;
 }
 
 .op-content {
-	text-align: center;
+    text-align: center;
 }
 
 .op-footer {
-	position: absolute;
-	background-color: #e4e4e4;
-	height: 54px;
-	width: 100%;
-	left: 0;
-	bottom: 0;
+    position: absolute;
+    background-color: #e4e4e4;
+    height: 54px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 .op-content .btn-back {
-	text-align: center;
-	padding: 32px 0 22px;
+    text-align: center;
+    padding: 32px 0 22px;
 }
 
 .op-content .btn-back .close-btn {
-	display: inline-block;
-	font: 17px/50px MyriadPro;
-	color: #007a00;
-	text-decoration: underline;
-	background-color: #e4e4e4;
-	padding: 0 46px;
-	border: 1px solid #007a00;
-	transition: .3s;
-	cursor: pointer;
+    display: inline-block;
+    font: 17px/50px MyriadPro;
+    color: #007a00;
+    text-decoration: underline;
+    background-color: #e4e4e4;
+    padding: 0 46px;
+    border: 1px solid #007a00;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .op-content .btn-back .close-btn:hover {
-	background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 .price-dscnt .price {
-	float: left;
-	position: relative;
-	padding-top: 10px;
+    float: left;
+    position: relative;
+    padding-top: 10px;
 }
 
 .price-dscnt .price .old {
-	position: absolute;
-	top: 0;
-	left: 0;
-	font: 12px Verdana;
-	color: #f00;
-	text-decoration: line-through;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 12px Verdana;
+    color: #f00;
+    text-decoration: line-through;
+}
+
+.modal.feedbackpopup {
+    width: 642px;
+    height: 620px;
+    overflow: visible;
+    margin: 44px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*margin: 44px auto;*/
+}
+
+.modal.feedbackpopup * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.feedbackpopup-content {
+    position: relative;
+    background-color: #fff;
+    height: 620px;
+}
+
+.feedbackpopup-content h3 {
+    margin: 0 0 60px;
+    padding: 22px 30px 16px;
+    font: 26px MyriadPro;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.feedbackpopup .form {
+    width: 484px;
+    margin: 0 auto;
+}
+
+.feedbackpopup .captcha {
+    padding-bottom: 24px;
+}
+
+.feedbackpopup .captcha:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.feedbackpopup .captcha label {
+    float: left;
+    width: 40%;
+    line-height: 50px;
+}
+
+.feedbackpopup .captcha .captcha-img {
+    float: left;
+}
+
+.feedbackpopup .captcha input {
+    float: right;
+    width: 144px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.feedbackpopup .button-box {
+    text-align: right;
+}
+
+.feedbackpopup .button-box input {
+    width: 304px;
+}
+
+.with-green-info:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+}
+
+.with-green-info .breadcrumbs {
+    float: left;
+    max-width: 60%;
+}
+
+.green-info {
+    float: right;
+    margin: 0 0 -5px;
+    padding: 11px 20px 0 0;
+}
+
+.green-info li {
+    display: inline-block;
+    font: 14px/14px MyriadPro;
+    color: #007a00;
+    background: url(../images/dott-green.png) no-repeat left;
+    padding: 0 2px 0 9px;
+}
+
+.green-info li:first-child {
+    background: none;
+}
+
+.green-info li a {
+    color: #007a00;
+    text-decoration: underline;
+}
+
+.green-info li a:hover {
+    text-decoration: none;
+}
+
+.way-list-button {
+    text-align: center;
+    padding-bottom: 27px;
+}
+
+.way-list-button span {
+    display: inline-block;
+    transition: .3s;
+    font: 19px/39px MyriadPro;
+    background-color: #007a00;
+    width: 327px;
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.way-list-button span:hover {
+    background-color: #009a00;
+}
+
+.personal-list ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.personal-list li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 207px;
+    padding: 0 22px 19px;
+    font: 15px MyriadPro;
+}
+
+.personal-list .img-box img {
+    border: 1px solid #c5c5c5;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.personal-list .post {
+    font-style: italic;
+    height: 72px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.personal-list .email,
+.personal-list .num,
+.personal-list .name {
+    padding-bottom: 16px;
+}
+
+.personal-list .email a {
+    color: #007a00;
+    text-decoration: underline;
+}
+
+.personal-list .email a:hover {
+    text-decoration: none;
 }
 /**/
 
