@@ -6649,6 +6649,7 @@ main {
     margin: 0 0 15px;
 }
 
+.feedbackpopup .thankyou .button-box span,
 .feedbackpopup input[type=submit],
 .loginbody input[type=submit] {
     width: 324px;
@@ -6664,6 +6665,7 @@ main {
     transition: .3s;
 }
 
+.feedbackpopup .thankyou .button-box span:hover,
 .feedbackpopup input[type=submit]:hover,
 .loginbody input[type=submit]:hover {
     background-color: #009a00;
@@ -11239,6 +11241,11 @@ body.black-friday {
     /*margin: 44px auto;*/
 }
 
+.modal.feedbackpopup.thank {
+	height: 420px;
+	top: 120px;
+}
+
 .modal.feedbackpopup * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -11249,6 +11256,10 @@ body.black-friday {
     position: relative;
     background-color: #fff;
     height: 620px;
+}
+
+.modal.feedbackpopup.thank .feedbackpopup-content {
+	height: 420px;
 }
 
 .feedbackpopup-content h3 {
@@ -11415,6 +11426,43 @@ body.black-friday {
 
 .personal-list .email a:hover {
     text-decoration: none;
+}
+
+.feedbackpopup .thankyou {
+	width: 533px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.feedbackpopup .thankyou p {
+	font: 20px/30px MyriadPro;
+	color: #000;
+	margin: 0 0 18px;
+	position: static;
+	text-align: center;
+}
+
+.feedbackpopup .thankyou .author {
+	text-align: right;
+	color: #878787;
+	font: 15px/19px MyriadPro;
+	margin-bottom: 27px;
+}
+
+.feedbackpopup .thankyou .button-box {
+	text-align: center;
+}
+
+.feedbackpopup .thankyou .button-box span.close-2 {
+	display: inline-block;
+	position: static;
+	text-decoration: none;
+	width: 224px;
+}
+
+
+.feedbackpopup .thankyou .button-box span:hover {
+	text-decoration: none;
 }
 /**/
 

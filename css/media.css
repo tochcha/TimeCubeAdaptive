@@ -2851,6 +2851,13 @@
     .green-info li:first-child {
         padding-left: 0;
     }
+	.feedbackpopup .thankyou {
+		width: 92%;
+		padding-top: 58px;
+	}
+	.feedbackpopup .thankyou p br {
+		display: none;
+	}
 }
 
 
@@ -3780,6 +3787,10 @@
         width: 100%;
         margin-bottom: 0;
     }
+	.feedbackpopup .thankyou {
+		width: 92%;
+		padding-top: 8px;
+	}
 }
 
 
