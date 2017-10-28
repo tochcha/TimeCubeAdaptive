@@ -340,6 +340,7 @@
     .content aside .catalog-slide .accordion {
         display: none;
     }
+	.filter.extrafilter,
     .filter {
         width: auto;
         margin: 0 0 35px;
@@ -625,6 +626,15 @@
         width: 312px;
         padding-top: 12px;
     }
+	.extrafilter .row {
+		padding-left: 4px;
+	}
+	.textinputbox input {
+		width: 80px;
+	}
+	.filter .selectbox.nomar {
+		width: 134px;
+	}
 }
 
 
@@ -1144,8 +1154,10 @@
     .product-list .item {
         width: 231px;
     }
+	.filter.extrafilter,
     .filter {
-        width: 741px;
+        width: 768px;
+		margin-left: -22px;
     }
     .product-listing .red-label,
     .price-rl .red-label {
@@ -1728,6 +1740,21 @@
     aside .filters {
         margin-top: 22px;
     }
+	.extrafilter .row {
+		margin-bottom: 0;
+		padding-left: 34px;
+	}
+	.textinputbox input:last-child {
+		margin-left: 34px;
+		margin-right: 0;
+	}
+	.filter .selectbox.nomar,
+	.textinputbox input:first-child,
+	.filter .selectbox.nomar.first-child {
+		margin-left: -1px;
+		margin-bottom: 12px;
+	}
+    .filter.extrafilter,
     .filter {
         width: auto;
         margin: 0 0 35px;
@@ -2857,6 +2884,19 @@
 	}
 	.feedbackpopup .thankyou p br {
 		display: none;
+	}
+	.extrafilter .row {
+		padding-left: 28px;
+	}
+	.textinputbox input:first-child,
+	.textinputbox input:last-child {
+		margin-left: -1px;
+		margin-bottom: 12px;
+		width: 138px;
+	}
+	.find-button {
+		padding-left: 35px;
+		padding-bottom: 12px;
 	}
 }
 

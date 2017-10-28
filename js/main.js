@@ -14,9 +14,9 @@ $(document).ready(function() {
 
     // подключение слайдера картинок
     $('.main-slider').slick({
-        dots: true,
+        dots: false,
         autoplay: true,
-		autoplaySpeed: 6000,
+		autoplaySpeed: 7000,
         fade: true,
     });
 

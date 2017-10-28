@@ -1058,34 +1058,41 @@ main {
 .main-slider .slick-list img {
     height: 296px;
     width: 100%;
+    border: 1px solid #6e6e6e;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .main-slider .slick-arrow {
     position: absolute;
-    bottom: 0;
-    width: 28px;
-    height: 33px;
+    top: 50%;
+    width: 21px;
+    height: 87px;
     border: none;
     text-indent: -9999px;
     cursor: pointer;
+    z-index: 2;
+    margin-top: -44px;
+    transition: .3s;
 }
 
 .main-slider .slick-arrow.slick-prev {
-    background: url(../images/arrows.png) no-repeat 0 0;
-    left: 221px;
+    background: url(../images/arrows-main-slider.png) no-repeat 0 0;
+    left: 10px;
 }
 
 .main-slider .slick-arrow.slick-prev:hover {
-    background-position: -1px -33px;
+    left: 6px;
 }
 
 .main-slider .slick-arrow.slick-next {
-    background: url(../images/arrows.png) no-repeat -28px 0;
-    right: 221px;
+    background: url(../images/arrows-main-slider.png) no-repeat 0 -87px;
+    right: 10px;
 }
 
 .main-slider .slick-arrow.slick-next:hover {
-    background-position: -27px -33px;
+    right: 6px;
 }
 
 .main-slider .slick-dots {
@@ -2457,6 +2464,11 @@ main {
     border: none;
 }
 
+.content aside .accordion li.nochild a:hover,
+.content aside .accordion li.nochild a {
+	background: none;
+}
+
 .content aside .accordion li.active a {
     background: #fff url(../images/a-arrow-up.png) no-repeat 93% center;
 }
@@ -2468,7 +2480,7 @@ main {
 .content aside .accordion li a {
     display: block;
     font: 17px/21px MyriadProS;
-    padding: 15px 40px 15px 35px;
+    padding: 15px 16px 15px 26px;
     background: #fff url(../images/a-arrow-down.png) no-repeat 93% center;
 }
 
@@ -2696,13 +2708,18 @@ main {
 }
 
 .filter {
-    width: 757px;
-    margin: 0 0 35px -8px;
+    width: 797px;
+    margin: 0 0 35px -28px;
     background-color: #e8e8e8;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 20px 17px 6px 16px;
+}
+
+.filter.extrafilter {
+    width: 757px;
+    margin: 0 0 35px -8px;
 }
 
 .filter .row {
@@ -9740,15 +9757,21 @@ body.black-friday {
     padding: 0 9px 1px;
     color: #000;
     text-decoration: none;
-    border: 1px solid #b8a870;
+    border: 1px solid #adb0b9;
     transition: .3s;
     border-radius: 3px;
-    background-color: #f4edd6;
+    background-color: #edf9ff;
 }
 
 .tags-list .tag-item a:hover {
     background-color: #d6e8f4;
     border-color: #7394b5;
+}
+
+.tags-list .tag-item.active a {
+    background-color: #085c98;
+    border-color: #003abf;
+    color: #fff;
 }
 
 .tags-list .slick-arrow {
@@ -11242,8 +11265,8 @@ body.black-friday {
 }
 
 .modal.feedbackpopup.thank {
-	height: 420px;
-	top: 120px;
+    height: 420px;
+    top: 120px;
 }
 
 .modal.feedbackpopup * {
@@ -11259,7 +11282,7 @@ body.black-friday {
 }
 
 .modal.feedbackpopup.thank .feedbackpopup-content {
-	height: 420px;
+    height: 420px;
 }
 
 .feedbackpopup-content h3 {
@@ -11429,41 +11452,124 @@ body.black-friday {
 }
 
 .feedbackpopup .thankyou {
-	width: 533px;
-	margin: 0 auto;
-	text-align: center;
+    width: 533px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .feedbackpopup .thankyou p {
-	font: 20px/30px MyriadPro;
-	color: #000;
-	margin: 0 0 18px;
-	position: static;
-	text-align: center;
+    font: 20px/30px MyriadPro;
+    color: #000;
+    margin: 0 0 18px;
+    position: static;
+    text-align: center;
 }
 
 .feedbackpopup .thankyou .author {
-	text-align: right;
-	color: #878787;
-	font: 15px/19px MyriadPro;
-	margin-bottom: 27px;
+    text-align: right;
+    color: #878787;
+    font: 15px/19px MyriadPro;
+    margin-bottom: 27px;
 }
 
 .feedbackpopup .thankyou .button-box {
-	text-align: center;
+    text-align: center;
 }
 
 .feedbackpopup .thankyou .button-box span.close-2 {
-	display: inline-block;
-	position: static;
-	text-decoration: none;
-	width: 224px;
+    display: inline-block;
+    position: static;
+    text-decoration: none;
+    width: 224px;
 }
-
 
 .feedbackpopup .thankyou .button-box span:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
+
+.slide-link-11 {
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+}
+
+.slide-link-11 a {
+    font: 11px Arial;
+    padding-right: 14px;
+    background: url(../images/arrow-link-white.png) no-repeat right 3px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.slide-link-11 a:hover {
+    text-decoration: none;
+}
+
+.textinputbox {
+    float: left;
+    margin-right: 9px;
+}
+
+.textinputbox input {
+    float: left;
+    width: 110px;
+    height: 26px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    font: 15px/ 26px Arial;
+    color: #000;
+    padding: 0 16px;
+    margin: 0 0 0 -1px;
+}
+
+.textinputbox input:first-child {
+    margin: 0;
+}
+
+.textinputbox input:last-child {
+    margin-right: 22px;
+}
+
+.filter .selectbox.middlelong {
+    width: 222px;
+}
+
+.find-button {
+    float: left;
+    padding-left: 21px;
+}
+
+.find-button input {
+    width: 104px;
+    height: 28px;
+    font: 15px/24px Arial;
+    color: #000;
+    background-color: #d6e8f4;
+    border: 1px solid #7394b5;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.find-button input.active,
+.find-button input:hover {
+    background-color: #f00;
+    color: #fff;
+}
+
+.filter .selectbox.nomar {
+    margin-right: 0;
+	margin-left: -1px;
+}
+
+.filter .selectbox.nomar.first-child {
+	margin-left: 0;
+}
+
+.extrafilter .row {
+	padding-left: 10px;
+}
+
+
 /**/
 
 
