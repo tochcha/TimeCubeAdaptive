@@ -2187,6 +2187,10 @@ main {
     width: 100%;
 }
 
+.bf2017 .before-footer {
+    background: #000 url(../images/subfooter.png) repeat-x top;
+}
+
 .before-footer .subscribe {
     padding: 18px 0;
 }
@@ -2466,7 +2470,7 @@ main {
 
 .content aside .accordion li.nochild a:hover,
 .content aside .accordion li.nochild a {
-	background: none;
+    background: none;
 }
 
 .content aside .accordion li.active a {
@@ -11558,18 +11562,198 @@ body.black-friday {
 
 .filter .selectbox.nomar {
     margin-right: 0;
-	margin-left: -1px;
+    margin-left: -1px;
 }
 
 .filter .selectbox.nomar.first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .extrafilter .row {
-	padding-left: 10px;
+    padding-left: 10px;
 }
 
+.bf2017 {
+    background: url(../images/bf2017-min.jpg) center;
+}
 
+.bf2017:before {
+    display: block;
+    content: '';
+    background: url(../images/bf-repeat.png) repeat-y;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.bf2017:after {
+    display: block;
+    content: '';
+    background: url(../images/bf-repeat.png) repeat-y;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.bf2017 .search-menu .form input[type="submit"] {
+    background-color: #000;
+}
+.header-content-right .cart.not-empty {
+	background: url(../images/cart-empty.png) no-repeat;
+}
+.header-content-right .cart .qty,
+.header-content-right .cart.not-empty .qty,
+.header-content-right .favorite-compare .compare.active .qty,
+.header-content-right .favorite-compare .favorite.active .qty,
+.bf2017 .header-content-right .favorite-compare .qty {
+    background-color: #000;
+}
+
+.bnr-2017 {
+    border: 3px solid #ffe100;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.bnr-2017 img {
+	display: block;
+	max-width: 100%;
+}
+
+.bnr-2017 .code {
+	position: absolute;
+	color: #000;
+	font: bold 16px/26px Arial;
+	position: absolute;
+	text-align: center;
+	width: 65px;
+	height: 26px;
+	position: absolute;
+	top: 275px;
+	left: 457px;
+}
+
+.labellist .label-bf-2017 {
+	position: absolute;
+	top: 224px;
+	left: 0;
+	width: 100%;
+}
+.labellist div .lbf2017-inner {
+	background-color: #171717;
+	font: 12px/18px Arial;
+	text-align: center;
+	color: #ffe100;
+	margin: 0 6px;
+}
+.labellist div .lbf2017-inner strong {
+	text-transform: uppercase;
+}
+.bf217-percent {
+	float: right;
+	width: 75px;
+	height: 36px;
+	background: url(../images/bf2017-percent.png);
+	margin: -12px 6px 0 0;
+}
+
+.rl-for-detail .bf217-percent {
+	float: right;
+	margin: 0;
+}
+
+.bnr-bf2017-small {
+	position: relative;
+	border: 4px solid #ffe100;
+	margin-bottom: 20px;
+}
+
+.bnr-bf2017-small img {
+	display: block;
+	max-width: 100%;
+}
+
+.bnr-bf2017-small .code {
+	position: absolute;
+	bottom: 12px;
+	right: 32px;
+	width: 65px;
+	height: 18px;
+	font: bold 16px/18px Arial;
+	text-align: center;
+	color: #000;
+}
+
+.bf2017 .tags-list .tag-item a {
+	background-color: #fff;
+	border-color: #adb0b9;
+}
+
+.bf2017 .tags-list .tag-item a:hover,
+.bf2017 .tags-list .tag-item.active a {
+	background-color: #ffe793;
+	border-color: #c5a845;
+	color: #000;
+}
+
+.bf2017 .header-content-right .favorite-compare .favorite.active,
+.bf2017 .header-content-right .favorite-compare .favorite {
+	background: url(../images/heart-black.png) no-repeat 0 100%;
+}
+
+.bf2017 .header-content-right .favorite-compare .compare.active,
+.bf2017 .header-content-right .favorite-compare .compare {
+	background: url(../images/list-black.png) no-repeat 0 76%;
+}
+
+.bf-label {
+	background: url(../images/bf2017-label.png);
+	width: 154px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 569px;
+	background-size: 100% 100%;
+}
+
+.bf2017 .product-listing .oc-price-buy {
+	margin-top: 14px;
+}
+
+.bf2017 .product-listing .favorite-compare {
+	padding-top: 26px;
+}
+
+.buy-links .links li.bf2017-label-big {
+	left: -22px;
+	position: relative;
+}
+.buy-links .links li.bf2017-label-big img {
+	border-radius: 10px;
+	max-width: 100%;
+}
+
+.bf2017 .before-footer {
+    background: #000 url(../images/subfooter.png) repeat-x top;
+}
+
+.bf2017 .footer-cols .column a,
+.bf2017 .footer-cols .column,
+.bf2017 .footer-cols .column ul a,
+.bf2017 .footer-cols .column .title,
+.bf2017 .footer-cols .column p {
+	color: #fff;
+}
+
+.bf2017 #footer {
+	background-color: #dadada;
+}
 /**/
 
 

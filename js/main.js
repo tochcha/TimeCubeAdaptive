@@ -291,7 +291,7 @@ $(document).ready(function() {
         $(this).addClass("active");
         $(".plitka").removeClass("active");
     });
-
+	
     // кнопка вверх -->
     $(function() {
         $.fn.scrollToTop = function() {

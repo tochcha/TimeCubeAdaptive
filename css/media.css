@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1380px) {
+	.bf2017:before,
+	.bf2017:after {
+		display: none;
+	}
+}
 @media only screen and (min-width: 769px) {
     .modal.feedbackpopup .close {
         background: url(../images/outer-close.png) no-repeat;
@@ -340,7 +346,7 @@
     .content aside .catalog-slide .accordion {
         display: none;
     }
-	.filter.extrafilter,
+    .filter.extrafilter,
     .filter {
         width: auto;
         margin: 0 0 35px;
@@ -626,14 +632,37 @@
         width: 312px;
         padding-top: 12px;
     }
-	.extrafilter .row {
-		padding-left: 4px;
+    .extrafilter .row {
+        padding-left: 4px;
+    }
+    .textinputbox input {
+        width: 80px;
+    }
+    .filter .selectbox.nomar {
+        width: 134px;
+    }
+    .bnr-2017 .code {
+        top: 211px;
+        left: 347px;
+        font-size: 13px;
+    }
+	.bnr-bf2017-small .code {
+		font-size: 12px;
+		bottom: 7px;
+		right: 18px;
 	}
-	.textinputbox input {
-		width: 80px;
+	.bf-label {
+		left: auto;
+		right: 0;
+		height: 46px;
 	}
-	.filter .selectbox.nomar {
-		width: 134px;
+	.buy-links .links li.bf2017-label-big {
+		left: 0;
+	}
+	.buy-links .links li.bf2017-label-big img {
+		width: 106px;
+		height: 50px;
+		border-radius: 6px;
 	}
 }
 
@@ -1154,10 +1183,10 @@
     .product-list .item {
         width: 231px;
     }
-	.filter.extrafilter,
+    .filter.extrafilter,
     .filter {
         width: 768px;
-		margin-left: -22px;
+        margin-left: -22px;
     }
     .product-listing .red-label,
     .price-rl .red-label {
@@ -1212,6 +1241,14 @@
         width: 700px;
         margin-left: -360px;
     }
+    .bnr-2017 .code {
+        top: 265px;
+        left: 439px;
+    }
+	.bf-label {
+		left: auto;
+		right: 0;
+	}
 }
 
 
@@ -1251,6 +1288,9 @@
         float: left;
         padding-top: 2px;
     }
+	.product-listing {
+		width: 731px;
+	}
 }
 
 
@@ -1740,20 +1780,20 @@
     aside .filters {
         margin-top: 22px;
     }
-	.extrafilter .row {
-		margin-bottom: 0;
-		padding-left: 34px;
-	}
-	.textinputbox input:last-child {
-		margin-left: 34px;
-		margin-right: 0;
-	}
-	.filter .selectbox.nomar,
-	.textinputbox input:first-child,
-	.filter .selectbox.nomar.first-child {
-		margin-left: -1px;
-		margin-bottom: 12px;
-	}
+    .extrafilter .row {
+        margin-bottom: 0;
+        padding-left: 34px;
+    }
+    .textinputbox input:last-child {
+        margin-left: 34px;
+        margin-right: 0;
+    }
+    .filter .selectbox.nomar,
+    .textinputbox input:first-child,
+    .filter .selectbox.nomar.first-child {
+        margin-left: -1px;
+        margin-bottom: 12px;
+    }
     .filter.extrafilter,
     .filter {
         width: auto;
@@ -2878,25 +2918,39 @@
     .green-info li:first-child {
         padding-left: 0;
     }
-	.feedbackpopup .thankyou {
-		width: 92%;
-		padding-top: 58px;
+    .feedbackpopup .thankyou {
+        width: 92%;
+        padding-top: 58px;
+    }
+    .feedbackpopup .thankyou p br {
+        display: none;
+    }
+    .extrafilter .row {
+        padding-left: 28px;
+    }
+    .textinputbox input:first-child,
+    .textinputbox input:last-child {
+        margin-left: -1px;
+        margin-bottom: 12px;
+        width: 138px;
+    }
+    .find-button {
+        padding-left: 35px;
+        padding-bottom: 12px;
+    }
+    .bnr-2017 .code {
+        top: 148px;
+        left: 242px;
+        font-size: 10px;
+    }
+	.bnr-bf2017-small .code {
+		font-size: 9px;
+		bottom: 3px;
+		right: 4px;
 	}
-	.feedbackpopup .thankyou p br {
-		display: none;
-	}
-	.extrafilter .row {
-		padding-left: 28px;
-	}
-	.textinputbox input:first-child,
-	.textinputbox input:last-child {
-		margin-left: -1px;
-		margin-bottom: 12px;
-		width: 138px;
-	}
-	.find-button {
-		padding-left: 35px;
-		padding-bottom: 12px;
+	.bf-label {
+		left: auto;
+		right: 0;
 	}
 }
 
@@ -3827,9 +3881,25 @@
         width: 100%;
         margin-bottom: 0;
     }
-	.feedbackpopup .thankyou {
-		width: 92%;
-		padding-top: 8px;
+    .feedbackpopup .thankyou {
+        width: 92%;
+        padding-top: 8px;
+    }
+    .bnr-2017 .code {
+        top: 95px;
+        left: 150px;
+        font-size: 7px;
+    }
+	.bnr-bf2017-small .code {
+		font-size: 7px;
+		bottom: 4px;
+		right: 0;
+		height: 12px;
+		width: 48px;
+	}
+	.bf-label {
+		top: 213px;
+		border-radius: 7px;
 	}
 }
 
