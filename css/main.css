@@ -2364,7 +2364,7 @@ main {
 #footer .cards {
     margin: 0;
     padding: 27px 0 12px;
-    text-align: right;
+    text-align: center;
 }
 
 #footer li {
@@ -11753,6 +11753,20 @@ body.black-friday {
 
 .bf2017 #footer {
 	background-color: #dadada;
+}
+
+.ul.dropdown li a:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #989b9d;
+    height: 1px;
+    transition: all 0.4s;
 }
 /**/
 
