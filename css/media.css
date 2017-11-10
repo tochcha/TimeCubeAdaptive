@@ -2952,6 +2952,19 @@
 		left: auto;
 		right: 0;
 	}
+	.mob-link {
+		display: block;
+		text-align: center;
+		padding: 12px 0;
+	}
+	.mob-link a {
+		font: 17px Arial;
+		text-decoration: underline;
+		color: #000;
+	}
+	.mob-link a:hover {
+		text-decoration: none;
+	}
 }
 
 

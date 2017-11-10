@@ -2254,6 +2254,7 @@ main {
 
 .before-footer .subscribe .buttons {
     float: right;
+	overflow: hidden;
 }
 
 .footer-cols {
@@ -8810,15 +8811,18 @@ body.black-friday {
     background: #f0f0f0 url(../images/ico-menu-9.png) no-repeat 23px center;
 }
 
+.mob-link {
+    display: none;
+}
+
 .up-scroll-2 {
     display: none;
     text-align: center;
     border-top: 1px solid #9c9c9c;
     border-bottom: 1px solid #9c9c9c;
-    padding-top: 10px;
-    padding-bottom: 12px;
-    -webkit-box-shadow: 0 6px 6px 0 #B0B0B0;
-    box-shadow: 0 6px 6px 0 #B0B0B0;
+    margin-top: 10px;
+    -webkit-box-shadow: 0 0 6px 0 #999;
+    box-shadow: 0 0 6px 0 #999;
     background-color: #c9c9c9;
 }
 
@@ -11604,9 +11608,11 @@ body.black-friday {
 .bf2017 .search-menu .form input[type="submit"] {
     background-color: #000;
 }
+
 .header-content-right .cart.not-empty {
-	background: url(../images/cart-empty.png) no-repeat;
+    background: url(../images/cart-empty.png) no-repeat;
 }
+
 .header-content-right .cart .qty,
 .header-content-right .cart.not-empty .qty,
 .header-content-right .favorite-compare .compare.active .qty,
@@ -11617,126 +11623,130 @@ body.black-friday {
 
 .bnr-2017 {
     border: 3px solid #ffe100;
-	margin-bottom: 20px;
-	position: relative;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .bnr-2017 img {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 .bnr-2017 .code {
-	position: absolute;
-	color: #000;
-	font: bold 16px/26px Arial;
-	position: absolute;
-	text-align: center;
-	width: 65px;
-	height: 26px;
-	position: absolute;
-	top: 275px;
-	left: 457px;
+    position: absolute;
+    color: #000;
+    font: bold 16px/26px Arial;
+    position: absolute;
+    text-align: center;
+    width: 65px;
+    height: 26px;
+    position: absolute;
+    top: 275px;
+    left: 457px;
 }
 
 .labellist .label-bf-2017 {
-	position: absolute;
-	top: 224px;
-	left: 0;
-	width: 100%;
+    position: absolute;
+    top: 224px;
+    left: 0;
+    width: 100%;
 }
+
 .labellist div .lbf2017-inner {
-	background-color: #171717;
-	font: 12px/18px Arial;
-	text-align: center;
-	color: #ffe100;
-	margin: 0 6px;
+    background-color: #171717;
+    font: 12px/18px Arial;
+    text-align: center;
+    color: #ffe100;
+    margin: 0 6px;
 }
+
 .labellist div .lbf2017-inner strong {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 .bf217-percent {
-	float: right;
-	width: 75px;
-	height: 36px;
-	background: url(../images/bf2017-percent.png);
-	margin: -12px 6px 0 0;
+    float: right;
+    width: 75px;
+    height: 36px;
+    background: url(../images/bf2017-percent.png);
+    margin: -12px 6px 0 0;
 }
 
 .rl-for-detail .bf217-percent {
-	float: right;
-	margin: 0;
+    float: right;
+    margin: 0;
 }
 
 .bnr-bf2017-small {
-	position: relative;
-	border: 4px solid #ffe100;
-	margin-bottom: 20px;
+    position: relative;
+    border: 4px solid #ffe100;
+    margin-bottom: 20px;
 }
 
 .bnr-bf2017-small img {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 .bnr-bf2017-small .code {
-	position: absolute;
-	bottom: 12px;
-	right: 32px;
-	width: 65px;
-	height: 18px;
-	font: bold 16px/18px Arial;
-	text-align: center;
-	color: #000;
+    position: absolute;
+    bottom: 12px;
+    right: 32px;
+    width: 65px;
+    height: 18px;
+    font: bold 16px/18px Arial;
+    text-align: center;
+    color: #000;
 }
 
 .bf2017 .tags-list .tag-item a {
-	background-color: #fff;
-	border-color: #adb0b9;
+    background-color: #fff;
+    border-color: #adb0b9;
 }
 
 .bf2017 .tags-list .tag-item a:hover,
 .bf2017 .tags-list .tag-item.active a {
-	background-color: #ffe793;
-	border-color: #c5a845;
-	color: #000;
+    background-color: #ffe793;
+    border-color: #c5a845;
+    color: #000;
 }
 
 .bf2017 .header-content-right .favorite-compare .favorite.active,
 .bf2017 .header-content-right .favorite-compare .favorite {
-	background: url(../images/heart-black.png) no-repeat 0 100%;
+    background: url(../images/heart-black.png) no-repeat 0 100%;
 }
 
 .bf2017 .header-content-right .favorite-compare .compare.active,
 .bf2017 .header-content-right .favorite-compare .compare {
-	background: url(../images/list-black.png) no-repeat 0 76%;
+    background: url(../images/list-black.png) no-repeat 0 76%;
 }
 
 .bf-label {
-	background: url(../images/bf2017-label.png);
-	width: 154px;
-	height: 50px;
-	position: absolute;
-	top: 0;
-	left: 569px;
-	background-size: 100% 100%;
+    background: url(../images/bf2017-label.png);
+    width: 154px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 569px;
+    background-size: 100% 100%;
 }
 
 .bf2017 .product-listing .oc-price-buy {
-	margin-top: 14px;
+    margin-top: 14px;
 }
 
 .bf2017 .product-listing .favorite-compare {
-	padding-top: 26px;
+    padding-top: 26px;
 }
 
 .buy-links .links li.bf2017-label-big {
-	left: -22px;
-	position: relative;
+    left: -22px;
+    position: relative;
 }
+
 .buy-links .links li.bf2017-label-big img {
-	border-radius: 10px;
-	max-width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
 }
 
 .bf2017 .before-footer {
@@ -11748,11 +11758,11 @@ body.black-friday {
 .bf2017 .footer-cols .column ul a,
 .bf2017 .footer-cols .column .title,
 .bf2017 .footer-cols .column p {
-	color: #fff;
+    color: #fff;
 }
 
 .bf2017 #footer {
-	background-color: #dadada;
+    background-color: #dadada;
 }
 
 .ul.dropdown li a:before {
@@ -11768,6 +11778,8 @@ body.black-friday {
     height: 1px;
     transition: all 0.4s;
 }
+
+
 /**/
 
 
