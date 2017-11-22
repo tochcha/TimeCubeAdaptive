@@ -2254,7 +2254,7 @@ main {
 
 .before-footer .subscribe .buttons {
     float: right;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .footer-cols {
@@ -11777,6 +11777,60 @@ body.black-friday {
     background: #989b9d;
     height: 1px;
     transition: all 0.4s;
+}
+
+.bf-2017-uslovia {
+    background-color: #0e0e0e;
+    margin: -18px 0 -22px;
+    padding-bottom: 22px;
+}
+
+.bf-2017-uslovia-bnr {
+    padding-bottom: 14px;
+}
+
+.bf-2017-uslovia-bnr img {
+    width: 100%;
+}
+
+.bf-2017-uslovia-content {
+    padding: 0 37px 22px;
+}
+
+.bf-rem {
+    color: #464646;
+    font-size: 14px;
+    padding-bottom: 27px;
+}
+
+.bf-rem-separ {
+    height: 1px;
+    width: 92%;
+    margin: 0 auto 42px;
+    background-color: #464646;
+}
+
+.bf-2017-uslovia h3,
+.bf-2017-uslovia h1 {
+    font: 31px MyriadPro;
+    color: #fff000;
+    text-align: center;
+    margin: 0;
+}
+
+.bf-2017-uslovia hgroup {
+    margin-bottom: 42px;
+}
+
+.bf-2017-uslovia h1 br {
+    display: none;
+}
+
+.bf-2017-uslovia p {
+    font: 18px/1.4 MyriadPro;
+    color: #dedede;
+    margin: 0 14px 32px;
+    padding-top: 22px;
 }
 
 

@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1380px) {
-	.bf2017:before,
-	.bf2017:after {
-		display: none;
-	}
+    .bf2017:before, .bf2017:after {
+        display: none;
+    }
 }
+
 @media only screen and (min-width: 769px) {
     .modal.feedbackpopup .close {
         background: url(../images/outer-close.png) no-repeat;
@@ -298,6 +298,9 @@
     }
     .terms {
         padding: 6px 22px 44px;
+    }
+    .bf-2017-uslovia h1 br {
+        display: block;
     }
 }
 
@@ -646,24 +649,24 @@
         left: 347px;
         font-size: 13px;
     }
-	.bnr-bf2017-small .code {
-		font-size: 12px;
-		bottom: 7px;
-		right: 18px;
-	}
-	.bf-label {
-		left: auto;
-		right: 0;
-		height: 46px;
-	}
-	.buy-links .links li.bf2017-label-big {
-		left: 0;
-	}
-	.buy-links .links li.bf2017-label-big img {
-		width: 106px;
-		height: 50px;
-		border-radius: 6px;
-	}
+    .bnr-bf2017-small .code {
+        font-size: 12px;
+        bottom: 7px;
+        right: 18px;
+    }
+    .bf-label {
+        left: auto;
+        right: 0;
+        height: 46px;
+    }
+    .buy-links .links li.bf2017-label-big {
+        left: 0;
+    }
+    .buy-links .links li.bf2017-label-big img {
+        width: 106px;
+        height: 50px;
+        border-radius: 6px;
+    }
 }
 
 
@@ -1245,10 +1248,10 @@
         top: 265px;
         left: 439px;
     }
-	.bf-label {
-		left: auto;
-		right: 0;
-	}
+    .bf-label {
+        left: auto;
+        right: 0;
+    }
 }
 
 
@@ -1288,9 +1291,9 @@
         float: left;
         padding-top: 2px;
     }
-	.product-listing {
-		width: 731px;
-	}
+    .product-listing {
+        width: 731px;
+    }
 }
 
 
@@ -2943,28 +2946,43 @@
         left: 242px;
         font-size: 10px;
     }
-	.bnr-bf2017-small .code {
-		font-size: 9px;
-		bottom: 3px;
-		right: 4px;
-	}
-	.bf-label {
-		left: auto;
-		right: 0;
-	}
-	.mob-link {
-		display: block;
-		text-align: center;
-		padding: 12px 0;
-	}
-	.mob-link a {
-		font: 17px Arial;
-		text-decoration: underline;
-		color: #000;
-	}
-	.mob-link a:hover {
-		text-decoration: none;
-	}
+    .bnr-bf2017-small .code {
+        font-size: 9px;
+        bottom: 3px;
+        right: 4px;
+    }
+    .bf-label {
+        left: auto;
+        right: 0;
+    }
+    .mob-link {
+        display: block;
+        text-align: center;
+        padding: 12px 0;
+    }
+    .mob-link a {
+        font: 17px Arial;
+        text-decoration: underline;
+        color: #000;
+    }
+    .mob-link a:hover {
+        text-decoration: none;
+    }
+    .bf-2017-uslovia-content {
+        padding: 0 17px 22px;
+    }
+    .bf-2017-uslovia h3 br,
+    .bf-2017-uslovia h1 br {
+        display: none;
+    }
+    .bf-2017-uslovia h3,
+    .bf-2017-uslovia h1 {
+        font-size: 22px;
+    }
+    .bf-2017-uslovia p {
+        font-size: 16px;
+        padding-top: 0;
+    }
 }
 
 
@@ -3903,17 +3921,17 @@
         left: 150px;
         font-size: 7px;
     }
-	.bnr-bf2017-small .code {
-		font-size: 7px;
-		bottom: 4px;
-		right: 0;
-		height: 12px;
-		width: 48px;
-	}
-	.bf-label {
-		top: 213px;
-		border-radius: 7px;
-	}
+    .bnr-bf2017-small .code {
+        font-size: 7px;
+        bottom: 4px;
+        right: 0;
+        height: 12px;
+        width: 48px;
+    }
+    .bf-label {
+        top: 213px;
+        border-radius: 7px;
+    }
 }
 
 
