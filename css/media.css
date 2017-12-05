@@ -19,6 +19,9 @@
     .blue-informer {
         right: 235px;
     }
+    .bells {
+        display: none;
+    }
 }
 
 
@@ -301,6 +304,15 @@
     }
     .bf-2017-uslovia h1 br {
         display: block;
+    }
+    .pf-main-right.champ-2017 {
+        background-position: -39px -20px;
+    }
+    .champ-big {
+        left: 80px;
+    }
+    .champ-big-footer {
+        display: none;
     }
 }
 
@@ -667,6 +679,10 @@
         height: 50px;
         border-radius: 6px;
     }
+    .bottle-small-2017-list {
+        top: 130px;
+        left: -20px;
+    }
 }
 
 
@@ -866,9 +882,14 @@
         padding: 25px 0 26px;
         background-position: 46px 66px;
     }
-    .modal.present-1 .present-2-content,
-    .modal.present-2 .present-2-content {
+    .modal.present-2 .modal-content {
+        background-position: -86px -3px;
+    }
+    .modal.present-1 .present-2-content {
         margin-left: 270px;
+    }
+    .modal.present-2 .present-2-content {
+        margin-left: 230px;
     }
     .modal.present-1 {
         margin-top: -284px;
@@ -1251,6 +1272,19 @@
     .bf-label {
         left: auto;
         right: 0;
+    }
+    .pf-main-right.champ-2017 {
+        position: static;
+        background-position: 256px -142px;
+    }
+    .champ-big {
+        left: 390px;
+        top: 700px;
+    }
+    .champ-big-footer {
+        display: block;
+        top: 974px;
+        left: 404px;
     }
 }
 
@@ -1769,7 +1803,7 @@
         height: auto;
     }
     .modal.present-2 .modal-content .present-2-content {
-        margin-left: 22px;
+        margin-left: 0;
     }
     .product-list .item .quick-view {
         display: none;
@@ -2983,6 +3017,27 @@
         font-size: 16px;
         padding-top: 0;
     }
+    .pf-main-right.champ-2017 {
+        background: none;
+    }
+    .champ-big {
+        left: -5px;
+        top: 560px;
+    }
+    .champ-big-footer {
+        display: block;
+        top: 834px;
+        left: 4px;
+    }
+    .bottle-small-2017-list {
+        top: 136px;
+        left: 30px;
+    }
+    .product-listing .labels .label-champagne {
+        width: 207px;
+        height: 17px;
+        overflow: hidden;
+    }
 }
 
 
@@ -3931,6 +3986,20 @@
     .bf-label {
         top: 213px;
         border-radius: 7px;
+    }
+    .champ-big,
+    .champ-big-footer {
+        display: none;
+    }
+    .bottle-small-2017-list {
+        top: auto;
+        bottom: -34px;
+        left: auto;
+        right: -20px;
+    }
+    .green-left,
+    .green-right {
+        display: none;
     }
 }
 

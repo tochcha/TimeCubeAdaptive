@@ -1095,6 +1095,37 @@ main {
     right: 6px;
 }
 
+.main-slider.inner .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    height: 53px;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: -27px;
+    transition: .3s;
+}
+
+.main-slider.inner .slick-arrow.slick-prev {
+    background: url(../images/arrows-inner-slider.png) no-repeat 0 -53px;
+    left: 10px;
+}
+
+.main-slider.inner .slick-arrow.slick-prev:hover {
+    left: 6px;
+}
+
+.main-slider.inner .slick-arrow.slick-next {
+    background: url(../images/arrows-inner-slider.png) no-repeat 0 0;
+    right: 10px;
+}
+
+.main-slider.inner .slick-arrow.slick-next:hover {
+    right: 6px;
+}
+
 .main-slider .slick-dots {
     margin: 0;
     padding: 0;
@@ -1210,6 +1241,7 @@ main {
     cursor: pointer;
     top: 50%;
     margin-top: -47px;
+    z-index: 3;
 }
 
 .product-list .item .img-box .slick-arrow.slick-prev {
@@ -1303,6 +1335,8 @@ main {
     height: 36px;
     overflow: hidden;
     text-decoration: none;
+    position: relative;
+    z-index: 3;
 }
 
 .product-list .item a.title:hover {
@@ -1363,6 +1397,8 @@ main {
     font: 12px/16px Arial, Verdana;
     padding-bottom: 22px;
     color: #949494;
+    position: relative;
+    z-index: 3;
 }
 
 .product-list .item .quick-view span {
@@ -1600,7 +1636,8 @@ main {
 }
 
 .modal.present-2 .modal-content {
-    background: #fff url(../images/bottle-big.jpg) no-repeat 90px 66px;
+    /*background: #fff url(../images/bottle-big.jpg) no-repeat 90px 66px;*/
+    background: #fff url(../images/bottle-big-2017.jpg) no-repeat 1px 1px;
     width: 812px;
     height: 505px;
 }
@@ -1896,29 +1933,35 @@ main {
 }
 
 .present-2-content {
-    width: 406px;
+    width: 446px;
     text-align: center;
-    border-bottom: 2px solid #cdcdcd;
-    padding: 77px 0 22px;
-    margin-left: 330px;
+    padding: 55px 0 22px;
+    margin-left: 310px;
 }
 
 .present-2-content h3 {
-    font: bold 29px Verdana;
+    font: 43px Calibri;
     color: #649316;
-    margin: 0 0 26px;
+    margin: 0 0 20px;
 }
 
 .present-2-content .champ-logo {
-    padding-bottom: 37px;
+    padding-bottom: 25px;
 }
 
 .present-2-content p {
-    margin: 0;
-    font: bold 13px Verdana;
-    color: #838383;
+    margin: 0 0 21px;
+    font: 17px/21px MyriadPro;
+    color: #418300;
     position: static;
     text-align: center;
+    border-bottom: 2px solid #cdcdcd;
+    padding-bottom: 24px;
+}
+
+.rem-2017 {
+    font: 14px/18px MyriadPro;
+    color: #838383;
 }
 
 .overlay-4,
@@ -3744,17 +3787,19 @@ main {
     margin-bottom: 11px;
 }
 
+.flags ul li span,
 .flags ul li a {
     display: table-cell;
     vertical-align: middle;
-    height: 48px;
-    padding: 0 22px 2px 91px;
+    height: 46px;
+    padding: 2px 22px 2px 91px;
     color: #fff;
     font: 12px/13px Arial;
     width: 103px;
+    cursor: pointer;
 }
 
-.flags ul li a:hover {
+.flags ul li span:hover {
     text-decoration: underline;
     background-position: 0 -50px;
 }
@@ -3771,6 +3816,7 @@ main {
     background: url(../images/flag-3.png) 0 0;
 }
 
+.flags .item-4 span,
 .flags .item-4 a {
     background: url(../images/flag-4.png) 0 0;
 }
@@ -9558,6 +9604,8 @@ body.black-friday {
 
 .product-listing .labels .label-champagne {
     background-color: #548300;
+    width: 278px;
+    text-align: center;
 }
 
 .product-listing .oc-price-buy {
@@ -11833,7 +11881,92 @@ body.black-friday {
     padding-top: 22px;
 }
 
+.bells {
+    position: absolute;
+    top: -26px;
+    left: -154px;
+    z-index: 4;
+}
 
+.pf-main-right.champ-2017 {
+    background: url(../images/green-champ-bg-2017.png) no-repeat -9px -20px;
+    position: relative;
+}
+
+.champ-big {
+    position: absolute;
+    top: 109px;
+    left: 120px;
+    z-index: 2;
+}
+
+.champ-big span {
+    cursor: pointer;
+}
+
+.champ-big-footer {
+    position: absolute;
+    top: 385px;
+    left: 135px;
+    z-index: 3;
+}
+
+.green-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(../images/green-top.png) no-repeat;
+    height: 132px;
+    background-size: 100% 132px;
+}
+
+.green-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/green-bottom.png) no-repeat;
+    height: 140px;
+    background-size: 100% 140px;
+}
+
+.bottle-small-2017 {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    z-index: 2;
+}
+
+.green-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/green-left.png) no-repeat;
+    background-size: 183px 100%;
+    height: 100%;
+    width: 183px;
+}
+
+.green-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/green-right.png) no-repeat;
+    background-size: 183px 100%;
+    height: 100%;
+    width: 183px;
+}
+
+.bottle-small-2017-list {
+    position: absolute;
+    top: 28px;
+    left: 154px;
+}
+
+.main-slider .slick-list .no-border img {
+	border: none;
+}
 /**/
 
 
