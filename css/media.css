@@ -308,8 +308,14 @@
     .pf-main-right.champ-2017 {
         background-position: -39px -20px;
     }
+    .pf-main-right.champ-2018 {
+        background-position: -39px -20px;
+    }
     .champ-big {
         left: 80px;
+    }
+    .champ-big_2018 {
+        left: 58px;
     }
     .champ-big-footer {
         display: none;
@@ -683,6 +689,9 @@
         top: 130px;
         left: -20px;
     }
+	.bottle-small-2018 {
+		right: 0;
+	}
 }
 
 
@@ -1277,7 +1286,15 @@
         position: static;
         background-position: 256px -142px;
     }
+    .pf-main-right.champ-2018 {
+        position: static;
+        background-position: 256px -142px;
+    }
     .champ-big {
+        left: 390px;
+        top: 700px;
+    }
+    .champ-big_2018 {
         left: 390px;
         top: 700px;
     }
@@ -3017,12 +3034,17 @@
         font-size: 16px;
         padding-top: 0;
     }
+    .pf-main-right.champ-2018,
     .pf-main-right.champ-2017 {
         background: none;
     }
     .champ-big {
         left: -5px;
         top: 560px;
+    }
+    .champ-big_2018 {
+        left: -5px;
+        top: 580px;
     }
     .champ-big-footer {
         display: block;
@@ -3178,6 +3200,9 @@
     .fc-right {
         padding-left: 0;
     }
+	.bottle-small-2018 {
+		top: 92px;
+	}
 }
 
 
@@ -3988,6 +4013,7 @@
         border-radius: 7px;
     }
     .champ-big,
+    .champ-big_2018,
     .champ-big-footer {
         display: none;
     }
@@ -4001,6 +4027,9 @@
     .green-right {
         display: none;
     }
+	.bottle-small-2018 {
+		right: 0;
+	}
 }
 
 

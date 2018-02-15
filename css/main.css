@@ -1636,8 +1636,8 @@ main {
 }
 
 .modal.present-2 .modal-content {
-    /*background: #fff url(../images/bottle-big.jpg) no-repeat 90px 66px;*/
-    background: #fff url(../images/bottle-big-2017.jpg) no-repeat 1px 1px;
+    background: #fff url(../images/bottle-big.jpg) no-repeat 90px 66px;
+    /*background: #fff url(../images/bottle-big-2017.jpg) no-repeat 1px 1px;*/
     width: 812px;
     height: 505px;
 }
@@ -3792,10 +3792,10 @@ main {
     display: table-cell;
     vertical-align: middle;
     height: 46px;
-    padding: 2px 22px 2px 91px;
+    padding: 2px 20px 2px 91px;
     color: #fff;
     font: 12px/13px Arial;
-    width: 103px;
+    width: 105px;
     cursor: pointer;
 }
 
@@ -3823,6 +3823,16 @@ main {
 
 .flags .item-5 a {
     background: url(../images/flag-5.png) 0 0;
+}
+
+.flags .item-6 span,
+.flags .item-6 a {
+    background: url(../images/red-flag-moem-min.png) 0 0;
+}
+
+.flags .item-6 span:hover,
+.flags .item-6 a:hover {
+    background: url(../images/red-flag-moem-min.png)) 0 100%;
 }
 
 .flags .favorite-compare {
@@ -9493,6 +9503,8 @@ body.black-friday {
     width: 193px;
     height: 42px;
     font: 12px/16px Arial;
+	position: relative;
+	z-index: 2;
 }
 
 .product-listing .img-box {
@@ -9606,6 +9618,14 @@ body.black-friday {
     background-color: #548300;
     width: 278px;
     text-align: center;
+}
+
+.product-listing .labels .label-champagne.label-champagne_red {
+	background-color: #e70000;
+}
+
+.product-listing .labels .label-champagne.label-champagne_red:hover {
+	background-color: #db1010;
 }
 
 .product-listing .oc-price-buy {
@@ -9979,6 +9999,14 @@ body.black-friday {
 
 .labellist .label-champagne:hover {
     background-color: #2c982c;
+}
+
+.labellist .label-champagne.label-champagne_red {
+	background-color: #e70000;
+}
+
+.labellist .label-champagne.label-champagne_red:hover {
+	background-color: #db1010;
 }
 
 .price-rl .price {
@@ -11893,6 +11921,11 @@ body.black-friday {
     position: relative;
 }
 
+.pf-main-right.champ-2018 {
+    background: url(../images/red-champ-bg-2018-min.png) no-repeat -9px -30px;
+    position: relative;
+}
+
 .champ-big {
     position: absolute;
     top: 109px;
@@ -11901,6 +11934,17 @@ body.black-friday {
 }
 
 .champ-big span {
+    cursor: pointer;
+}
+
+.champ-big_2018 {
+    position: absolute;
+    top: 107px;
+    left: 105px;
+    z-index: 2;
+}
+
+.champ-big_2018 span {
     cursor: pointer;
 }
 
@@ -11966,6 +12010,53 @@ body.black-friday {
 
 .main-slider .slick-list .no-border img {
 	border: none;
+}
+
+.red-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(../images/red-top-min.png) no-repeat;
+    height: 143px;
+    background-size: 100% 143px;
+}
+
+.red-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/red-bottom-min.png) no-repeat;
+    height: 148px;
+    background-size: 100% 148px;
+}
+
+.bottle-small-2018 {
+    position: absolute;
+    top: 122px;
+    right: -14px;
+    z-index: 2;
+}
+
+.red-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/red-left-min.png) no-repeat;
+    background-size: 197px 100%;
+    height: 100%;
+    width: 197px;
+}
+
+.red-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/red-right-min.png) no-repeat;
+    background-size: 197px 100%;
+    height: 100%;
+    width: 197px;
 }
 /**/
 
