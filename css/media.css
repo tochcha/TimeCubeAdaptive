@@ -892,13 +892,15 @@
         background-position: 46px 66px;
     }
     .modal.present-2 .modal-content {
-        background-position: -86px -3px;
+        /*background-position: -86px -3px;*/
+		background-image: none;
     }
     .modal.present-1 .present-2-content {
         margin-left: 270px;
     }
     .modal.present-2 .present-2-content {
-        margin-left: 230px;
+        /*margin-left: 230px;*/
+		margin: 0 auto;
     }
     .modal.present-1 {
         margin-top: -284px;
